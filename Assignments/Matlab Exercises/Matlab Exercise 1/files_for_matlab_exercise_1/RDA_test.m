@@ -22,6 +22,8 @@ function [Y_predict] = RDA_test(X_test, LDAmodel, numofClass)
 
 % Write your code here:
 
+	%testing is the same as for normal LDA, since the only change is a different Sigmapooled calculated in RDA_train
+	Y_predict = LDA_test(X_test, LDAmodel, numofClass);
 
 
 end

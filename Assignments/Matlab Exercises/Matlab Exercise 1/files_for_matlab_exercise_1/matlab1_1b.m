@@ -2,6 +2,8 @@ clear
 
 load 'data_iris.mat'
 
+s = RandStream('mt19937ar', 'Seed', 1)
+
 S = 10; %splits
 R = 10; %repetitions
 [N,D] = size(X); %number of samples

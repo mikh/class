@@ -23,5 +23,14 @@ function [LDAmodel]= RDA_train(X_train, Y_train,gamma, numofClass)
 % Y_predict predicted labels for all the testing data points in X_test
 
 % Write your code here:
+	
+	%first get the base LDA values
+	LDAmodel = LDA_train(X_train, Y_train, numofClass);
 
+	%now regularize the matrix
+	S = LDAmodel.Sigmapooled;
+	diag_matrix = diag(diag(S));
+
+	S_new = gamma*diag_matrix + (1-gamma)*S;
+	LDAmodel.Sigmapooled = S_new;
 end

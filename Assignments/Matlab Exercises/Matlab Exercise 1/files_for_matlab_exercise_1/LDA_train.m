@@ -23,7 +23,12 @@ function [LDAmodel]= LDA_train(X_train, Y_train, numofClass)
 
 % Write your codes here:
 	M = numofClass;
-	[N, D] = size(X_train);
+    [N, D] = size(X_train);
+    
+    %make sure we can index properly
+    if min(Y_train) == 0
+        Y_train = Y_train + 1;
+    end
 
 	n_y = zeros(1,M);
 	p_y = zeros(1,M);
