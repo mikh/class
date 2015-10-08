@@ -25,13 +25,19 @@ function [Y_predict] = LDA_test(X_test, LDAmodel, numofClass)
     
     Y_predict = zeros(N,1);
     
+    %precalculate the beta and gamma terms
+    beta = zeros(M, D);
+    gamma = zeros(M, 1);
+    for jj = 1:M
+       beta(jj, :) = LDAmodel.Mu(jj,:) * inv(LDAmodel.Sigmapooled);
+       gamma(jj) = .5 * (beta(jj,:) * LDAmodel.Mu(jj,:)') + log(LDAmodel.pi(jj)); 
+    end
+    
     for ii = 1:N
        best_class = 0;
        best_class_result = 0;
        for jj = 1:M 
-           beta = LDAmodel.Mu(jj,:) * inv(LDAmodel.Sigmapooled);
-           gamma = .5 * (beta * LDAmodel.Mu(jj,:)') + log(LDAmodel.pi(jj));
-           rule_result = (beta * X_test(ii,:)') - gamma;   
+           rule_result = (beta(jj,:) * X_test(ii,:)') - gamma(jj);   
            if rule_result > best_class_result
                best_class_result = rule_result;
                best_class = jj;

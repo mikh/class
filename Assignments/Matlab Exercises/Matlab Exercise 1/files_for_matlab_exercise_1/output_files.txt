@@ -3,3 +3,6 @@ QDA_train.m
 LDA_test.m
 QDA_test.m
 matlab1_1b.m
+RDA_test.m
+RDA_train.m
+matlab1_1d.m
