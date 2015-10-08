@@ -14,7 +14,7 @@ newsgroups = textread('newsgrouplabels.txt', '%s');
 l_N = length(newsgroups);
 fprintf('Done.\n');
 
-blank_doc = struct('document_id', -1, 'document_label', '', 'word_list', [], 'word_count', [], 'total_words', 0);
+blank_doc = struct('document_id', -1, 'document_label', -1, 'predicted_label', -1, 'word_list', [], 'word_count', [], 'total_words', 0);
 
 if GET_UNIQUE_WORDS == 1
     train_unique_words = [];
