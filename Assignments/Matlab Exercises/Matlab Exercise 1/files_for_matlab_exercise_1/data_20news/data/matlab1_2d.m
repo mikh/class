@@ -1,12 +1,12 @@
 matlab1_2a;
 
-fprintf('Part c running...\n\n');
+fprintf('Part d running...\n\n');
 
 fprintf('Training B_w_c...\t');
 beta = zeros(l_V, l_N);
 n_c = zeros(l_N);
 n_y = zeros(l_N);
-non_zero = 0;
+alpha = 1/l_V;
 
 for ii = 1:N_train
     y = train_docs(ii).document_label;
@@ -14,42 +14,18 @@ for ii = 1:N_train
     n_c(y) = n_c(y) + train_docs(ii).total_words;
     for jj = 1:length(train_docs(ii).word_list)
         w = train_docs(ii).word_list(jj);
-        if beta(w,y) == 0
-            non_zero = non_zero + 1;
-        end
         beta(w, y) = beta(w,y) + train_docs(ii).word_count(jj);        
     end
 end
 
 for ii = 1:l_N
-    beta(:,ii) = beta(:,ii) ./ n_c(ii);
+    beta(:,ii) = (beta(:,ii) + alpha) ./ (n_c(ii) + (l_V * (alpha)));
 end
+non_zero = l_V * l_N - length(find(beta(:,:)==0));
 clear ii jj w y;
 fprintf('Done.\n');
 
-fprintf('%.0f (%.2f%%) Beta_w_c are non-zero\n', non_zero, 100*non_zero/((l_V * l_N) - length(words_only_in_testing)*l_N));
-
-fprintf('Removing unused test words...\t');
-for ii = 1:N_test
-	remove_index = length(words_only_in_testing);
-	for jj = length(test_docs(ii).word_list):-1:1
-		if remove_index == 0
-			break;
-		end
-		k = test_docs(ii).word_list(jj);
-		r_k = words_only_in_testing(remove_index);
-		while (k < r_k) && (remove_index > 1)
-			remove_index = remove_index - 1;
-			r_k = words_only_in_testing(remove_index);
-		end
-
-		if k == r_k
-			test_docs(ii).word_list(jj) = [];
-			test_docs(ii).word_count(jj) = [];
-		end
-	end
-end
-fprintf('Done\n\n');
+fprintf('%.0f (%.2f%%) Beta_w_c are non-zero\n', non_zero, 100*non_zero/(l_V * l_N));
 
 fprintf('Performing testing...\t');
 no_class = 0;

@@ -93,7 +93,8 @@ if GET_UNIQUE_WORDS == 1
     fprintf('Unique words in training set: %d\n', length(train_unique_words));
     fprintf('Unique words in testing set: %d\n', length(test_unique_words));
     fprintf('Unique words in entire data set: %d\n', length(union(train_unique_words, test_unique_words)));
-    fprintf('Unique words in test set not in training set: %d\n', length(setdiff(test_unique_words, train_unique_words)));
+    words_only_in_testing = setdiff(test_unique_words, train_unique_words);
+    fprintf('Unique words in test set not in training set: %d\n', length(words_only_in_testing));
 end
     
 %average document length
