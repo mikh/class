@@ -1,18 +1,18 @@
 clc
 clear
-
+fid = fopen('all_output.txt','a');
 GET_UNIQUE_WORDS = 1;
 GET_TOTAL_NUMBER_OF_WORDS = 1;
 
-fprintf('Loading vocabulary...\t');
+fprintf(fid, 'Loading vocabulary...\t');
 vocabulary = textread('vocabulary.txt','%s');
 l_V = length(vocabulary);
-fprintf('Done.\n');
+fprintf(fid, 'Done.\n');
 
-fprintf('Loading newsgroups...\t');
+fprintf(fid, 'Loading newsgroups...\t');
 newsgroups = textread('newsgrouplabels.txt', '%s');
 l_N = length(newsgroups);
-fprintf('Done.\n');
+fprintf(fid, 'Done.\n');
 
 blank_doc = struct('document_id', -1, 'document_label', -1, 'predicted_label', -1, 'word_list', [], 'word_count', [], 'total_words', 0);
 
@@ -26,7 +26,7 @@ if GET_TOTAL_NUMBER_OF_WORDS == 1
     test_total_words = 0;
 end
     
-fprintf('Loading training samples...\t');
+fprintf(fid, 'Loading training samples...\t');
 [train_d_id, train_w_id, train_w_c] = textread('train.data', '%d %d %d');
 train_labels = textread('train.label', '%d');
 N_train = length(train_labels);
@@ -52,9 +52,9 @@ for ii = 1:N_train
    end
 end
 clear train_d_id train_w_id train_w_c train_labels data_index ii words_in_doc;
-fprintf('Done.\n');
+fprintf(fid, 'Done.\n');
 
-fprintf('Loading testing samples...\t');
+fprintf(fid, 'Loading testing samples...\t');
 [test_d_id, test_w_id, test_w_c] = textread('test.data', '%d %d %d');
 test_labels = textread('test.label', '%d');
 N_test = length(test_labels);
@@ -79,29 +79,31 @@ for ii = 1:N_test
    end
 end
 clear test_d_id test_w_id test_w_c test_labels data_index ii words_in_doc;
-fprintf('Done.\n');
+fprintf(fid, 'Done.\n');
 
-fprintf('Loading stoplist...\t');
+fprintf(fid, 'Loading stoplist...\t');
 stoplist = textread('stoplist.txt', '%s');
 l_S = length(stoplist);
-fprintf('Done\n');
+fprintf(fid, 'Done\n');
 
-fprintf('\n\n');
+fprintf(fid, '\n\n');
 
 %get number of unique words
 if GET_UNIQUE_WORDS == 1
-    fprintf('Unique words in training set: %d\n', length(train_unique_words));
-    fprintf('Unique words in testing set: %d\n', length(test_unique_words));
-    fprintf('Unique words in entire data set: %d\n', length(union(train_unique_words, test_unique_words)));
+    fprintf(fid, 'Unique words in training set: %d\n', length(train_unique_words));
+    fprintf(fid, 'Unique words in testing set: %d\n', length(test_unique_words));
+    fprintf(fid, 'Unique words in entire data set: %d\n', length(union(train_unique_words, test_unique_words)));
     words_only_in_testing = setdiff(test_unique_words, train_unique_words);
-    fprintf('Unique words in test set not in training set: %d\n', length(words_only_in_testing));
+    fprintf(fid, 'Unique words in test set not in training set: %d\n', length(words_only_in_testing));
 end
     
 %average document length
 if GET_TOTAL_NUMBER_OF_WORDS == 1
-    fprintf('Average words in training set documents: %.2f\n', train_total_words/N_train);
-    fprintf('Average words in test set documents: %.2f\n', test_total_words/N_test);
+    fprintf(fid, 'Average words in training set documents: %.2f\n', train_total_words/N_train);
+    fprintf(fid, 'Average words in test set documents: %.2f\n', test_total_words/N_test);
 end
-fprintf('\n\n');
+fprintf(fid, '\n\n');
 
-fprintf('Done.\n');
+fprintf(fid, 'Done.\n');
+
+fclose(fid);

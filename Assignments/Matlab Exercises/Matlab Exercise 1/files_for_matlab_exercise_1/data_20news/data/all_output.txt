@@ -1,0 +1,1233 @@
+***************** 2 A ******************Loading vocabulary...	Done.
+Loading newsgroups...	Done.
+Loading training samples...	Done.
+Loading testing samples...	Done.
+Loading stoplist...	Done
+
+
+Unique words in training set: 53975
+Unique words in testing set: 47376
+Unique words in entire data set: 61188
+Unique words in test set not in training set: 7213
+Average words in training set documents: 245.39
+Average words in test set documents: 239.43
+
+
+Done.
+***************** 2 B ******************Loading vocabulary...	Done.
+Loading newsgroups...	Done.
+Loading training samples...	Done.
+Loading testing samples...	Done.
+Loading stoplist...	Done
+
+
+Unique words in training set: 53975
+Unique words in testing set: 47376
+Unique words in entire data set: 61188
+Unique words in test set not in training set: 7213
+Average words in training set documents: 245.39
+Average words in test set documents: 239.43
+
+
+Done.
+Part b running...
+
+Training B_w_c...	Done.
+200778 (16.41%) Beta_w_c are non-zero
+Performing testing...	Done.
+6958 (92.71%) test samples resulted in no class assignment
+CCR = 5.44%
+***************** 2 C ******************Loading vocabulary...	Done.
+Loading newsgroups...	Done.
+Loading training samples...	Done.
+Loading testing samples...	Done.
+Loading stoplist...	Done
+
+
+Unique words in training set: 53975
+Unique words in testing set: 47376
+Unique words in entire data set: 61188
+Unique words in test set not in training set: 7213
+Average words in training set documents: 245.39
+Average words in test set documents: 239.43
+
+
+Done.
+Part c running...
+
+Removing test-only words...	Done.
+Unique words in test set not in training set: 0
+Training B_w_c...	Done.
+200778 (16.41%) Beta_w_c are non-zero
+Performing testing...	Done.
+6768 (90.18%) test samples resulted in no class assignment
+CCR = 7.16%
+***************** 2 D ******************Loading vocabulary...	Done.
+Loading newsgroups...	Done.
+Loading training samples...	Done.
+Loading testing samples...	Done.
+Loading stoplist...	Done
+
+
+Unique words in training set: 53975
+Unique words in testing set: 47376
+Unique words in entire data set: 61188
+Unique words in test set not in training set: 7213
+Average words in training set documents: 245.39
+Average words in test set documents: 239.43
+
+
+Done.
+Part d running...
+
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 78.52%
+Confusion Matrix:
+
+***************** 2 A ******************Loading vocabulary...	Done.
+Loading newsgroups...	Done.
+Loading training samples...	{Operation terminated by user during <a href="matlab:helpUtils.errorDocCallback('matlab1_2a', 'D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\data_20news\data\matlab1_2a.m', 41)" style="font-weight:bold">matlab1_2a</a> (<a href="matlab: opentoline('D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\data_20news\data\matlab1_2a.m',41,0)">line 41</a>)
+
+
+In <a href="matlab:helpUtils.errorDocCallback('matlab1_2all', 'D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\data_20news\data\matlab1_2all.m', 4)" style="font-weight:bold">matlab1_2all</a> (<a href="matlab: opentoline('D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\data_20news\data\matlab1_2all.m',4,0)">line 4</a>)
+matlab1_2a
+} 
+matlab1_2all
+{Undefined function or variable 'fid'.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('matlab1_2a', 'D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\data_20news\data\matlab1_2a.m', 7)" style="font-weight:bold">matlab1_2a</a> (<a href="matlab: opentoline('D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\data_20news\data\matlab1_2a.m',7,0)">line 7</a>)
+fprintf(fid, 'Loading vocabulary...\t');
+
+Error in <a href="matlab:helpUtils.errorDocCallback('matlab1_2all', 'D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\data_20news\data\matlab1_2all.m', 5)" style="font-weight:bold">matlab1_2all</a> (<a href="matlab: opentoline('D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\data_20news\data\matlab1_2all.m',5,0)">line 5</a>)
+matlab1_2a
+} 
+matlab1_2all
+  Columns 1 through 18
+
+   249     0     0     0     0     1     0     0     1     0     0     2     0     3     3    24     2     3
+     0   286    13    14     9    22     4     1     1     0     1    11     8     6    10     1     2     0
+     1    33   204    57    19    21     4     2     3     0     0    12     5    10     8     3     1     0
+     0    11    30   277    20     1    10     2     1     0     1     4    32     1     2     0     0     0
+     0    17    13    30   269     0    12     2     2     0     0     3    21     8     4     0     1     0
+     0    54    16     6     3   285     1     1     3     0     0     5     3     6     4     0     1     1
+     0     7     5    32    16     1   270    17     8     1     2     0     7     4     6     0     2     1
+     0     3     1     2     0     0    14   331    17     0     0     1    13     0     4     2     0     0
+     0     1     0     1     0     0     2    27   360     0     0     0     3     1     0     0     1     1
+     0     0     0     1     1     0     2     1     2   352    17     0     1     3     3     5     2     1
+     2     0     1     0     0     0     2     1     2     4   383     0     0     0     0     1     2     0
+     0     3     0     3     4     1     0     0     0     1     1   362     2     2     2     0     9     0
+     3    20     4    25     7     4     8    11     6     0     0    21   264     9     7     1     3     0
+     5     7     0     3     0     0     3     5     4     1     0     1     8   320     8     7     6     5
+     0     8     0     1     0     3     1     0     1     0     1     4     6     5   343     3     2     1
+    11     2     0     0     0     2     1     0     0     0     0     0     0     2     0   362     0     1
+     1     1 ***************** 2 E ******************Loading vocabulary...	Done.
+Loading newsgroups...	Done.
+Loading training samples...	Done.
+Loading testing samples...	Done.
+Loading stoplist...	Done
+
+
+Unique words in training set: 53975
+Unique words in testing set: 47376
+Unique words in entire data set: 61188
+Unique words in test set not in training set: 7213
+Average words in training set documents: 245.39
+Average words in test set documents: 239.43
+
+
+Done.
+Part e running...
+
+Runnning test with exponent = -5.0
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 78.39%
+Runnning test with exponent = -4.5
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 78.59%
+Runnning test with exponent = -4.0
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 78.89%
+Runnning test with exponent = -3.5
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 79.37%
+Runnning test with exponent = -3.0
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 79.71%
+Runnning test with exponent = -2.5
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 79.93%
+Runnning test with exponent = -2.0
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 80.37%
+Runnning test with exponent = -1.5
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 80.69%
+Runnning test with exponent = -1.0
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 80.47%
+Runnning test with exponent = -0.5
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 80.36%
+Runnning test with exponent = 0.0
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 78.11%
+Runnning test with exponent = 0.5
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 65.77%
+Runnning test with exponent = 1.0
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 39.65%
+Runnning test with exponent = 1.5
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 21.52%
+***************** 2 F ******************Loading vocabulary...	Done.
+Loading newsgroups...	Done.
+Loading training samples...	Done.
+Loading testing samples...	Done.
+Loading stoplist...	Done
+
+
+Unique words in training set: 53975
+Unique words in testing set: 47376
+Unique words in entire data set: 61188
+Unique words in test set not in training set: 7213
+Average words in training set documents: 245.39
+Average words in test set documents: 239.43
+
+
+Done.
+Part f running...
+Determining new word indicies...	Done.
+Removing words...	60698 words in vocabulary
+Done.
+Editing training document words...	Done.
+Editing testing document words...	Done.
+Average words in training set documents: 116.98
+Average words in test set documents: 114.62
+Training B_w_c...	Done.
+1213960 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+1 (0.01%) test samples resulted in no class assignment
+CCR = 78.23%
+Confusion Matrix:
+
+    0     0     0     1     1     2     1     1     0     4     0     5     2     1   303     5
+    12     1     0     1     0     0     1     2     0     2     0     2     1     0     0     6     3   326
+     6     1     0     0     1     1     0     0     0     0     0     5     0    10     6     2    63     6
+    39     3     0     0     0     0     0     0     1     1     0     1     0     2     6    27    10     3
+
+  Columns 19 through 20
+
+     4    26
+     0     0
+     5     3
+     0     0
+     1     0
+     1     0
+     2     1
+     6     1
+     0     0
+     5     1
+     1     0
+     5     0
+     0     0
+     8     2
+    12     1
+     2    15
+    23    13
+    18     1
+   196    13
+     7   151
+
+  Columns 1 through 18
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0   251     0     0     0     0     1     0     0     1     0     0     2     0     3     3    24     1
+     0     0   286     9    14     9    21     5     1     0     0     2    12     9     5    11     1     1
+     0     1    33   207    56    17    21     5     1     3     0     0    13     5    10     9     4     1
+     0     0    11    33   270    20     1    13     1     1     0     1     5    32     1     2     0     1
+     0     0    19    11    28   268     1    10     1     2     0     0     3    21    11     5     0     1
+     0     0    49    15     6     2   291     1     1     3     0     0     5     2     7     5     0     1
+     0     0     8     5    37    20     1   250    17     9     1     3     1    11     7     5     0     3
+     0     0     3     1     2     0     0    13   333    17     0     0     2    11     0     3     2     0
+     0     0     1     0     1     1     0     2    27   360     0     0     0     2     1     0     0     1
+     0     0     0     0     1     0     0     2     1     3   352    17     0     1     3     4     4     2
+     0     1     0     1     0     0     0     2     0     2     3   385     0     0     1     0     2     1
+     0     0     2     0     3     3     1     1     0     0     0     1   361     3     2     2     0    12
+     0     3    21     5    26     7     3    10     9     7     0     0    24   255    10     9     0     3
+     0     4     7     0     3     0     0     2     6     2     2     1     1     9   322     9     7     6
+     0     0     8     0     1     0     5     2     0     1     0     1     2     6     5   342     3     2
+     0    10     2     0     0     0     2     1     0     0     0     0     0     0     2     0   362     0
+     0     1     1     0     0     0     1     1     2     1     1     0     4     0     5     2     1   300
+     0    14     1     0     1     0     0     0     2     0     2     0     2     0     0     0     6     2
+     1     6     0     0     0     1     1     0     0     0     0     0     5     0    12     7     2    60
+     0    37     2     0     0     0     0     0     0     1     1     0     1     0     2     6    26    11
+
+  Columns 19 through 21
+
+     0     0     0
+     4     4    24
+     0     3     0
+     0     2     3
+     0     0     0
+     0     2     0
+     1     1     0
+     1     2     1
+     0     7     1
+     1     0     0
+     1     5     1
+     0     1     0
+     0     3     1
+     0     1     0
+     4     7     1
+     1    12     1
+     1     2    16
+     5    25    14
+   327    18     1
+     6   195    14
+     3     7   154
+
+matab1_3
+matab1_3
+matab1_3
+<a href="matlab: opentoline('D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\matab1_3.m',20,1)">20  </a>        [sorted_values, sorted_indices] = sort(distances);
+if system_dependent('IsDebugMode')==1, dbstep; end
+matab1_3
+if system_dependent('IsDebugMode')==1, dbstep; end
+matab1_3
+{Attempted to access grid(-3.5,-3); index must be a positive integer or logical.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('matab1_3', 'D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\matab1_3.m', 26)" style="font-weight:bold">matab1_3</a> (<a href="matlab: opentoline('D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\matab1_3.m',26,0)">line 26</a>)
+        grid(ii,jj) = p/10;
+} 
+matab1_3
+matab1_3
+matab1_3
+{Error using <a href="matlab:helpUtils.errorDocCallback('colormap', 'D:\Programs\Matlab 2014\toolbox\matlab\graph3d\colormap.m', 95)" style="font-weight:bold">colormap</a> (<a href="matlab: opentoline('D:\Programs\Matlab 2014\toolbox\matlab\graph3d\colormap.m',95,0)">line 95</a>)
+Colormap must have 3 columns: [R,G,B].
+
+Error in <a href="matlab:helpUtils.errorDocCallback('matab1_3', 'D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\matab1_3.m', 36)" style="font-weight:bold">matab1_3</a> (<a href="matlab: opentoline('D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\matab1_3.m',36,0)">line 36</a>)
+colormap(grid);
+} 
+matab1_3
+matab1_3
+{Error using <a href="matlab:helpUtils.errorDocCallback('colormap', 'D:\Programs\Matlab 2014\toolbox\matlab\graph3d\colormap.m', 95)" style="font-weight:bold">colormap</a> (<a href="matlab: opentoline('D:\Programs\Matlab 2014\toolbox\matlab\graph3d\colormap.m',95,0)">line 95</a>)
+Colormap must have 3 columns: [R,G,B].
+
+Error in <a href="matlab:helpUtils.errorDocCallback('matab1_3', 'D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\matab1_3.m', 36)" style="font-weight:bold">matab1_3</a> (<a href="matlab: opentoline('D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\matab1_3.m',36,0)">line 36</a>)
+colormap(grid);
+} 
+matab1_3
+matab1_3
+matab1_3
+{Operands to the || and && operators must be convertible to logical scalar values.
+} 
+matab1_3
+{Undefined function or variable 'matab1_3'.
+} 
+matlab1_3d
+{Operands to the || and && operators must be convertible to logical scalar values.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('matlab1_3d', 'D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\matlab1_3d.m', 21)" style="font-weight:bold">matlab1_3d</a> (<a href="matlab: opentoline('D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\matlab1_3d.m',21,0)">line 21</a>)
+        if (best_distance == -1) || (best_distance > distance)
+} 
+matlab1_3d
+CCR = 1.00 (0.01%)
+matlab1_3d
+1.01% complete.
+{Operation terminated by user during <a href="matlab:helpUtils.errorDocCallback('matlab1_3d', 'D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\matlab1_3d.m', 31)" style="font-weight:bold">matlab1_3d</a> (<a href="matlab: opentoline('D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\matlab1_3d.m',31,0)">line 31</a>)
+
+} 
+matlab1_3d
+1.01% complete.
+2.01% complete.
+{Operation terminated by user during <a href="matlab:helpUtils.errorDocCallback('matlab1_3d', 'D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\matlab1_3d.m', 32)" style="font-weight:bold">matlab1_3d</a> (<a href="matlab: opentoline('D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\matlab1_3d.m',32,0)">line 32</a>)
+
+} 
+matlab1_3d
+1.00% complete.
+2.00% complete.
+3.00% complete.
+4.00% complete.
+5.00% complete.
+6.00% complete.
+7.00% complete.
+8.00% complete.
+9.00% complete.
+10.00% complete.
+11.00% complete.
+12.00% complete.
+13.00% complete.
+14.00% complete.
+15.00% complete.
+16.00% complete.
+17.00% complete.
+18.00% complete.
+19.00% complete.
+20.00% complete.
+21.00% complete.
+22.00% complete.
+23.00% complete.
+24.00% complete.
+25.00% complete.
+26.00% complete.
+27.00% complete.
+28.00% complete.
+29.00% complete.
+30.00% complete.
+31.00% complete.
+32.00% complete.
+33.00% complete.
+34.00% complete.
+35.00% complete.
+36.00% complete.
+37.00% complete.
+38.00% complete.
+39.00% complete.
+40.00% complete.
+41.00% complete.
+42.00% complete.
+43.00% complete.
+44.00% complete.
+45.00% complete.
+46.00% complete.
+47.00% complete.
+48.00% complete.
+49.00% complete.
+50.00% complete.
+51.00% complete.
+52.00% complete.
+53.00% complete.
+54.00% complete.
+55.00% complete.
+56.00% complete.
+57.00% complete.
+58.00% complete.
+59.00% complete.
+60.00% complete.
+61.00% complete.
+62.00% complete.
+63.00% complete.
+64.00% complete.
+65.00% complete.
+66.00% complete.
+67.00% complete.
+68.00% complete.
+69.00% complete.
+70.00% complete.
+71.00% complete.
+72.00% complete.
+73.00% complete.
+74.00% complete.
+75.00% complete.
+76.00% complete.
+77.00% complete.
+78.00% complete.
+79.00% complete.
+80.00% complete.
+81.00% complete.
+82.00% complete.
+83.00% complete.
+84.00% complete.
+85.00% complete.
+86.00% complete.
+87.00% complete.
+88.00% complete.
+89.00% complete.
+90.00% complete.
+91.00% complete.
+92.00% complete.
+93.00% complete.
+94.00% complete.
+95.00% complete.
+96.00% complete.
+97.00% complete.
+98.00% complete.
+99.00% complete.
+100.00% complete.
+CCR = 9631.00 (96.31%)
+con_mat = confusionmat(Y_test, Y_predicted)
+
+con_mat =
+
+  Columns 1 through 4
+
+         973           2           1           0
+           0        1129           3           0
+           9           8         987           6
+           0           2           4         965
+           1           9           0           0
+           2           1           0          17
+           5           2           1           0
+           0          20           4           2
+           9           5           6          21
+           1           5           1           7
+
+  Columns 5 through 8
+
+           0           1           2           1
+           1           1           1           0
+           1           0           2          17
+           1          21           0           9
+         937           0           3           4
+           2         848           9           1
+           2           5         943           0
+           4           0           0         989
+           4          18           3           4
+          13           5           1           9
+
+  Columns 9 through 10
+
+           0           0
+           0           0
+           2           0
+           4           4
+           1          27
+           5           7
+           0           0
+           0           9
+         894          10
+           1         966
+
+0:9
+
+ans =
+
+     0     1     2     3     4     5     6     7     8     9
+
+ans'
+
+ans =
+
+     0
+     1
+     2
+     3
+     4
+     5
+     6
+     7
+     8
+     9
+
+ans'
+
+ans =
+
+  Columns 1 through 8
+
+     0     1     2     3     4     5     6     7
+
+  Columns 9 through 10
+
+     8     9
+
+matlab1_3abc
+matlab1_3abc
+matlab1_3abc
+matlab1_3abc
+matlab1_3abc
+matlab1_2d
+Loading vocabulary...	{Error using <a href="matlab:helpUtils.errorDocCallback('textread', 'D:\Programs\Matlab 2014\toolbox\matlab\iofun\textread.m', 165)" style="font-weight:bold">textread</a> (<a href="matlab: opentoline('D:\Programs\Matlab 2014\toolbox\matlab\iofun\textread.m',165,0)">line 165</a>)
+File not found.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('matlab1_2a', 'D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\matlab1_2a.m', 7)" style="font-weight:bold">matlab1_2a</a> (<a href="matlab: opentoline('D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\matlab1_2a.m',7,0)">line 7</a>)
+vocabulary = textread('vocabulary.txt','%s');
+
+Error in <a href="matlab:helpUtils.errorDocCallback('matlab1_2d', 'D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\matlab1_2d.m', 1)" style="font-weight:bold">matlab1_2d</a> (<a href="matlab: opentoline('D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\matlab1_2d.m',1,0)">line 1</a>)
+matlab1_2a;
+} 
+matlab1_2d
+Loading vocabulary...	Done.
+Loading newsgroups...	Done.
+Loading training samples...	Done.
+Loading testing samples...	Done.
+Loading stoplist...	Done
+
+
+Unique words in training set: 53975
+Unique words in testing set: 47376
+Unique words in entire data set: 61188
+Unique words in test set not in training set: 7213
+Average words in training set documents: 245.39
+Average words in test set documents: 239.43
+
+
+Done.
+Part d running...
+
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 78.52%
+Confusion Matrix:
+
+  Columns 1 through 8
+
+   249     0     0     0     0     1     0     0
+     0   286    13    14     9    22     4     1
+     1    33   204    57    19    21     4     2
+     0    11    30   277    20     1    10     2
+     0    17    13    30   269     0    12     2
+     0    54    16     6     3   285     1     1
+     0     7     5    32    16     1   270    17
+     0     3     1     2     0     0    14   331
+     0     1     0     1     0     0     2    27
+     0     0     0     1     1     0     2     1
+     2     0     1     0     0     0     2     1
+     0     3     0     3     4     1     0     0
+     3    20     4    25     7     4     8    11
+     5     7     0     3     0     0     3     5
+     0     8     0     1     0     3     1     0
+    11     2     0     0     0     2     1     0
+     1     1     0     0     0     1     1     2
+    12     1     0     1     0     0     1     2
+     6     1     0     0     1     1     0     0
+    39     3     0     0     0     0     0     0
+
+  Columns 9 through 16
+
+     1     0     0     2     0     3     3    24
+     1     0     1    11     8     6    10     1
+     3     0     0    12     5    10     8     3
+     1     0     1     4    32     1     2     0
+     2     0     0     3    21     8     4     0
+     3     0     0     5     3     6     4     0
+     8     1     2     0     7     4     6     0
+    17     0     0     1    13     0     4     2
+   360     0     0     0     3     1     0     0
+     2   352    17     0     1     3     3     5
+     2     4   383     0     0     0     0     1
+     0     1     1   362     2     2     2     0
+     6     0     0    21   264     9     7     1
+     4     1     0     1     8   320     8     7
+     1     0     1     4     6     5   343     3
+     0     0     0     0     0     2     0   362
+     1     1     0     4     0     5     2     1
+     0     2     0     2     1     0     0     6
+     0     0     0     5     0    10     6     2
+     1     1     0     1     0     2     6    27
+
+  Columns 17 through 20
+
+     2     3     4    26
+     2     0     0     0
+     1     0     5     3
+     0     0     0     0
+     1     0     1     0
+     1     1     1     0
+     2     1     2     1
+     0     0     6     1
+     1     1     0     0
+     2     1     5     1
+     2     0     1     0
+     9     0     5     0
+     3     0     0     0
+     6     5     8     2
+     2     1    12     1
+     0     1     2    15
+   303     5    23    13
+     3   326    18     1
+    63     6   196    13
+    10     3     7   151
+
+matlab1_2e
+Loading vocabulary...	Done.
+Loading newsgroups...	Done.
+Loading training samples...	Done.
+Loading testing samples...	Done.
+Loading stoplist...	Done
+
+
+Unique words in training set: 53975
+Unique words in testing set: 47376
+Unique words in entire data set: 61188
+Unique words in test set not in training set: 7213
+Average words in training set documents: 245.39
+Average words in test set documents: 239.43
+
+
+Done.
+Part e running...
+
+Runnning test with exponent = -5.0
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 78.39%
+Runnning test with exponent = -4.5
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 78.59%
+Runnning test with exponent = -4.0
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 78.89%
+Runnning test with exponent = -3.5
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 79.37%
+Runnning test with exponent = -3.0
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 79.71%
+Runnning test with exponent = -2.5
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 79.93%
+Runnning test with exponent = -2.0
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 80.37%
+Runnning test with exponent = -1.5
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 80.69%
+Runnning test with exponent = -1.0
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 80.47%
+Runnning test with exponent = -0.5
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 80.36%
+Runnning test with exponent = 0.0
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 78.11%
+Runnning test with exponent = 0.5
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 65.77%
+Runnning test with exponent = 1.0
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 39.65%
+Runnning test with exponent = 1.5
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 21.52%
+Training...	ii=1
+ii=2
+ii=3
+ii=4
+ii=5
+ii=6
+ii=7
+ii=8
+ii=9
+ii=10
+ii=11
+ii=12
+ii=13
+ii=14
+ii=15
+ii=16
+ii=17
+ii=18
+ii=19
+Done.
+lambda=1.000000e-01
+Testing Train Samples...	Done.
+Testing Test Samples...	Done.
+lambda=1.500000e-01
+Testing Train Samples...	Done.
+Testing Test Samples...	Done.
+lambda=2.000000e-01
+Testing Train Samples...	Done.
+Testing Test Samples...	{Operation terminated by user during <a href="matlab:helpUtils.errorDocCallback('LDA_test', 'D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\LDA_test.m', 32)" style="font-weight:bold">LDA_test</a> (<a href="matlab: opentoline('D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\LDA_test.m',32,0)">line 32</a>)
+
+
+In <a href="matlab:helpUtils.errorDocCallback('RDA_test', 'D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\RDA_test.m', 26)" style="font-weight:bold">RDA_test</a> (<a href="matlab: opentoline('D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\RDA_test.m',26,0)">line 26</a>)
+	Y_predict = LDA_test(X_test, LDAmodel, numofClass);
+} 
+Training...	ii=1
+ii=2
+ii=3
+ii=4
+ii=5
+ii=6
+ii=7
+ii=8
+ii=9
+ii=10
+ii=11
+ii=12
+ii=13
+ii=14
+ii=15
+ii=16
+ii=17
+ii=18
+ii=19
+Done.
+lambda=1.000000e-01
+Testing Train Samples...	Done.
+Testing Test Samples...	Done.
+lambda=1.500000e-01
+Testing Train Samples...	Done.
+Testing Test Samples...	Done.
+lambda=2.000000e-01
+Testing Train Samples...	Done.
+Testing Test Samples...	Done.
+lambda=2.500000e-01
+Testing Train Samples...	Done.
+Testing Test Samples...	Done.
+lambda=3.000000e-01
+Testing Train Samples...	Done.
+Testing Test Samples...	Done.
+lambda=3.500000e-01
+Testing Train Samples...	Done.
+Testing Test Samples...	Done.
+lambda=4.000000e-01
+Testing Train Samples...	Done.
+Testing Test Samples...	Done.
+lambda=4.500000e-01
+Testing Train Samples...	Done.
+Testing Test Samples...	Done.
+lambda=5.000000e-01
+Testing Train Samples...	Done.
+Testing Test Samples...	Done.
+lambda=5.500000e-01
+Testing Train Samples...	Done.
+Testing Test Samples...	Done.
+lambda=6.000000e-01
+Testing Train Samples...	Done.
+Testing Test Samples...	Done.
+lambda=6.500000e-01
+Testing Train Samples...	Done.
+Testing Test Samples...	Done.
+lambda=7.000000e-01
+Testing Train Samples...	Done.
+Testing Test Samples...	Done.
+lambda=7.500000e-01
+Testing Train Samples...	Done.
+Testing Test Samples...	Done.
+lambda=8.000000e-01
+Testing Train Samples...	Done.
+Testing Test Samples...	Done.
+lambda=8.500000e-01
+Testing Train Samples...	Done.
+Testing Test Samples...	Done.
+lambda=9.000000e-01
+Testing Train Samples...	Done.
+Testing Test Samples...	Done.
+lambda=9.500000e-01
+Testing Train Samples...	Done.
+Testing Test Samples...	Done.
+lambda=1
+Testing Train Samples...	Done.
+Testing Test Samples...	Done.
+matlab1_2d
+Loading vocabulary...	Done.
+Loading newsgroups...	Done.
+Loading training samples...	Done.
+Loading testing samples...	Done.
+Loading stoplist...	Done
+
+
+Unique words in training set: 53975
+Unique words in testing set: 47376
+Unique words in entire data set: 61188
+Unique words in test set not in training set: 7213
+Average words in training set documents: 245.39
+Average words in test set documents: 239.43
+
+
+Done.
+Part d running...
+
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 78.52%
+Confusion Matrix:
+
+  Columns 1 through 17
+
+   249     0     0     0     0     1     0     0     1     0     0     2     0     3     3    24     2
+     0   286    13    14     9    22     4     1     1     0     1    11     8     6    10     1     2
+     1    33   204    57    19    21     4     2     3     0     0    12     5    10     8     3     1
+     0    11    30   277    20     1    10     2     1     0     1     4    32     1     2     0     0
+     0    17    13    30   269     0    12     2     2     0     0     3    21     8     4     0     1
+     0    54    16     6     3   285     1     1     3     0     0     5     3     6     4     0     1
+     0     7     5    32    16     1   270    17     8     1     2     0     7     4     6     0     2
+     0     3     1     2     0     0    14   331    17     0     0     1    13     0     4     2     0
+     0     1     0     1     0     0     2    27   360     0     0     0     3     1     0     0     1
+     0     0     0     1     1     0     2     1     2   352    17     0     1     3     3     5     2
+     2     0     1     0     0     0     2     1     2     4   383     0     0     0     0     1     2
+     0     3     0     3     4     1     0     0     0     1     1   362     2     2     2     0     9
+     3    20     4    25     7     4     8    11     6     0     0    21   264     9     7     1     3
+     5     7     0     3     0     0     3     5     4     1     0     1     8   320     8     7     6
+     0     8     0     1     0     3     1     0     1     0     1     4     6     5   343     3     2
+    11     2     0     0     0     2     1     0     0     0     0     0     0     2     0   362     0
+     1     1     0     0     0     1     1     2     1     1     0     4     0     5     2     1   303
+    12     1     0     1     0     0     1     2     0     2     0     2     1     0     0     6     3
+     6     1     0     0     1     1     0     0     0     0     0     5     0    10     6     2    63
+    39     3     0     0     0     0     0     0     1     1     0     1     0     2     6    27    10
+
+  Columns 18 through 20
+
+     3     4    26
+     0     0     0
+     0     5     3
+     0     0     0
+     0     1     0
+     1     1     0
+     1     2     1
+     0     6     1
+     1     0     0
+     1     5     1
+     0     1     0
+     0     5     0
+     0     0     0
+     5     8     2
+     1    12     1
+     1     2    15
+     5    23    13
+   326    18     1
+     6   196    13
+     3     7   151
+
+matlab1_2e
+Loading vocabulary...	Done.
+Loading newsgroups...	Done.
+Loading training samples...	{Operation terminated by user during <a href="matlab:helpUtils.errorDocCallback('matlab1_2a', 'D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\matlab1_2a.m', 42)" style="font-weight:bold">matlab1_2a</a> (<a href="matlab: opentoline('D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\matlab1_2a.m',42,0)">line 42</a>)
+
+
+In <a href="matlab:helpUtils.errorDocCallback('matlab1_2e', 'D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\matlab1_2e.m', 1)" style="font-weight:bold">matlab1_2e</a> (<a href="matlab: opentoline('D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Assignments\Matlab Exercises\Matlab Exercise 1\files_for_matlab_exercise_1\matlab1_2e.m',1,0)">line 1</a>)
+matlab1_2a;
+} 
+matlab1_1b
+Average mean vector for each split
+    5.0117    3.4261    1.4584    0.2443
+    5.9366    2.7642    4.2538    1.3238
+    6.5768    2.9674    5.5399    2.0263
+
+
+Average variances for QDA for each split
+    0.1233    0.1379    0.0285    0.0101
+    0.2556    0.0940    0.2136    0.0373
+    0.3781    0.0971    0.2828    0.0718
+
+
+Average variances for LDA for each split
+    0.2519    0.1106    0.1744    0.0394
+
+
+Mean of CCR for LDA:
+    0.9683
+    0.9682
+    0.9690
+    0.9644
+    0.9700
+    0.9700
+    0.9750
+    0.9820
+    0.9675
+    0.9733
+
+Mean of CCR for QDA:
+    0.9383
+    0.9500
+    0.9590
+    0.9522
+    0.9675
+    0.9557
+    0.9650
+    0.9700
+    0.9775
+    0.9700
+
+Variance of CCR for LDA:
+   1.0e-03 *
+
+    0.1975
+    0.1331
+    0.2544
+    0.2140
+    0.2847
+    0.5646
+    0.2006
+    0.3067
+    0.8403
+    0.4444
+
+Variance of CCR for QDA:
+    0.0016
+    0.0003
+    0.0004
+    0.0011
+    0.0004
+    0.0004
+    0.0005
+    0.0009
+    0.0005
+    0.0006
+
+MAX CCR=9.820000e-01, index=8
+   15.2000         0         0
+         0   16.5000    0.5000
+         0    0.4000   17.4000
+
+MIN CCR=9.644444e-01, index=4
+   29.0000         0         0
+         0   29.1000    1.6000
+         0    1.6000   28.7000
+
+Done
+matlab1_2e
+Loading vocabulary...	Done.
+Loading newsgroups...	Done.
+Loading training samples...	Done.
+Loading testing samples...	Done.
+Loading stoplist...	Done
+
+
+Unique words in training set: 53975
+Unique words in testing set: 47376
+Unique words in entire data set: 61188
+Unique words in test set not in training set: 7213
+Average words in training set documents: 245.39
+Average words in test set documents: 239.43
+
+
+Done.
+Part e running...
+
+Runnning test with exponent = -5.0
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 78.39%
+Runnning test with exponent = -4.5
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 78.59%
+Runnning test with exponent = -4.0
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 78.89%
+Runnning test with exponent = -3.5
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 79.37%
+Runnning test with exponent = -3.0
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 79.71%
+Runnning test with exponent = -2.5
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 79.93%
+Runnning test with exponent = -2.0
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 80.37%
+Runnning test with exponent = -1.5
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 80.69%
+Runnning test with exponent = -1.0
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 80.47%
+Runnning test with exponent = -0.5
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 80.36%
+Runnning test with exponent = 0.0
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 78.11%
+Runnning test with exponent = 0.5
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 65.77%
+Runnning test with exponent = 1.0
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 39.65%
+Runnning test with exponent = 1.5
+Training B_w_c...	Done.
+1223760 (100.00%) Beta_w_c are non-zero
+Performing testing...	Done.
+0 (0.00%) test samples resulted in no class assignment
+CCR = 21.52%
+matlab1_1b
+Average mean vector for each split
+    5.0117    3.4261    1.4584    0.2443
+    5.9366    2.7642    4.2538    1.3238
+    6.5768    2.9674    5.5399    2.0263
+
+
+Average variances for QDA for each split
+    0.1233    0.1379    0.0285    0.0101
+    0.2556    0.0940    0.2136    0.0373
+    0.3781    0.0971    0.2828    0.0718
+
+
+Average variances for LDA for each split
+    0.2519    0.1106    0.1744    0.0394
+
+
+Mean of CCR for LDA:
+    0.9683
+    0.9682
+    0.9690
+    0.9644
+    0.9700
+    0.9700
+    0.9750
+    0.9820
+    0.9675
+    0.9733
+
+Mean of CCR for QDA:
+    0.9383
+    0.9500
+    0.9590
+    0.9522
+    0.9675
+    0.9557
+    0.9650
+    0.9700
+    0.9775
+    0.9700
+
+Variance of CCR for LDA:
+   1.0e-03 *
+
+    0.1975
+    0.1331
+    0.2544
+    0.2140
+    0.2847
+    0.5646
+    0.2006
+    0.3067
+    0.8403
+    0.4444
+
+Variance of CCR for QDA:
+    0.0016
+    0.0003
+    0.0004
+    0.0011
+    0.0004
+    0.0004
+    0.0005
+    0.0009
+    0.0005
+    0.0006
+
+MAX CCR=9.820000e-01, index=8
+   15.2000         0         0
+         0   16.5000    0.5000
+         0    0.4000   17.4000
+
+MIN CCR=9.644444e-01, index=4
+   29.0000         0         0
+         0   29.1000    1.6000
+         0    1.6000   28.7000
+
+Done

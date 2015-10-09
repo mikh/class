@@ -77,3 +77,8 @@ for jj = 1:length(x_axis)
 end
 
 plot(x_axis, CCR_train, x_axis, CCR_test);
+title('Cancer data CCR value for training and testing set over different lambda');
+xlabel('lambda');
+ylabel('CCR');
+legend('Training CCR', 'Testing CCR');
+

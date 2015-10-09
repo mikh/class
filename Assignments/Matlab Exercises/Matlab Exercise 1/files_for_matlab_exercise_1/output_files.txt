@@ -6,3 +6,13 @@ matlab1_1b.m
 RDA_test.m
 RDA_train.m
 matlab1_1d.m
+matlab1_2a.m
+matlab1_2b.m
+train_Naive_Bayes.m
+test_Naive_Bayes.m
+matlab1_2c.m
+matlab1_2d.m
+matlab1_2e.m
+matlab1_2f.m
+matlab1_3abc.m
+matlab1_3d.m
