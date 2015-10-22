@@ -11,7 +11,8 @@ output_directory="$output_directory""/"
 
 while read p; do
 	echo $p
-	cp "$current_directory""$p" "$output_directory""mikh_""$p"
+	name=`basename $p`
+	cp "$current_directory""$p" "$output_directory""mikh_""$name"
 
 done <"$output_files_list"
 

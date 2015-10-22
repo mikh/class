@@ -1,3 +1,4 @@
+%% Process inputs
 clc
 clear
 
@@ -98,9 +99,9 @@ clear Address_test date_data Dates_test DayOfWeek_test elapsed_time ii PdDistric
 save('matlab2_1a', 'training_data', 'testing_data', 'total_training_features', 'total_test_features', 'N_train', 'N_test', 'total_time', 'estimated_total_time');
 
 
-%% Results section
+%% Output histograms
 
-LOAD_FROM_VARIABLE = 1;
+LOAD_FROM_VARIABLE = 0;
 
 if LOAD_FROM_VARIABLE == 1
     clc
@@ -191,9 +192,36 @@ for ii = 1:N_train
     crime_matrix_district(r_district, c) = crime_matrix_district(r_district, c) + 1;
 end
 
+save('crime_matrix', 'crime_matrix_hour', 'crime_matrix_district');
 
-[max_amount, max_index]
 
+%% Crime Matrix results
+LOAD_FROM_VARIABLE = 0;
+clc;
+
+if LOAD_FROM_VARIABLE == 1
+    clc;
+	clear;
+	load 'crime_matrix.mat'
+end
+
+category_mapping = struct('ARSON', 1, 'ASSAULT', 2, 'BAD_CHECKS', 3, 'BRIBERY', 4, 'BURGLARY', 5, 'DISORDERLY_CONDUCT', 6, 'DRIVING_UNDER_THE_INFLUENCE',7, 'DRUG_NARCOTIC',8, 'DRUNKENNESS',9, 'EMBEZZLEMENT',10, 'EXTORTION',11, 'FAMILY_OFFENSES',12, 'FORGERY_COUNTERFEITING',13, 'FRAUD',14, 'GAMBLING',15, 'KIDNAPPING',16, 'LARCENY_THEFT',17, 'LIQUOR_LAWS',18, 'LOITERING',19, 'MISSING_PERSON',20, 'NON_CRIMINAL',21, 'OTHER_OFFENSES',22, 'PORNOGRAPHY_OBSCENE_MAT',23, 'PROSTITUTION',24, 'RECOVERED_VEHICLE',25, 'ROBBERY',26, 'RUNAWAY',27, 'SECONDARY_CODES',28, 'SEX_OFFENSES_FORCIBLE',29, 'SEX_OFFENSES_NON_FORCIBLE',30, 'STOLEN_PROPERTY',31, 'SUICIDE',32, 'SUSPICIOUS_OCC',33, 'TREA',34, 'TRESPASS',35, 'VANDALISM',36, 'VEHICLE_THEFT',37, 'WARRANTS',38, 'WEAPON_LAWS',39);
+police_district_mapping = struct('BAYVIEW', 1, 'CENTRAL', 2, 'INGLESIDE', 3, 'MISSION', 4, 'NORTHERN', 5, 'PARK', 6, 'RICHMOND', 7, 'SOUTHERN', 8, 'TARAVAL', 9, 'TENDERLOIN', 10);
+
+all_categories = fieldnames(category_mapping);
+all_districts = fieldnames(police_district_mapping);
+for i = 1:39
+    [max_val, max_index] = max(crime_matrix_hour(:,i));
+    fprintf('%s is most likely to occur at hour %.0f\n', all_categories{i}, max_index); 
+end
+
+fprintf('\n\n');
+for i = 1:10
+    [max_value, max_index] = max(crime_matrix_district(i, :));
+    fprintf('The crime most likely to occur in %s is %s\n', all_districts{i}, all_categories{max_index});
+end
+
+fprintf('\n\n');
 fprintf('Matlab2_1a complete. (%.2fs) (ETT: %.2fs)\n', total_time, estimated_total_time);
 
     
