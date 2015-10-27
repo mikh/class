@@ -80,15 +80,16 @@ W = zeros(t_max + 1, FEATURE_LENGTH, M);
 f_theta = zeros(t_max+1, 1);
 w_current = zeros(FEATURE_LENGTH, M);
 
+C = zeros(FEATURE_LENGTH, M);
+for j = 1:N_train_div
+    C(:,Y_train(j)) = C(:,Y_train(j)) + X_train(j,:)';
+end
 
 for t = 1:t_max
     t3 = clock;
-    gradient_matrix = zeros(FEATURE_LENGTH, M);
-    for k = 1:M
-        gradient_matrix(:, k) = grad_objective_function(X_train, Y_train, w_current, N_train_div, M, FEATURE_LENGTH, k, lambda);
-    end
-    f_theta(t) = objective_function(X_train, Y_train, w_current, N_train_div, M, FEATURE_LENGTH, lambda);
-    w_next = w_current - (gradient_matrix .* step_size);
+    [obj_fnc, grad_obj_fnc] = train(X_train, Y_train, C, w_current, N_train_div, M, FEATURE_LENGTH, lambda);   
+    f_theta(t) = obj_fnc;
+    w_next = w_current - (grad_obj_fnc .* step_size);
     W(t+1, :,:) = w_next(:,:);
     w_current = w_next;
     t4 = clock;

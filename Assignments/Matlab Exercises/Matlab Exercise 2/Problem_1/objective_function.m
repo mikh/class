@@ -10,12 +10,8 @@ function [ result ] = objective_function( X, Y, W, n, m, d , lambda)
     
     total_a = NLL(X, Y, W, n, m, d);
     total_b = 0;
-    
-    for k = 1:m
-        w_temp = W(:, k);
-        w_temp = w_temp .^ 2;
-        total_b = total_b + sum(w_temp);
-    end
+
+    total_b = sum(sum(W.^2));
     
     result = total_a + (lambda/2*total_b);
 end
