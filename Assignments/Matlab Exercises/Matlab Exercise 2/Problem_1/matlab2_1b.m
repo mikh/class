@@ -19,7 +19,9 @@ TT = 0; %total time
 ETT = 0; %estimated total time
 category_mapping = struct('ARSON', 1, 'ASSAULT', 2, 'BAD_CHECKS', 3, 'BRIBERY', 4, 'BURGLARY', 5, 'DISORDERLY_CONDUCT', 6, 'DRIVING_UNDER_THE_INFLUENCE',7, 'DRUG_NARCOTIC',8, 'DRUNKENNESS',9, 'EMBEZZLEMENT',10, 'EXTORTION',11, 'FAMILY_OFFENSES',12, 'FORGERY_COUNTERFEITING',13, 'FRAUD',14, 'GAMBLING',15, 'KIDNAPPING',16, 'LARCENY_THEFT',17, 'LIQUOR_LAWS',18, 'LOITERING',19, 'MISSING_PERSON',20, 'NON_CRIMINAL',21, 'OTHER_OFFENSES',22, 'PORNOGRAPHY_OBSCENE_MAT',23, 'PROSTITUTION',24, 'RECOVERED_VEHICLE',25, 'ROBBERY',26, 'RUNAWAY',27, 'SECONDARY_CODES',28, 'SEX_OFFENSES_FORCIBLE',29, 'SEX_OFFENSES_NON_FORCIBLE',30, 'STOLEN_PROPERTY',31, 'SUICIDE',32, 'SUSPICIOUS_OCC',33, 'TREA',34, 'TRESPASS',35, 'VANDALISM',36, 'VEHICLE_THEFT',37, 'WARRANTS',38, 'WEAPON_LAWS',39);
 
-RUN_FIRST_PART = 1;
+RUN_FIRST_PART = 0;
+RUN_TRAINING_PART = 0;
+LOAD_TRAINING_FROM_FILE = 1;
 
 
 %% Load part a data
@@ -73,6 +75,8 @@ clear t1 t2 elapsed_time estimated_total_time total_time total_test_features tot
 end
 
 %% Train 
+
+if RUN_TRAINING_PART == 1
 clc
 fprintf('Training...\n');
 t1 = clock;
@@ -100,7 +104,26 @@ save('W_matrix_data', 'W', 'f_theta');
 t2 = clock;
 elapsed_time = etime(t2, t1);
 fprintf('Done. (%.2fs)\n', elapsed_time);
+end
 
+%% Part b results
+
+if LOAD_TRAINING_FROM_FILE == 1
+fprintf('Loading results from file...\t');
+t1 = clock;
+load 'W_matrix_data.mat'
+t2 = clock;
+fprintf('Done. (%.2fs)\n', etime(t2,t1));
+
+figure(1);
+plot(1:t_max,obj_fnc(1:t_max));
+title('Objective function vs. iterations');
+xlabel('Iterations');
+ylabel('Objective Function value');
+
+
+
+end
 
 
 %% Code complete
