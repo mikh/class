@@ -107,8 +107,10 @@ fprintf('Done. (%.2fs)\n', elapsed_time);
 end
 
 %% Part b results
-
+LOAD_TRAINING_FROM_FILE = 1;
 if LOAD_TRAINING_FROM_FILE == 1
+clear
+t_max = 1000;
 fprintf('Loading results from file...\t');
 t1 = clock;
 load 'W_matrix_data.mat'
@@ -116,7 +118,7 @@ t2 = clock;
 fprintf('Done. (%.2fs)\n', etime(t2,t1));
 
 figure(1);
-plot(1:t_max,obj_fnc(1:t_max));
+plot(1:t_max,f_theta(1:t_max));
 title('Objective function vs. iterations');
 xlabel('Iterations');
 ylabel('Objective Function value');
