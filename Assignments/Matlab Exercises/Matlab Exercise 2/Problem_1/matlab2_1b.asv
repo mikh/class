@@ -19,10 +19,10 @@ TT = 0; %total time
 ETT = 0; %estimated total time
 category_mapping = struct('ARSON', 1, 'ASSAULT', 2, 'BAD_CHECKS', 3, 'BRIBERY', 4, 'BURGLARY', 5, 'DISORDERLY_CONDUCT', 6, 'DRIVING_UNDER_THE_INFLUENCE',7, 'DRUG_NARCOTIC',8, 'DRUNKENNESS',9, 'EMBEZZLEMENT',10, 'EXTORTION',11, 'FAMILY_OFFENSES',12, 'FORGERY_COUNTERFEITING',13, 'FRAUD',14, 'GAMBLING',15, 'KIDNAPPING',16, 'LARCENY_THEFT',17, 'LIQUOR_LAWS',18, 'LOITERING',19, 'MISSING_PERSON',20, 'NON_CRIMINAL',21, 'OTHER_OFFENSES',22, 'PORNOGRAPHY_OBSCENE_MAT',23, 'PROSTITUTION',24, 'RECOVERED_VEHICLE',25, 'ROBBERY',26, 'RUNAWAY',27, 'SECONDARY_CODES',28, 'SEX_OFFENSES_FORCIBLE',29, 'SEX_OFFENSES_NON_FORCIBLE',30, 'STOLEN_PROPERTY',31, 'SUICIDE',32, 'SUSPICIOUS_OCC',33, 'TREA',34, 'TRESPASS',35, 'VANDALISM',36, 'VEHICLE_THEFT',37, 'WARRANTS',38, 'WEAPON_LAWS',39);
 
-RUN_LOADING_AND_PROCESSING_PART_A_DATA = 1;
-RUN_TRAINING_PART = 1;
-RUN_GRAPHING = 1;
-LOAD_TRAINING_FROM_FILE_FOR_PART_B = 0;
+RUN_LOADING_AND_PROCESSING_PART_A_DATA = 0;
+RUN_TRAINING_PART = 0;
+RUN_GRAPHING = 0;
+LOAD_TRAINING_FROM_FILE_FOR_PART_B = 1;
 RUN_TESTING = 1;
 fprintf('Starting Matlab2_1b\n');
 
@@ -69,7 +69,30 @@ if RUN_GRAPHING == 1
 end
 
 if RUN_TESTING == 1
-    [Y_pred, CCR, logloss, TT, ETT] = testing_wrapper(X_test, Y_test, N_test_d, W, t_max, TT, ETT);
+    fprintf('Running testing...\t');
+    t1 = clock;
+    w_current = squeeze(W(t_max+1,:,:));
+    Y_predicted = test(X_test, w_current, N_test_div);
+    t2 = clock;
+    fprintf('Done. (%.2fs)\n', etime(t2, t1));
+end
+
+fprintf('Getting CCR...\t');
+t1 = clock;
+correct = 0;
+for ii = 1:N_test_div
+    if Y_predicted(ii) == Y_test(ii)
+        correct = correct + 1;
+    end
+end
+CCR = correct/N_test_div*100;
+t2 = clock;
+fprintf('Done. (%.2fs)\n', etime(t2, t1));
+fprintf('CCR = %.2f%%\n', CCR);
+
+
+save('test_results', 'Y_predicted');
+
 end
 
 
