@@ -1,12 +1,15 @@
 function [Y_pred, CCR, logloss,  TT, ETT ] = testing_wrapper( X, Y, N, W, t_max, TT, ETT )
-    fprintf('Running testing...\t');
+    fprintf('Running testing...\n');
     t1 = clock;
     
     
     Y_pred = zeros(N, t_max);
     for ii = 1:t_max
+        t3 = clock;
         w_current = squeeze(W(ii+1,:,:));
         Y_pred(:,ii) = test(X, w_current, N);
+        t4 = clock;
+        fprintf('\tTesting iteration %d/%d. (%.2fs)\n', ii, t_max, etime(t4,t3));
     end
 
     t2 = clock;

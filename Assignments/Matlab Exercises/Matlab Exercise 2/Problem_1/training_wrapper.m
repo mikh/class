@@ -1,4 +1,4 @@
-function [W, f_theta TT, ETT] = training_wrapper(X, Y, N, M, FEATURE_LENGTH, t_max, lambda, TT, ETT)
+function [W, f_theta TT, ETT] = training_wrapper(X, Y, N, M, FEATURE_LENGTH, t_max, lambda, step_size, TT, ETT)
 	fprintf('Training...\n');
 	t1 = clock;
 

@@ -19,11 +19,11 @@ function [X_train, Y_train, N_train, X_test, Y_test, N_test, TT, ETT] = split_da
 	test_index = 1;
 	for ii = 1:N
 		x_vector = data(ii).feature_vector(:);
-		y_label = training_data(ii).Category;
+		y_label = data(ii).Category;
 		y_label = strrep(y_label, ' ', '_');
         y_label = strrep(y_label, '/', '_');
         y_label = strrep(y_label, '-', '_');
-        y_label = label_mapping.(ylabel);
+        y_label = label_mapping.(y_label);
 		if training_indices(perm_index) == ii
 			X_train(train_index,:) = x_vector;
 			Y_train(train_index) = y_label;
@@ -36,7 +36,7 @@ function [X_train, Y_train, N_train, X_test, Y_test, N_test, TT, ETT] = split_da
 		end
 	end
 
-	if (train_index ~= N_train) || (test_index ~= N_test) || (perm_index ~= length(training_indices))
+	if (train_index ~= N_train+1) || (test_index ~= N_test+1) || (perm_index ~= length(training_indices)+1)
 		fprintf('Invalid Indexing!\n\n');
 	end
 
