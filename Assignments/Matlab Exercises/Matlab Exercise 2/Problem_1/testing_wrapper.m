@@ -23,7 +23,7 @@ function [Y_pred, CCR, logloss,  TT, ETT ] = testing_wrapper( X, Y, N, W, t_max,
    
     CCR = zeros(t_max, 1);
     for ii = 1:t_max
-        CCR(ii) = sum(Y_pred==Y)/N*100;
+        CCR(ii) = sum(Y_pred(:,ii)==Y)/N*100;
     end
     
     f2 = figure(2);
