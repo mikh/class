@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.13)  22 OCT 2015 15:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.13)  31 OCT 2015 00:27
 entering extended mode
 **answers.tex
 (answers.tex
@@ -384,27 +384,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--80
 
 {C:/Users/mikha_000/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./histo
 gram_hours.png (PNG copy)>] [2 <./histogram_days.png (PNG copy)> <./histogram_d
-istrict.png (PNG copy)>] [3 <./crimes_hours.png>] [4 <./crimes_hours_2.png>]
-[5] (answers.aux) ) 
+istrict.png (PNG copy)>] [3 <./crimes_hours.png>]
+<CCR.png, id=24, 578.16pt x 433.62pt>
+File: CCR.png Graphic file (type png)
+ <use CCR.png>
+Package pdftex.def Info: CCR.png used on input line 82.
+(pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
+
+<logloss.png, id=25, 578.16pt x 433.62pt>
+File: logloss.png Graphic file (type png)
+ <use logloss.png>
+Package pdftex.def Info: logloss.png used on input line 86.
+(pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
+
+Overfull \hbox (44.27307pt too wide) in paragraph at lines 82--87
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--87
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--87
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--87
+
+ []
+
+
+Overfull \hbox (44.27307pt too wide) in paragraph at lines 82--87
+[] 
+ []
+
+[4 <./crimes_hours_2.png>] [5 <./CCR.png (PNG copy)>] [6 <./logloss.png (PNG co
+py)>] (answers.aux) ) 
 Here is how much of TeX's memory you used:
- 4460 strings out of 493673
- 62725 string characters out of 3147619
+ 4470 strings out of 493673
+ 62853 string characters out of 3147619
  286459 words of memory out of 3000000
- 7754 multiletter control sequences out of 15000+200000
+ 7762 multiletter control sequences out of 15000+200000
  17043 words of font info for 40 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 41i,10n,47p,224b,214s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
-r\jknappen\ec\dpi600\eccc1200.pk> <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\
-fonts\pk\ljfour\jknappen\ec\dpi600\eccc1440.pk> <C:\Users\mikha_000\AppData\Loc
-al\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\mikha_0
-00\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <C:
-\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ec
-rm2074.pk> <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
-n\ec\dpi600\eccc1095.pk>
-Output written on answers.pdf (5 pages, 91325 bytes).
+ 41i,10n,47p,258b,214s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
+our\jknappen\ec\dpi600\eccc1200.pk> <C:\Users\mikha_000\AppData\Local\MiKTeX\2.
+9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1440.pk> <C:\Users\mikha_000\AppData\L
+ocal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\mikha
+_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <
+C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
+ecrm2074.pk> <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
+pen\ec\dpi600\eccc1095.pk>
+Output written on answers.pdf (6 pages, 113277 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
+ 192 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

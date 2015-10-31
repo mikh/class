@@ -1,1 +1,15 @@
 Problem_1/matlab2_1a.m
+Problem_1/calculate_logloss.m
+Problem_1/create_objective_function_graph.m
+Problem_1/grad_NLL.m
+Problem_1/grad_NLL_fast.m
+Problem_1/grad_objective_function.m
+Problem_1/grad_objective_function_fast.m
+Problem_1/matlab2_1b.m
+Problem_1/NLL.m
+Problem_1/objective_function.m
+Problem_1/split_data.m
+Problem_1/test.m
+Problem_1/testing_wrapper.m
+Problem_1/train.m
+Problem_1/training_wrapper.m
