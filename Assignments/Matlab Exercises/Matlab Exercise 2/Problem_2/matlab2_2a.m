@@ -32,7 +32,7 @@ if LOAD_BASE_DATA == 1
     [X_wf_train, X_wf_test, TT, ETT] = remove_stopwords(vocabulary, W, stoplist, l_S, X_wf_train, X_wf_test, TT, ETT);
 
     clear stoplist l_S X_train_doc X_train_word X_train_count N_train_s X_test_doc X_test_word X_test_count X_test_s
-    save('word_freq_data', 'X_wf_train', 'X_wf_test', 'N_train', 'N_test', 'Y_train', 'Y_test', 'W', 'M', 'TT', 'ETT');
+    save('word_freq_data', 'X_wf_train', 'X_wf_test', 'N_train', 'N_test', 'Y_train', 'Y_test', 'W', 'M', 'TT', 'ETT', '-v7.3');
 end
 
 %% Part a
