@@ -25,19 +25,17 @@ function [ X_train, X_test, TT, ETT ] = remove_stopwords( vocabulary, W, stoplis
     t4 = clock;
     fprintf('Done. (%.2fs)\n', etime(t4,t3));
     
-    fprintf('\tRemoving stopwords...\n');
+    fprintf('\tRemoving stopwords...\t');
     t3 = clock;
     
     X_train = X_train';
     X_test = X_test';
     
     for i = l_S:-1:1
-        t5 = clock;
-        
+        fprintf('i = %d, index = %d\n', i, index_list(i));
         X_train(index_list(i), :) = [];
-        X_test(index_list(i), :) = [];        
-        t6 = clock;
-        fprintf('\t\ti = %d, index = %d (%.2fs)\n', i, index_list(i), etime(t6,t5));
+        X_test(index_list(i)) = [];
+        
     end
     
     t4 = clock;
