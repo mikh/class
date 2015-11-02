@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.13)  31 OCT 2015 00:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.13)  2 NOV 2015 09:22
 entering extended mode
 **answers.tex
 (answers.tex
@@ -421,27 +421,78 @@ Overfull \hbox (44.27307pt too wide) in paragraph at lines 82--87
 [] 
  []
 
-[4 <./crimes_hours_2.png>] [5 <./CCR.png (PNG copy)>] [6 <./logloss.png (PNG co
-py)>] (answers.aux) ) 
+[4 <./crimes_hours_2.png>] [5 <./CCR.png (PNG copy)>]
+<part_a_CV_CCR.png, id=33, 578.16pt x 433.62pt>
+File: part_a_CV_CCR.png Graphic file (type png)
+ <use part_a_CV_CCR.png>
+Package pdftex.def Info: part_a_CV_CCR.png used on input line 98.
+(pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
+
+Overfull \hbox (44.27307pt too wide) in paragraph at lines 98--103
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--103
+
+ []
+
+[6 <./logloss.png (PNG copy)>] <part_b_CV_CCR.png, id=37, 578.16pt x 433.62pt>
+File: part_b_CV_CCR.png Graphic file (type png)
+
+<use part_b_CV_CCR.png>
+Package pdftex.def Info: part_b_CV_CCR.png used on input line 105.
+(pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
+
+Overfull \hbox (44.27307pt too wide) in paragraph at lines 105--112
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--112
+
+ []
+
+[7 <./part_a_CV_CCR.png (PNG copy)>] [8 <./part_b_CV_CCR.png (PNG copy)>]
+(answers.aux) ) 
 Here is how much of TeX's memory you used:
- 4470 strings out of 493673
- 62853 string characters out of 3147619
- 286459 words of memory out of 3000000
- 7762 multiletter control sequences out of 15000+200000
- 17043 words of font info for 40 fonts, out of 3000000 for 9000
+ 4504 strings out of 493673
+ 63332 string characters out of 3147619
+ 287459 words of memory out of 3000000
+ 7787 multiletter control sequences out of 15000+200000
+ 21391 words of font info for 57 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  41i,10n,47p,258b,214s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
-our\jknappen\ec\dpi600\eccc1200.pk> <C:\Users\mikha_000\AppData\Local\MiKTeX\2.
-9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1440.pk> <C:\Users\mikha_000\AppData\L
-ocal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\mikha
-_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <
-C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-ecrm2074.pk> <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
-pen\ec\dpi600\eccc1095.pk>
-Output written on answers.pdf (6 pages, 113277 bytes).
+ <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
+nappen\ec\dpi600\eccc1200.pk> <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\font
+s\pk\ljfour\jknappen\ec\dpi600\eccc1440.pk> <C:\Users\mikha_000\AppData\Local\M
+iKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\mikha_000\A
+ppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <C:\Use
+rs\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm20
+74.pk> <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
+\dpi600\eccc1095.pk><D:/Programs/MikTeX/fonts/type1/public/amsfonts/cm/cmmi10.p
+fb><D:/Programs/MikTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Programs/Mi
+kTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Programs/MikTeX/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb><D:/Programs/MikTeX/fonts/type1/public/amsfonts/cm/
+cmsy8.pfb>
+Output written on answers.pdf (8 pages, 180931 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
+ 224 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
