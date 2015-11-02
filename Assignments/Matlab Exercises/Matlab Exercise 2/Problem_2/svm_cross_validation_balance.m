@@ -9,15 +9,16 @@ function [ CCR, con_mat, TT, ETT ] = svm_cross_validation_balance( X, Y, N, fold
     for ii = 1:q_length
         con_mat{ii} = zeros(2,2);
     end
+    X = sparse(X);
 
     for fold = 1:folds
-        fprintf('\tPreforming fold %d...\n', j);
+        fprintf('\tPreforming fold %d...\n', fold);
         t3 = clock;
 
         fprintf('\t\tSetting up fields...\t');
         t4 = clock;
 
-        testing_start_index = 1 + inc_val*(i-1);
+        testing_start_index = 1 + inc_val*(fold-1);
         testing_end_index = min(testing_start_index + inc_val-1, N);
         if testing_start_index == 1
             X_train = X(testing_end_index+1:N,:);
@@ -33,6 +34,8 @@ function [ CCR, con_mat, TT, ETT ] = svm_cross_validation_balance( X, Y, N, fold
         X_test = X(testing_start_index:testing_end_index);
         Y_test = Y(testing_start_index:testing_end_index);
         N_test = length(Y_test);
+        
+
 
         fprintf('Done. (%.2fs)\n', etime(clock,t4));
 
@@ -43,7 +46,7 @@ function [ CCR, con_mat, TT, ETT ] = svm_cross_validation_balance( X, Y, N, fold
         for exponent = boxconstraint_exponent_low:boxconstraint_exponent_high
             fprintf('\t\tSet boxconstraint to 2^%d\t', exponent);
             t5 = clock;
-            svm_classifier = svmtrain(X_train, Y_train, 'autoscale', autoscale, 'boxconstraint', 2^exponent, 'kernel_function', kernel_function);
+            svm_classifier = svmtrain(X_train, Y_train, 'autoscale', autoscale, 'boxconstraint', 2^exponent, 'kernel_function', kernel_function, 'kernelcachelimit', 100000);
             prediction = svmclassify(svm_classifier, X_test);
             num_correct = sum(prediction == Y_test);
             CCR(CCR_index) = CCR(CCR_index) + num_correct/N_test*100;
