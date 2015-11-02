@@ -5,34 +5,27 @@ function [ CCR, con_mat, TT, ETT ] = svm_cross_validation( X, Y, N, folds, boxco
     fprintf('\tSetting up fields...\t');
     t3 = clock;
     
-    increments = cell(folds,2);
+    increments = cell(folds,4);  
     start_index = 1;
     inc_val = ceil(N/folds);
-    for i = 1:folds-1
-        increments{i,1} = X(start_index:(start_index + inc_val - 1),:);
-        increments{i,2} = Y(start_index:(start_index + inc_val - 1),:);
-        start_index = start_index + inc_val;
-    end;
-    increments{folds,1} = X(start_index:N, :);
-    increments{folds,2} = Y(start_index:N, :);
-    
-    iteration_sets = cell(folds, 4);
-    for ii = 1:folds
-        iteration_sets{ii,1} = [];
-        iteration_sets{ii,2} = [];
-        iteration_sets{ii,3} = [];
-        iteration_sets{ii,4} = [];
-        for jj = 1:folds
-            if ii == jj
-                iteration_sets{ii,3} = increments{jj,1};
-                iteration_sets{ii,4} = increments{jj,2};
-            else
-                iteration_sets{ii,1} = vertcat(iteration_sets{ii,1},increments{jj,1});
-                iteration_sets{ii,2} = vertcat(iteration_sets{ii,2},increments{jj,2});
-            end
+
+    for i = 1:folds
+        testing_start_index = 1 + inc_val*(i-1);
+        testing_end_index = min(testing_start_index + inc_val-1, N);
+        if testing_start_index == 1
+            increments{i,1} = X(testing_end_index+1:N,:);
+            increments{i,2} = Y(testing_end_index+1:N,:);
+        else if testing_end_index == N
+            increments{i,1} = X(1:testing_start_index-1, :);
+            increments{i,2} = Y(1:testing_start_index-1, :);
+        else
+            increments{i,1} = vertcat(X(1:testing_start_index-1, :), X(testing_end_index+1:N,:));
+            increments{i,2} = vertcat(Y(1:testing_start_index-1, :), Y(testing_end_index+1:N,:));
         end
+        increments{i,3} = X(testing_start_index:testing_end_index);
+        increments{i,4} = Y(testing_start_index:testing_end_index);
     end
-    
+   
     CCR = zeros(length(boxconstraint_exponent_low:boxconstraint_exponent_high),1);
     con_mat = cell(length(boxconstraint_exponent_low:boxconstraint_exponent_high),1);
     
@@ -52,14 +45,14 @@ function [ CCR, con_mat, TT, ETT ] = svm_cross_validation( X, Y, N, folds, boxco
             fprintf('\t\t\tPreforming fold %d...\t', j);
             t5 = clock;
             
-            [N_train, ww] = size(iteration_sets{j,1});
+            [N_train, ww] = size(increments{j,1});
             
-            svm_classifier = svmtrain(iteration_sets{j,1}, iteration_sets{j,2}, 'autoscale', autoscale, 'boxconstraint', (2^exponent), 'kernel_function', kernel_function);
-            prediction = svmclassify(svm_classifier, iteration_sets{j,3});
-            num_correct = sum(prediction == iteration_sets{j,4});
+            svm_classifier = svmtrain(increments{j,1}, increments{j,2}, 'autoscale', autoscale, 'boxconstraint', (2^exponent), 'kernel_function', kernel_function);
+            prediction = svmclassify(svm_classifier, increments{j,3});
+            num_correct = sum(prediction == increments{j,4});
             [r c] = size(testing_set);
             CCR(CCR_index) = CCR(CCR_index) + num_correct/r*100;
-            con_mat{CCR_index} = con_mat{CCR_index} + confusionmat(iteration_sets{j,4}, prediction);
+            con_mat{CCR_index} = con_mat{CCR_index} + confusionmat(increments{j,4}, prediction);
             
             
             fprintf('\t\t\tDone. (%.2fs)\n', etime(clock, t5));
