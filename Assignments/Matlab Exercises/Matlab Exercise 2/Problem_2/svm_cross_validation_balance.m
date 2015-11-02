@@ -31,7 +31,7 @@ function [ CCR, con_mat, TT, ETT ] = svm_cross_validation_balance( X, Y, N, fold
             Y_train = vertcat(Y(1:testing_start_index-1, :), Y(testing_end_index+1:N,:));
         end
         N_train = length(Y_train);
-        X_test = X(testing_start_index:testing_end_index);
+        X_test = X(testing_start_index:testing_end_index,:);
         Y_test = Y(testing_start_index:testing_end_index);
         N_test = length(Y_test);
         
