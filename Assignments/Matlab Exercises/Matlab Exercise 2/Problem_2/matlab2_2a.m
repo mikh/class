@@ -13,7 +13,8 @@ ETT = 0;
 LOAD_BASE_DATA = 0;
 RUN_PART_A = 0;
 LOAD_DATA_FOR_PART_A = 1;
-RUN_PART_B = 1;
+RUN_PART_B = 0;
+RUN_PART_CD = 1;
 
 %% Load Data
 if LOAD_BASE_DATA == 1
@@ -101,6 +102,41 @@ if RUN_PART_B == 1
     max_box_index = max_box_index(max_rbf_index);
     [CCR, TT, ETT] = full_SVM(X_a, X_a_test, Y_a, Y_a_test, N_a, N_a_test, 2^(-5+max_box_index-1), 2^(-13+max_rbf_index-1), false, 'RBF', TT, ETT);
     fprintf('Using constraint %d, with a value of 2^%d and rbf %d with a value of 2^%d, CCR = %.2f%%\n', max_box_index, -5+max_box_index-1, max_rbf_index,2^(-13+max_rbf_index-1), CCR);
+    
+
+end
+
+%% part c d
+if RUN_PART_CD == 1
+    fprintf('Running part C and D\n');
+    if LOAD_DATA_FOR_PART_A == 1
+        fprintf('Loading base data...\t');
+        t1 = clock;
+        load 'word_freq_data.mat'
+        fprintf('Done. (%.2fs)\n', etime(clock, t1));
+        
+    end
+
+    [X_class_17, N_class_17, TT, ETT] = get_class_documents(X_wf_train, Y_train, N_train, 17, TT, ETT);
+    [X_class_not_17, N_class_not_17, TT, ETT] = get_all_but_class_documents(X_wf_train, Y_train, N_train, 17, TT, ETT);
+    [X_class_17_test, N_class_17_test, TT, ETT] = get_class_documents(X_wf_test, Y_test, N_test, 17, TT, ETT);
+    [X_class_not_17_test, N_class_not_17_test, TT, ETT] = get_all_but_class_documents(X_wf_test, Y_test, N_test, 17, TT, ETT);
+
+    X_a = vertcat(X_class_17, X_class_not_17);
+    Y_a = vertcat(zeros(N_class_17, 1)+17, zeros(N_class_not_17, 1) + 1);
+    N_a = N_class_17 + N_class_not_17;
+
+    X_a_test = vertcat(X_class_17_test, X_class_not_17_test);
+    Y_a_test = vertcat(zeros(N_class_17_test, 1) + 17, zeros(N_class_not_17_test,1)+1);
+    N_a_test = N_class_17_test + N_class_not_17_test;
+
+    [CCR, con_mat, TT, ETT] = svm_cross_validation_balance(X_a, Y_a ,N_a,5,-5, 15, false, 'linear', TT, ETT);
+    plot_CCR(1,CCR,2.^(-5:15),'Binary SVM classifier CCR for classes 17 and the rest', 'part_c_CV_CCR.png');
+    plot_confusion_matrix(2, con_mat, 2.^(-5:15), 'Binary SVM classfier Precision, Recall, and F-Score', 'part_d_CV_CCR.png');
+    [max_value, max_index] = max(CCR);
+    [CCR, con_mat, TT, ETT] = full_SVM_balance(X_a, X_a_test, Y_a, Y_a_test, N_a, N_a_test, 2^(-5+max_index-1), 0, false, 'linear', TT, ETT);
+    fprintf('Using constraint %d, with a value of 2^%d, CCR = %.2f%%\n', max_index, -5+max_index-1, CCR);
+    disp(con_mat);
     
 
 end
