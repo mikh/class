@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.13)  2 NOV 2015 09:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.13)  2 NOV 2015 17:47
 entering extended mode
 **answers.tex
 (answers.tex
@@ -468,31 +468,97 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--112
 
  []
 
-[7 <./part_a_CV_CCR.png (PNG copy)>] [8 <./part_b_CV_CCR.png (PNG copy)>]
-(answers.aux) ) 
+[7 <./part_a_CV_CCR.png (PNG copy)>]
+<part_c_CV_CCR.png, id=46, 578.16pt x 433.62pt>
+File: part_c_CV_CCR.png Graphic file (type png)
+ <use part_c_CV_CCR.png>
+Package pdftex.def Info: part_c_CV_CCR.png used on input line 114.
+(pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
+
+<part_c_confusion_matrix.png, id=47, 161.85469pt x 56.46094pt>
+File: part_c_confusion_matrix.png Graphic file (type png)
+
+<use part_c_confusion_matrix.png>
+Package pdftex.def Info: part_c_confusion_matrix.png used on input line 122.
+(pdftex.def)             Requested size: 161.85428pt x 56.46078pt.
+
+Overfull \hbox (44.27307pt too wide) in paragraph at lines 114--123
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--123
+
+ []
+
+[8 <./part_b_CV_CCR.png (PNG copy)>]
+<part_d_CV_CCR.png, id=52, 421.575pt x 316.18124pt>
+File: part_d_CV_CCR.png Graphic file (type png)
+ <use part_d_CV_CCR.png>
+Package pdftex.def Info: part_d_CV_CCR.png used on input line 125.
+(pdftex.def)             Requested size: 337.26045pt x 252.94533pt.
+
+<part_d_confusion_matrix.png, id=53, 162.6075pt x 54.9553pt>
+File: part_d_confusion_matrix.png Graphic file (type png)
+
+<use part_d_confusion_matrix.png>
+Package pdftex.def Info: part_d_confusion_matrix.png used on input line 131.
+(pdftex.def)             Requested size: 162.6071pt x 54.95515pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--132
+
+ []
+
+[9 <./part_c_CV_CCR.png (PNG copy)> <./part_c_confusion_matrix.png>] [10 <./par
+t_d_CV_CCR.png (PNG copy)> <./part_d_confusion_matrix.png>] (answers.aux) ) 
 Here is how much of TeX's memory you used:
- 4504 strings out of 493673
- 63332 string characters out of 3147619
+ 4524 strings out of 493673
+ 63848 string characters out of 3147619
  287459 words of memory out of 3000000
- 7787 multiletter control sequences out of 15000+200000
+ 7803 multiletter control sequences out of 15000+200000
  21391 words of font info for 57 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  41i,10n,47p,258b,214s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
-nappen\ec\dpi600\eccc1200.pk> <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\font
-s\pk\ljfour\jknappen\ec\dpi600\eccc1440.pk> <C:\Users\mikha_000\AppData\Local\M
-iKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\mikha_000\A
-ppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <C:\Use
-rs\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm20
-74.pk> <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
-\dpi600\eccc1095.pk><D:/Programs/MikTeX/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb><D:/Programs/MikTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Programs/Mi
-kTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Programs/MikTeX/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb><D:/Programs/MikTeX/fonts/type1/public/amsfonts/cm/
-cmsy8.pfb>
-Output written on answers.pdf (8 pages, 180931 bytes).
+ <C:
+\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ec
+cc1200.pk> <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
+n\ec\dpi600\eccc1440.pk> <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\mikha_000\AppData\Local\MiKTeX
+\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <C:\Users\mikha_000\AppDat
+a\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm2074.pk> <C:\Users\mi
+kha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1095.pk
+><D:/Programs/MikTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Programs/Mik
+TeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Programs/MikTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr8.pfb><D:/Programs/MikTeX/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb><D:/Programs/MikTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on answers.pdf (10 pages, 201687 bytes).
 PDF statistics:
- 224 PDF objects out of 1000 (max. 8388607)
+ 239 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
