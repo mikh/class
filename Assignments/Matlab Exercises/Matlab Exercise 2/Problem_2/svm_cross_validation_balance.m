@@ -1,8 +1,8 @@
-function [ CCR, con_mat, TT, ETT ] = svm_cross_validation( X, Y, N, folds, boxconstraint_exponent_low, boxconstraint_exponent_high, autoscale, kernel_function, TT, ETT )
+function [ CCR, con_mat, TT, ETT ] = svm_cross_validation_balance( X, Y, N, folds, boxconstraint_exponent_low, boxconstraint_exponent_high, autoscale, kernel_function, TT, ETT )
     fprintf('Performing Cross Validation...\n');
     t1 = clock;
     
-    fprintf('\tSetting up fields...\t');
+    fprintf('\tSetting up fields...\n');
     t3 = clock;
     
     increments = cell(folds,4);  
@@ -10,12 +10,13 @@ function [ CCR, con_mat, TT, ETT ] = svm_cross_validation( X, Y, N, folds, boxco
     inc_val = ceil(N/folds);
 
     for i = 1:folds
+        fprintf('\t\tFold = %d\n',i);
         testing_start_index = 1 + inc_val*(i-1);
         testing_end_index = min(testing_start_index + inc_val-1, N);
         if testing_start_index == 1
             increments{i,1} = X(testing_end_index+1:N,:);
             increments{i,2} = Y(testing_end_index+1:N,:);
-        else if testing_end_index == N
+        elseif testing_end_index == N
             increments{i,1} = X(1:testing_start_index-1, :);
             increments{i,2} = Y(1:testing_start_index-1, :);
         else
@@ -30,7 +31,7 @@ function [ CCR, con_mat, TT, ETT ] = svm_cross_validation( X, Y, N, folds, boxco
     con_mat = cell(length(boxconstraint_exponent_low:boxconstraint_exponent_high),1);
     
     t4 = clock;
-    fprintf('Done. (%.2fs)\n', etime(t4,t3));
+    fprintf('\tDone. (%.2fs)\n', etime(t4,t3));
     
     fprintf('\tPerforming Cross Validation...\n');
     t3 = clock;
