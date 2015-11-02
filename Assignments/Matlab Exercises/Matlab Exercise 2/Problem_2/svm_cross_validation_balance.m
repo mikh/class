@@ -11,7 +11,7 @@ function [ CCR, con_mat, TT, ETT ] = svm_cross_validation_balance( X, Y, N, fold
     end
     X = sparse(X);
 
-    for fold = 1:folds
+    for fold = folds:-1:1
         fprintf('\tPreforming fold %d...\n', fold);
         t3 = clock;
 
@@ -30,12 +30,32 @@ function [ CCR, con_mat, TT, ETT ] = svm_cross_validation_balance( X, Y, N, fold
             X_train = vertcat(X(1:testing_start_index-1, :), X(testing_end_index+1:N,:));
             Y_train = vertcat(Y(1:testing_start_index-1, :), Y(testing_end_index+1:N,:));
         end
+        
+
+        
         N_train = length(Y_train);
+        
         X_test = X(testing_start_index:testing_end_index,:);
         Y_test = Y(testing_start_index:testing_end_index);
         N_test = length(Y_test);
         
-
+        
+        %in case there are not 2 classes
+        if min(Y_train) == max(Y_train)
+            current_class = min(Y_train);
+            index = 0;
+            for ii = 1:N_test
+                if Y_test(ii) ~= current_class
+                    index = ii;
+                    break;
+                end
+            end
+            temp = X_train(1,:);
+            X_train(1,:) = X_test(index, :);
+            X_test(index, :) = temp;
+            Y_train(1) = Y_test(index);
+            Y_test(index) = current_class;
+        end
 
         fprintf('Done. (%.2fs)\n', etime(clock,t4));
 

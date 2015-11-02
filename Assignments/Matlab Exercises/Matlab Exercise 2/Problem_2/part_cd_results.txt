@@ -1,0 +1,159 @@
+Running Matlab2 - 2a...
+Running part C and D
+Loading base data...	Done. (36.29s)
+Extracting all samples of class 17...
+Done. (0.01s)
+Extracting all samples of class 17...
+Done. (0.00s)
+Performing Cross Validation...
+	Preforming fold 5...
+		Setting up fields...	Done. (0.10s)
+		Performing Cross Validation...
+		Set boxconstraint to 2^-5	Done. (22.87s)
+		Set boxconstraint to 2^-4	Done. (20.80s)
+		Set boxconstraint to 2^-3	Done. (19.46s)
+		Set boxconstraint to 2^-2	Done. (13.06s)
+		Set boxconstraint to 2^-1	Done. (8.35s)
+		Set boxconstraint to 2^0	Done. (5.78s)
+		Set boxconstraint to 2^1	Done. (4.32s)
+		Set boxconstraint to 2^2	Done. (3.76s)
+		Set boxconstraint to 2^3	Done. (3.25s)
+		Set boxconstraint to 2^4	Done. (3.15s)
+		Set boxconstraint to 2^5	Done. (3.01s)
+		Set boxconstraint to 2^6	Done. (2.95s)
+		Set boxconstraint to 2^7	Done. (2.96s)
+		Set boxconstraint to 2^8	Done. (3.01s)
+		Set boxconstraint to 2^9	Done. (2.96s)
+		Set boxconstraint to 2^10	Done. (2.98s)
+		Set boxconstraint to 2^11	Done. (2.87s)
+		Set boxconstraint to 2^12	Done. (2.87s)
+		Set boxconstraint to 2^13	Done. (2.96s)
+		Set boxconstraint to 2^14	Done. (2.87s)
+		Set boxconstraint to 2^15	Done. (2.88s)
+		Cross Validation complete. (137.13s)
+	Fold Complete. (137.51s)
+	Preforming fold 4...
+		Setting up fields...	Done. (0.04s)
+		Performing Cross Validation...
+		Set boxconstraint to 2^-5	Done. (22.53s)
+		Set boxconstraint to 2^-4	Done. (20.46s)
+		Set boxconstraint to 2^-3	Done. (20.53s)
+		Set boxconstraint to 2^-2	Done. (20.54s)
+		Set boxconstraint to 2^-1	Done. (20.47s)
+		Set boxconstraint to 2^0	Done. (20.39s)
+		Set boxconstraint to 2^1	Done. (20.11s)
+		Set boxconstraint to 2^2	Done. (18.77s)
+		Set boxconstraint to 2^3	Done. (16.57s)
+		Set boxconstraint to 2^4	Done. (13.99s)
+		Set boxconstraint to 2^5	Done. (11.74s)
+		Set boxconstraint to 2^6	Done. (9.70s)
+		Set boxconstraint to 2^7	Done. (9.10s)
+		Set boxconstraint to 2^8	Done. (8.70s)
+		Set boxconstraint to 2^9	Done. (8.94s)
+		Set boxconstraint to 2^10	Done. (8.74s)
+		Set boxconstraint to 2^11	Done. (8.86s)
+		Set boxconstraint to 2^12	Done. (8.48s)
+		Set boxconstraint to 2^13	Done. (8.45s)
+		Set boxconstraint to 2^14	Done. (8.60s)
+		Set boxconstraint to 2^15	Done. (8.74s)
+		Cross Validation complete. (294.43s)
+	Fold Complete. (294.47s)
+	Preforming fold 3...
+		Setting up fields...	Done. (0.03s)
+		Performing Cross Validation...
+		Set boxconstraint to 2^-5	Done. (20.53s)
+		Set boxconstraint to 2^-4	Done. (20.57s)
+		Set boxconstraint to 2^-3	Done. (20.61s)
+		Set boxconstraint to 2^-2	Done. (20.45s)
+		Set boxconstraint to 2^-1	Done. (20.54s)
+		Set boxconstraint to 2^0	Done. (20.49s)
+		Set boxconstraint to 2^1	Done. (20.07s)
+		Set boxconstraint to 2^2	Done. (18.73s)
+		Set boxconstraint to 2^3	Done. (16.55s)
+		Set boxconstraint to 2^4	Done. (13.99s)
+		Set boxconstraint to 2^5	Done. (11.76s)
+		Set boxconstraint to 2^6	Done. (9.77s)
+		Set boxconstraint to 2^7	Done. (9.23s)
+		Set boxconstraint to 2^8	Done. (8.80s)
+		Set boxconstraint to 2^9	Done. (8.79s)
+		Set boxconstraint to 2^10	Done. (8.91s)
+		Set boxconstraint to 2^11	Done. (8.76s)
+		Set boxconstraint to 2^12	Done. (8.38s)
+		Set boxconstraint to 2^13	Done. (8.69s)
+		Set boxconstraint to 2^14	Done. (8.79s)
+		Set boxconstraint to 2^15	Done. (8.85s)
+		Cross Validation complete. (293.27s)
+	Fold Complete. (293.31s)
+	Preforming fold 2...
+		Setting up fields...	Done. (0.03s)
+		Performing Cross Validation...
+		Set boxconstraint to 2^-5	Done. (21.15s)
+		Set boxconstraint to 2^-4	Done. (20.81s)
+		Set boxconstraint to 2^-3	Done. (20.84s)
+		Set boxconstraint to 2^-2	Done. (20.90s)
+		Set boxconstraint to 2^-1	Done. (20.89s)
+		Set boxconstraint to 2^0	Done. (20.90s)
+		Set boxconstraint to 2^1	Done. (20.67s)
+		Set boxconstraint to 2^2	Done. (19.52s)
+		Set boxconstraint to 2^3	Done. (17.48s)
+		Set boxconstraint to 2^4	Done. (14.88s)
+		Set boxconstraint to 2^5	Done. (12.22s)
+		Set boxconstraint to 2^6	Done. (10.46s)
+		Set boxconstraint to 2^7	Done. (9.45s)
+		Set boxconstraint to 2^8	Done. (9.47s)
+		Set boxconstraint to 2^9	Done. (9.42s)
+		Set boxconstraint to 2^10	Done. (9.22s)
+		Set boxconstraint to 2^11	Done. (9.43s)
+		Set boxconstraint to 2^12	Done. (8.99s)
+		Set boxconstraint to 2^13	Done. (8.91s)
+		Set boxconstraint to 2^14	Done. (9.46s)
+		Set boxconstraint to 2^15	Done. (9.45s)
+		Cross Validation complete. (304.82s)
+	Fold Complete. (304.85s)
+	Preforming fold 1...
+		Setting up fields...	Done. (0.02s)
+		Performing Cross Validation...
+		Set boxconstraint to 2^-5	Done. (20.81s)
+		Set boxconstraint to 2^-4	Done. (21.24s)
+		Set boxconstraint to 2^-3	Done. (20.87s)
+		Set boxconstraint to 2^-2	Done. (20.84s)
+		Set boxconstraint to 2^-1	Done. (20.77s)
+		Set boxconstraint to 2^0	Done. (20.90s)
+		Set boxconstraint to 2^1	Done. (20.68s)
+		Set boxconstraint to 2^2	Done. (19.67s)
+		Set boxconstraint to 2^3	Done. (17.40s)
+		Set boxconstraint to 2^4	Done. (14.86s)
+		Set boxconstraint to 2^5	Done. (11.91s)
+		Set boxconstraint to 2^6	Done. (10.27s)
+		Set boxconstraint to 2^7	Done. (9.66s)
+		Set boxconstraint to 2^8	Done. (9.21s)
+		Set boxconstraint to 2^9	Done. (8.91s)
+		Set boxconstraint to 2^10	Done. (9.68s)
+		Set boxconstraint to 2^11	Done. (9.66s)
+		Set boxconstraint to 2^12	Done. (9.05s)
+		Set boxconstraint to 2^13	Done. (9.53s)
+		Set boxconstraint to 2^14	Done. (8.89s)
+		Set boxconstraint to 2^15	Done. (8.91s)
+		Cross Validation complete. (303.72s)
+	Fold Complete. (303.73s)
+Done. (1335.54s)
+The best C value based on precision is 2^0
+It's Confusion matrix is:
+   1.0e+03 *
+
+    0.9026    1.0094
+    0.9088    2.1378
+
+The best C value based on recall is 2^0
+It's Confusion matrix is:
+   1.0e+03 *
+
+    0.9026    1.0094
+    0.9088    2.1378
+
+Running SVM on full set...	Done. (2089.15s)
+Using constraint 6, with a value of 2^0, CCR = 95.78%
+         217         147
+         170        6971
+
+Done. (3623.89s) (ETT: 3623.89s)
