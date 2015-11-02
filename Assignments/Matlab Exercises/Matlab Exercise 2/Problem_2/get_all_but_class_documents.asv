@@ -1,15 +1,9 @@
-function [ Y_class, TT, ETT ] = get_all_but_class_documents( Y, N, c, TT, ETT )
+function [ Y_class, TT, ETT ] = get_all_but_class_documents( X, Y, N,W, c, TT, ETT )
     fprintf('Extracting all samples of class %d...\n', c);
     t1 = clock;
    
     Y_class = zeros(N,1);
-    for ii = 1:N
-        if Y(ii) == c
-            Y_class(ii) = c;
-        else
-            Y_class(ii) = c+1;
-        end
-    end
+    for ii = !
    
     
     t2 = clock;

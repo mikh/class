@@ -117,18 +117,13 @@ if RUN_PART_CD == 1
         
     end
 
-    [X_class_17, N_class_17, TT, ETT] = get_class_documents(X_wf_train, Y_train, N_train, 17, TT, ETT);
-    [X_class_not_17, N_class_not_17, TT, ETT] = get_all_but_class_documents(X_wf_train, Y_train, N_train, 17, TT, ETT);
-    [X_class_17_test, N_class_17_test, TT, ETT] = get_class_documents(X_wf_test, Y_test, N_test, 17, TT, ETT);
-    [X_class_not_17_test, N_class_not_17_test, TT, ETT] = get_all_but_class_documents(X_wf_test, Y_test, N_test, 17, TT, ETT);
-
-    X_a = vertcat(X_class_17, X_class_not_17);
-    Y_a = vertcat(zeros(N_class_17, 1)+17, zeros(N_class_not_17, 1) + 1);
-    N_a = N_class_17 + N_class_not_17;
-
-    X_a_test = vertcat(X_class_17_test, X_class_not_17_test);
-    Y_a_test = vertcat(zeros(N_class_17_test, 1) + 17, zeros(N_class_not_17_test,1)+1);
-    N_a_test = N_class_17_test + N_class_not_17_test;
+    X_a = X_wf_train;
+    N_a = N_train;
+    [Y_a, TT, ETT] = get_all_but_class_documents(Y_train, N_train, 17, TT, ETT);
+    
+    X_a_test = X_wf_test;
+    N_a_test = N_test;
+    [Y_a_test, TT, ETT] = get_all_but_class_documents(Y_test, N_test, 17, TT, ETT);
 
     [CCR, con_mat, TT, ETT] = svm_cross_validation_balance(X_a, Y_a ,N_a,5,-5, 15, false, 'linear', TT, ETT);
     plot_CCR(1,CCR,2.^(-5:15),'Binary SVM classifier CCR for classes 17 and the rest', 'part_c_CV_CCR.png');
