@@ -40,11 +40,9 @@ if LOAD_BASE_DATA == 1
     save('word_freq_data', 'X_wf_train', 'X_wf_test', 'N_train', 'N_test', 'Y_train', 'Y_test', 'W', 'M', 'TT', 'ETT', '-v7.3');
 end
 
-%% Part a
-
-
-if RUN_PART_A == 1
-    fprintf('Running part A\n');
+%% part b
+if RUN_PART_B == 1
+    fprintf('Running part B\n');
     if LOAD_DATA_FOR_PART_A == 1
         fprintf('Loading base data...\t');
         t1 = clock;
@@ -52,7 +50,7 @@ if RUN_PART_A == 1
         fprintf('Done. (%.2fs)\n', etime(clock, t1));
         
     end
-    
+
     [X_class_1, N_class_1, TT, ETT] = get_class_documents(X_wf_train, Y_train, N_train, 1, TT, ETT);
     [X_class_20, N_class_20, TT, ETT] = get_class_documents(X_wf_train, Y_train, N_train, 20, TT, ETT);
     [X_class_1_test, N_class_1_test, TT, ETT] = get_class_documents(X_wf_test, Y_test, N_test, 1, TT, ETT);
@@ -66,14 +64,16 @@ if RUN_PART_A == 1
     Y_a_test = vertcat(zeros(N_class_1_test, 1) + 1, zeros(N_class_20_test,1)+20);
     N_a_test = N_class_1_test + N_class_20_test;
 
-    [CCR, TT, ETT] = svm_cross_validation(X_a, Y_a ,N_a,5,-5, 15, false, 'linear', TT, ETT);
-    plot_CCR(1,CCR,2.^(-5:15),'Binary SVM classifier CCR for classes 1 and 20', 'part_a_CV_CCR.png');
-    [max_value, max_index] = max(CCR);
-    [CCR, TT, ETT] = full_SVM(X_a, X_a_test, Y_a, Y_a_test, N_a, N_a_test, 2^(-5+max_index-1), 0, false, 'linear', TT, ETT);
-    fprintf('Using constraint %d, with a value of 2^%d, CCR = %.2f%%\n', max_index, -5+max_index-1, CCR);
+    [CCR, TT, ETT] = svm_cross_validation_rbf(X_a, Y_a ,N_a,5,-5, 15, -13, 3, false, 'RBF', TT, ETT);
+    plot_contour_CCR(2, CCR, 2.^(-5:15),2.^(-13:3),'Binary SVM classifier CCR for classes 1 and 20 using RBF', 'part_b_CR_CCR.png');
+    [max_value, max_box_index] = max(CCR);
+    [max_value, max_rbf_index] = max(max_value);
+    max_box_index = max_box_index(max_rbf_index);
+    [CCR, TT, ETT] = full_SVM(X_a, X_a_test, Y_a, Y_a_test, N_a, N_a_test, 2^(-5+max_box_index-1), 2^(-13+max_rbf_index-1), false, 'RBF', TT, ETT);
+    fprintf('Using constraint %d, with a value of 2^%d and rbf %d with a value of 2^%d, CCR = %.2f%%\n', max_box_index, -5+max_box_index-1, max_rbf_index,2^(-13+max_rbf_index-1), CCR);
+    
 
 end
-
 
 %% Code complete
 fprintf('Done. (%.2fs) (ETT: %.2fs)\n', TT, ETT);

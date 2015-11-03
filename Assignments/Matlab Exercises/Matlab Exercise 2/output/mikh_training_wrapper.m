@@ -1,4 +1,4 @@
-function [W, f_theta TT, ETT] = training_wrapper(X, Y, N, M, FEATURE_LENGTH, t_max, lambda, step_size, TT, ETT)
+function [W, f_theta TT, ETT] = mikh_training_wrapper(X, Y, N, M, FEATURE_LENGTH, t_max, lambda, step_size, TT, ETT)
 	fprintf('Training...\n');
 	t1 = clock;
 
@@ -13,7 +13,7 @@ function [W, f_theta TT, ETT] = training_wrapper(X, Y, N, M, FEATURE_LENGTH, t_m
 
 	for t = 1:t_max;
 		t3 = clock;
-		[obj_fnc, grad_obj_fnc] = train(X, Y, C, w_current, N, M, FEATURE_LENGTH, lambda);   
+		[obj_fnc, grad_obj_fnc] = mikh_train(X, Y, C, w_current, N, M, FEATURE_LENGTH, lambda);   
 		f_theta(t) = obj_fnc;
 		w_current = w_current - (grad_obj_fnc .* step_size);
 		W(t+1, :,:) = w_current;

@@ -1,4 +1,4 @@
-function [ logloss ] = calculate_logloss( X, Y, W, n )
+function [ logloss ] = mikh_calculate_logloss( X, Y, W, n )
     logloss = 0;
     for ii = 1:n
         x_test = X(ii,:)';

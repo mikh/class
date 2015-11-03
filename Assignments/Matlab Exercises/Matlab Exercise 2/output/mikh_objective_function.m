@@ -1,4 +1,4 @@
-function [ result ] = objective_function( X, Y, W, n, m, d , lambda)
+function [ result ] = mikh_objective_function( X, Y, W, n, m, d , lambda)
     %l2 - regularized objective function
     %X - input samples [n x d]
     %Y - labels for input samples [n x 1]
@@ -8,7 +8,7 @@ function [ result ] = objective_function( X, Y, W, n, m, d , lambda)
     %d - number of paramters
     %lambda - constant
     
-    total_a = NLL(X, Y, W, n, m, d);
+    total_a = mikh_NLL(X, Y, W, n, m, d);
     total_b = 0;
 
     total_b = sum(sum(W.^2));

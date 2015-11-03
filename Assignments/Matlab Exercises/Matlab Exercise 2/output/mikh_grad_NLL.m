@@ -1,4 +1,4 @@
-function [ result ] = grad_NLL( X, Y,  W, n, m, d, yy )
+function [ result ] = mikh_grad_NLL( X, Y,  W, n, m, d, yy )
     %Gradient of NLL function 
     %X - input samples [n x d]
     %Y - labesl for input samples [n x 1]

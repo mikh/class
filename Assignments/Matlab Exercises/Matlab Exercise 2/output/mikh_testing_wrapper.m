@@ -1,4 +1,4 @@
-function [Y_pred, CCR, logloss,  TT, ETT ] = testing_wrapper( X, Y, N, W, t_max, TT, ETT )
+function [Y_pred, CCR, logloss,  TT, ETT ] = mikh_testing_wrapper( X, Y, N, W, t_max, TT, ETT )
     fprintf('Running testing...\n');
     t1 = clock;
     
@@ -7,7 +7,7 @@ function [Y_pred, CCR, logloss,  TT, ETT ] = testing_wrapper( X, Y, N, W, t_max,
     for ii = 1:t_max
         t3 = clock;
         w_current = squeeze(W(ii+1,:,:));
-        Y_pred(:,ii) = test(X, w_current, N);
+        Y_pred(:,ii) = mikh_test(X, w_current, N);
         t4 = clock;
         fprintf('\tTesting iteration %d/%d. (%.2fs)\n', ii, t_max, etime(t4,t3));
     end
@@ -36,7 +36,7 @@ function [Y_pred, CCR, logloss,  TT, ETT ] = testing_wrapper( X, Y, N, W, t_max,
     logloss = zeros(t_max, 1);
     for ii = 1:t_max
         w_current = squeeze(W(ii+1,:,:));
-        logloss(ii) = calculate_logloss(X,Y,w_current,N);
+        logloss(ii) = mikh_calculate_logloss(X,Y,w_current,N);
     end
     
     f3 = figure(3);

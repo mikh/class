@@ -40,40 +40,36 @@ if LOAD_BASE_DATA == 1
     save('word_freq_data', 'X_wf_train', 'X_wf_test', 'N_train', 'N_test', 'Y_train', 'Y_test', 'W', 'M', 'TT', 'ETT', '-v7.3');
 end
 
-%% Part a
 
-
-if RUN_PART_A == 1
-    fprintf('Running part A\n');
+%% part f
+if RUN_PART_F == 1
+    fprintf('Running part F\n');
     if LOAD_DATA_FOR_PART_A == 1
         fprintf('Loading base data...\t');
         t1 = clock;
         load 'word_freq_data.mat'
         fprintf('Done. (%.2fs)\n', etime(clock, t1));
-        
     end
-    
-    [X_class_1, N_class_1, TT, ETT] = get_class_documents(X_wf_train, Y_train, N_train, 1, TT, ETT);
-    [X_class_20, N_class_20, TT, ETT] = get_class_documents(X_wf_train, Y_train, N_train, 20, TT, ETT);
-    [X_class_1_test, N_class_1_test, TT, ETT] = get_class_documents(X_wf_test, Y_test, N_test, 1, TT, ETT);
-    [X_class_20_test, N_class_20_test, TT, ETT] = get_class_documents(X_wf_test, Y_test, N_test, 20, TT, ETT);
 
-    X_a = vertcat(X_class_1, X_class_20);
-    Y_a = vertcat(zeros(N_class_1, 1)+1, zeros(N_class_20, 1) + 20);
-    N_a = N_class_1 + N_class_20;
-
-    X_a_test = vertcat(X_class_1_test, X_class_20_test);
-    Y_a_test = vertcat(zeros(N_class_1_test, 1) + 1, zeros(N_class_20_test,1)+20);
-    N_a_test = N_class_1_test + N_class_20_test;
-
-    [CCR, TT, ETT] = svm_cross_validation(X_a, Y_a ,N_a,5,-5, 15, false, 'linear', TT, ETT);
-    plot_CCR(1,CCR,2.^(-5:15),'Binary SVM classifier CCR for classes 1 and 20', 'part_a_CV_CCR.png');
-    [max_value, max_index] = max(CCR);
-    [CCR, TT, ETT] = full_SVM(X_a, X_a_test, Y_a, Y_a_test, N_a, N_a_test, 2^(-5+max_index-1), 0, false, 'linear', TT, ETT);
-    fprintf('Using constraint %d, with a value of 2^%d, CCR = %.2f%%\n', max_index, -5+max_index-1, CCR);
-
+    classes = cell(20,1);
+    class_sizes = zeros(20,1);
+    for ii = 1:20
+        [classes{ii}, class_sizes(ii), TT, ETT] = get_class_documents(X_wf_train, Y_train, N_train, ii, TT, ETT);
+    end
+    [SVM_classifiers, num_classifiers, training_time, TT, ETT] = train_ovo_svm(classes, class_sizes, 20, 'RBF', TT, ETT);
+    [CCR, confusion_matrix, testing_time, TT, ETT] = test_OVO_SVM(SVM_classifiers, num_classifiers, X_wf_test, Y_test, N_test, TT, ETT);
+    fprintf('CCR = %.2f\n', CCR);
+    fprintf('training time = %.2fs\n', training_time);
+    fprintf('testing_time = %.2fs\n', testing_time);
+    fid = fopen('part_f_confusion_matrix.txt', 'wt');
+    [r,c] = size(confusion_matrix);
+    for ii = 1:r
+        for jj = 1:c
+            fprintf(fid, '%d\t', confusion_matrix(ii,jj));
+        end
+        fprintf(fid,'\n');
+    end
 end
-
 
 %% Code complete
 fprintf('Done. (%.2fs) (ETT: %.2fs)\n', TT, ETT);

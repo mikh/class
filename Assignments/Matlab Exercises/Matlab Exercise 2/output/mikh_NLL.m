@@ -1,4 +1,4 @@
-function [ result ] = NLL( X, Y, W, n, m, d )
+function [ result ] = mikh_NLL( X, Y, W, n, m, d )
     %Negative log-likelihood function of logistic regression
     %X - input samples [n x d]
     %Y - labels for input samples [n x 1]

@@ -40,11 +40,11 @@ if LOAD_BASE_DATA == 1
     save('word_freq_data', 'X_wf_train', 'X_wf_test', 'N_train', 'N_test', 'Y_train', 'Y_test', 'W', 'M', 'TT', 'ETT', '-v7.3');
 end
 
-%% Part a
 
 
-if RUN_PART_A == 1
-    fprintf('Running part A\n');
+%% part c d
+if RUN_PART_CD == 1
+    fprintf('Running part C and D\n');
     if LOAD_DATA_FOR_PART_A == 1
         fprintf('Loading base data...\t');
         t1 = clock;
@@ -52,27 +52,24 @@ if RUN_PART_A == 1
         fprintf('Done. (%.2fs)\n', etime(clock, t1));
         
     end
+
+    X_a = X_wf_train;
+    N_a = N_train;
+    [Y_a, TT, ETT] = get_all_but_class_documents(Y_train, N_train, 17, TT, ETT);
     
-    [X_class_1, N_class_1, TT, ETT] = get_class_documents(X_wf_train, Y_train, N_train, 1, TT, ETT);
-    [X_class_20, N_class_20, TT, ETT] = get_class_documents(X_wf_train, Y_train, N_train, 20, TT, ETT);
-    [X_class_1_test, N_class_1_test, TT, ETT] = get_class_documents(X_wf_test, Y_test, N_test, 1, TT, ETT);
-    [X_class_20_test, N_class_20_test, TT, ETT] = get_class_documents(X_wf_test, Y_test, N_test, 20, TT, ETT);
+    X_a_test = X_wf_test;
+    N_a_test = N_test;
+    [Y_a_test, TT, ETT] = get_all_but_class_documents(Y_test, N_test, 17, TT, ETT);
 
-    X_a = vertcat(X_class_1, X_class_20);
-    Y_a = vertcat(zeros(N_class_1, 1)+1, zeros(N_class_20, 1) + 20);
-    N_a = N_class_1 + N_class_20;
-
-    X_a_test = vertcat(X_class_1_test, X_class_20_test);
-    Y_a_test = vertcat(zeros(N_class_1_test, 1) + 1, zeros(N_class_20_test,1)+20);
-    N_a_test = N_class_1_test + N_class_20_test;
-
-    [CCR, TT, ETT] = svm_cross_validation(X_a, Y_a ,N_a,5,-5, 15, false, 'linear', TT, ETT);
-    plot_CCR(1,CCR,2.^(-5:15),'Binary SVM classifier CCR for classes 1 and 20', 'part_a_CV_CCR.png');
+    [CCR, con_mat, TT, ETT] = svm_cross_validation_balance(X_a, Y_a ,N_a,5,-5, 15, false, 'linear', TT, ETT);
+    plot_CCR(1,CCR,2.^(-5:15),'Binary SVM classifier CCR for classes 17 and the rest', 'part_c_CV_CCR.png');
+    plot_confusion_matrix(2, con_mat, 2.^(-5:15), 'Binary SVM classfier Precision, Recall, and F-Score', 'part_d_CV_CCR.png');
     [max_value, max_index] = max(CCR);
-    [CCR, TT, ETT] = full_SVM(X_a, X_a_test, Y_a, Y_a_test, N_a, N_a_test, 2^(-5+max_index-1), 0, false, 'linear', TT, ETT);
+    [CCR, con_mat, TT, ETT] = full_SVM_balance(X_a, X_a_test, Y_a, Y_a_test, N_a, N_a_test, 2^(-5+max_index-1), 0, false, 'linear', TT, ETT);
     fprintf('Using constraint %d, with a value of 2^%d, CCR = %.2f%%\n', max_index, -5+max_index-1, CCR);
-
+    disp(con_mat);
 end
+
 
 
 %% Code complete

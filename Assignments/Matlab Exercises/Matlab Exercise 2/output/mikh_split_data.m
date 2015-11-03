@@ -1,4 +1,4 @@
-function [X_train, Y_train, N_train, X_test, Y_test, N_test, TT, ETT] = split_data(data, N, DATA_LENGTH_MULTIPLIER, PERCENTAGE_TRAINING, FEATURE_LENGTH, TT, ETT, label_mapping)
+function [X_train, Y_train, N_train, X_test, Y_test, N_test, TT, ETT] = mikh_split_data(data, N, DATA_LENGTH_MULTIPLIER, PERCENTAGE_TRAINING, FEATURE_LENGTH, TT, ETT, label_mapping)
 	fprintf('Spliting data into 2 sets...\t');
 	t1 = clock;
 

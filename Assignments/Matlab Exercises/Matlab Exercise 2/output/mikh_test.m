@@ -1,4 +1,4 @@
-function [Y_predicted] = test(X, W, n)
+function [Y_predicted] = mikh_test(X, W, n)
 
     %X - input samples [n x d]
     %W - Theta parameters [d x M]

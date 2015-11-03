@@ -1,4 +1,4 @@
-function [ CCR, con_mat, TT, ETT ] = svm_cross_validation_balance( X, Y, N, folds, boxconstraint_exponent_low, boxconstraint_exponent_high, autoscale, kernel_function, TT, ETT )
+function [ CCR, con_mat, TT, ETT ] = mikh_svm_cross_validation_balance( X, Y, N, folds, boxconstraint_exponent_low, boxconstraint_exponent_high, autoscale, kernel_function, TT, ETT )
     fprintf('Performing Cross Validation...\n');
     t1 = clock;
     
@@ -31,9 +31,7 @@ function [ CCR, con_mat, TT, ETT ] = svm_cross_validation_balance( X, Y, N, fold
             Y_train = vertcat(Y(1:testing_start_index-1, :), Y(testing_end_index+1:N,:));
         end
         
-        if min(Y_train) == max(Y_train)
-            
-        end
+
         
         N_train = length(Y_train);
         
@@ -41,7 +39,23 @@ function [ CCR, con_mat, TT, ETT ] = svm_cross_validation_balance( X, Y, N, fold
         Y_test = Y(testing_start_index:testing_end_index);
         N_test = length(Y_test);
         
-
+        
+        %in case there are not 2 classes
+        if min(Y_train) == max(Y_train)
+            current_class = min(Y_train);
+            index = 0;
+            for ii = 1:N_test
+                if Y_test(ii) ~= current_class
+                    index = ii;
+                    break;
+                end
+            end
+            temp = X_train(1,:);
+            X_train(1,:) = X_test(index, :);
+            X_test(index, :) = temp;
+            Y_train(1) = Y_test(index);
+            Y_test(index) = current_class;
+        end
 
         fprintf('Done. (%.2fs)\n', etime(clock,t4));
 

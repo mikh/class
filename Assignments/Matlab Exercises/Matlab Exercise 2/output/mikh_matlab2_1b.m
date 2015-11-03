@@ -40,7 +40,7 @@ if RUN_LOADING_AND_PROCESSING_PART_A_DATA == 1
     ETT = ETT + elapsed_time;
     fprintf('Done. (%.2fs)\n', elapsed_time);
 
-    [X_train, Y_train, N_train_d, X_test, Y_test, N_test_d, TT, ETT] = split_data(training_data, N_train, TRAIN_DATA_MULTIPLIER, training_division, FEATURE_LENGTH, TT, ETT, category_mapping);
+    [X_train, Y_train, N_train_d, X_test, Y_test, N_test_d, TT, ETT] = mikh_split_data(training_data, N_train, TRAIN_DATA_MULTIPLIER, training_division, FEATURE_LENGTH, TT, ETT, category_mapping);
 
     save('processed_part_a_data', 'X_train', 'Y_train', 'X_test', 'Y_test', 'N_train_d', 'N_test_d', 'TT', 'ETT');
 
@@ -50,7 +50,7 @@ end
 %% Train 
 
 if RUN_TRAINING_PART == 1
-    [W, f_theta, TT, ETT] = training_wrapper(X_train, Y_train, N_train_d, M, FEATURE_LENGTH, t_max, lambda, step_size, TT, ETT);
+    [W, f_theta, TT, ETT] = mikh_training_wrapper(X_train, Y_train, N_train_d, M, FEATURE_LENGTH, t_max, lambda, step_size, TT, ETT);
 end
 
 %% Part b results
@@ -65,11 +65,11 @@ if LOAD_TRAINING_FROM_FILE_FOR_PART_B == 1
 end
 
 if RUN_GRAPHING == 1
-    create_objective_function_graph(t_max, f_theta);
+    mikh_create_objective_function_graph(t_max, f_theta);
 end
 
 if RUN_TESTING == 1
-    [Y_pred, CCR, logloss, TT, ETT] = testing_wrapper(X_test, Y_test, N_test_d, W, t_max, TT, ETT);
+    [Y_pred, CCR, logloss, TT, ETT] = mikh_testing_wrapper(X_test, Y_test, N_test_d, W, t_max, TT, ETT);
 end
 
 

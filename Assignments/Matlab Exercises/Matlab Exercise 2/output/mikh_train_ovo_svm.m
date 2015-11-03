@@ -1,4 +1,4 @@
-function [SVM_classifiers, number_of_classifiers, training_time, TT, ETT] = train_ovo_svm(classes, class_lengths, num_classes, kernel_function, TT, ETT)
+function [SVM_classifiers, number_of_classifiers, training_time, TT, ETT] = mikh_train_ovo_svm(classes, class_lengths, num_classes, kernel_function, TT, ETT)
 	tic;
 	fprintf('Training One-Versus-One classfiers...\n');
 	t1 = clock;
@@ -25,7 +25,7 @@ function [SVM_classifiers, number_of_classifiers, training_time, TT, ETT] = trai
 			SVM_classifiers{index} = svmtrain(X, Y, 'autoscale', false, 'kernel_function', kernel_function, 'kernelcachelimit', 100000);
 
 			fprintf('Done. (%.2fs)\n', etime(clock, t2));
-            index = index + 
+            index = index + 1;
 		end
 	end
 

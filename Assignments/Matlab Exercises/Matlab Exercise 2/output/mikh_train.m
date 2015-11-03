@@ -1,4 +1,4 @@
-function [obj_fnc, grad_obj_fnc] = train(X, Y, C, W, n, m, d, lambda)
+function [obj_fnc, grad_obj_fnc] = mikh_train(X, Y, C, W, n, m, d, lambda)
 
     %X - input samples [n x d]
     %Y - labels for input samples [n x 1]
