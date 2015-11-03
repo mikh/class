@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.13)  2 NOV 2015 17:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.13)  3 NOV 2015 10:38
 entering extended mode
 **answers.tex
 (answers.tex
@@ -288,254 +288,274 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 50.
 
 (D:\Programs\MikTeX\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-<histogram_hours.png, id=1, 941.01563pt x 301.125pt>
+) [1
+
+
+{C:/Users/mikha_000/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<histogram_hours.png, id=9, 941.01563pt x 301.125pt>
 File: histogram_hours.png Graphic file (type png)
  <use histogram_hours.png>
-Package pdftex.def Info: histogram_hours.png used on input line 59.
+Package pdftex.def Info: histogram_hours.png used on input line 62.
 (pdftex.def)             Requested size: 658.70645pt x 210.78606pt.
 
-<histogram_days.png, id=2, 677.53125pt x 301.125pt>
+<histogram_days.png, id=10, 677.53125pt x 301.125pt>
 File: histogram_days.png Graphic file (type png)
  <use histogram_days.png>
-Package pdftex.def Info: histogram_days.png used on input line 61.
+Package pdftex.def Info: histogram_days.png used on input line 66.
 (pdftex.def)             Requested size: 474.26863pt x 210.78606pt.
 
-<histogram_district.png, id=3, 865.73438pt x 301.125pt>
+<histogram_district.png, id=11, 865.73438pt x 301.125pt>
 File: histogram_district.png Graphic file (type png)
 
 <use histogram_district.png>
-Package pdftex.def Info: histogram_district.png used on input line 63.
+Package pdftex.def Info: histogram_district.png used on input line 70.
 (pdftex.def)             Requested size: 606.00993pt x 210.78606pt.
 
-<crimes_hours.png, id=4, 266.49562pt x 235.63031pt>
+<crimes_hours.png, id=12, 266.49562pt x 235.63031pt>
 File: crimes_hours.png Graphic file (type png)
  <use crimes_hours.png>
-Package pdftex.def Info: crimes_hours.png used on input line 66.
+Package pdftex.def Info: crimes_hours.png used on input line 75.
 (pdftex.def)             Requested size: 266.49496pt x 235.62973pt.
 
-<crimes_hours_2.png, id=6, 261.22594pt x 395.22656pt>
+<crimes_hours_2.png, id=14, 261.22594pt x 395.22656pt>
 File: crimes_hours_2.png Graphic file (type png)
- <use crimes_hours_2.png>
-Package pdftex.def Info: crimes_hours_2.png used on input line 68.
+
+<use crimes_hours_2.png>
+Package pdftex.def Info: crimes_hours_2.png used on input line 77.
 (pdftex.def)             Requested size: 261.22528pt x 395.22559pt.
 
-Overfull \hbox (126.63988pt too wide) in paragraph at lines 59--80
+Overfull \hbox (126.63988pt too wide) in paragraph at lines 62--92
 | [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--80
+Underfull \hbox (badness 10000) in paragraph at lines 62--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--80
+Underfull \hbox (badness 10000) in paragraph at lines 62--92
 
  []
 
 
-Overfull \hbox (56.01308pt too wide) in paragraph at lines 59--80
+Underfull \hbox (badness 10000) in paragraph at lines 62--92
+
+ []
+
+
+Overfull \hbox (56.01308pt too wide) in paragraph at lines 62--92
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--80
+Underfull \hbox (badness 10000) in paragraph at lines 62--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--80
+Underfull \hbox (badness 10000) in paragraph at lines 62--92
 
  []
 
 
-Overfull \hbox (102.39612pt too wide) in paragraph at lines 59--80
+Underfull \hbox (badness 10000) in paragraph at lines 62--92
+
+ []
+
+
+Overfull \hbox (102.39612pt too wide) in paragraph at lines 62--92
 | [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--80
+Underfull \hbox (badness 10000) in paragraph at lines 62--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--80
+Underfull \hbox (badness 10000) in paragraph at lines 62--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--80
+Underfull \hbox (badness 10000) in paragraph at lines 62--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--80
+Underfull \hbox (badness 10000) in paragraph at lines 62--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--80
+Underfull \hbox (badness 10000) in paragraph at lines 62--92
 
  []
 
-[1
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--92
+
+ []
 
 
-{C:/Users/mikha_000/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./histo
-gram_hours.png (PNG copy)>] [2 <./histogram_days.png (PNG copy)> <./histogram_d
-istrict.png (PNG copy)>] [3 <./crimes_hours.png>]
-<CCR.png, id=24, 578.16pt x 433.62pt>
+Underfull \hbox (badness 10000) in paragraph at lines 62--92
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--92
+
+ []
+
+[2 <./histogram_hours.png (PNG copy)> <./histogram_days.png (PNG copy)>]
+[3 <./histogram_district.png (PNG copy)> <./crimes_hours.png>] [4 <./crimes_hou
+rs_2.png>] [5] <CCR.png, id=31, 578.16pt x 433.62pt>
 File: CCR.png Graphic file (type png)
  <use CCR.png>
-Package pdftex.def Info: CCR.png used on input line 82.
+Package pdftex.def Info: CCR.png used on input line 96.
 (pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
 
-<logloss.png, id=25, 578.16pt x 433.62pt>
+<logloss.png, id=32, 578.16pt x 433.62pt>
 File: logloss.png Graphic file (type png)
  <use logloss.png>
-Package pdftex.def Info: logloss.png used on input line 86.
+Package pdftex.def Info: logloss.png used on input line 100.
 (pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
 
-Overfull \hbox (44.27307pt too wide) in paragraph at lines 82--87
+Overfull \hbox (44.27307pt too wide) in paragraph at lines 96--103
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--87
+Underfull \hbox (badness 10000) in paragraph at lines 96--103
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--87
+Underfull \hbox (badness 10000) in paragraph at lines 96--103
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--87
+Underfull \hbox (badness 10000) in paragraph at lines 96--103
 
  []
 
 
-Overfull \hbox (44.27307pt too wide) in paragraph at lines 82--87
+Overfull \hbox (44.27307pt too wide) in paragraph at lines 96--103
 [] 
  []
 
-[4 <./crimes_hours_2.png>] [5 <./CCR.png (PNG copy)>]
-<part_a_CV_CCR.png, id=33, 578.16pt x 433.62pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--103
+
+ []
+
+[6 <./CCR.png (PNG copy)>] [7 <./logloss.png (PNG copy)>] [8]
+<part_a_CV_CCR.png, id=43, 578.16pt x 433.62pt>
 File: part_a_CV_CCR.png Graphic file (type png)
  <use part_a_CV_CCR.png>
-Package pdftex.def Info: part_a_CV_CCR.png used on input line 98.
+Package pdftex.def Info: part_a_CV_CCR.png used on input line 115.
 (pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
 
-Overfull \hbox (44.27307pt too wide) in paragraph at lines 98--103
+Overfull \hbox (44.27307pt too wide) in paragraph at lines 115--118
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--103
+Underfull \hbox (badness 10000) in paragraph at lines 115--118
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--103
-
- []
-
-[6 <./logloss.png (PNG copy)>] <part_b_CV_CCR.png, id=37, 578.16pt x 433.62pt>
+[9 <./part_a_CV_CCR.png (PNG copy)>]
+<part_b_CV_CCR.png, id=51, 578.16pt x 433.62pt>
 File: part_b_CV_CCR.png Graphic file (type png)
-
-<use part_b_CV_CCR.png>
-Package pdftex.def Info: part_b_CV_CCR.png used on input line 105.
+ <use part_b_CV_CCR.png>
+Package pdftex.def Info: part_b_CV_CCR.png used on input line 121.
 (pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
 
-Overfull \hbox (44.27307pt too wide) in paragraph at lines 105--112
+Overfull \hbox (44.27307pt too wide) in paragraph at lines 121--124
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--112
+Underfull \hbox (badness 10000) in paragraph at lines 121--124
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 105--112
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 105--112
-
- []
-
-[7 <./part_a_CV_CCR.png (PNG copy)>]
-<part_c_CV_CCR.png, id=46, 578.16pt x 433.62pt>
+[10 <./part_b_CV_CCR.png (PNG copy)>]
+<part_c_CV_CCR.png, id=55, 578.16pt x 433.62pt>
 File: part_c_CV_CCR.png Graphic file (type png)
  <use part_c_CV_CCR.png>
-Package pdftex.def Info: part_c_CV_CCR.png used on input line 114.
+Package pdftex.def Info: part_c_CV_CCR.png used on input line 127.
 (pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
 
-<part_c_confusion_matrix.png, id=47, 161.85469pt x 56.46094pt>
+<part_c_confusion_matrix.png, id=56, 161.85469pt x 56.46094pt>
 File: part_c_confusion_matrix.png Graphic file (type png)
 
 <use part_c_confusion_matrix.png>
-Package pdftex.def Info: part_c_confusion_matrix.png used on input line 122.
+Package pdftex.def Info: part_c_confusion_matrix.png used on input line 133.
 (pdftex.def)             Requested size: 161.85428pt x 56.46078pt.
 
-Overfull \hbox (44.27307pt too wide) in paragraph at lines 114--123
+Overfull \hbox (44.27307pt too wide) in paragraph at lines 127--136
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--123
+Underfull \hbox (badness 10000) in paragraph at lines 127--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--123
+Underfull \hbox (badness 10000) in paragraph at lines 127--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--123
+Underfull \hbox (badness 10000) in paragraph at lines 127--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--123
+Underfull \hbox (badness 10000) in paragraph at lines 127--136
 
  []
 
-[8 <./part_b_CV_CCR.png (PNG copy)>]
-<part_d_CV_CCR.png, id=52, 421.575pt x 316.18124pt>
+[11 <./part_c_CV_CCR.png (PNG copy)> <./part_c_confusion_matrix.png>]
+<part_d_CV_CCR.png, id=61, 421.575pt x 316.18124pt>
 File: part_d_CV_CCR.png Graphic file (type png)
  <use part_d_CV_CCR.png>
-Package pdftex.def Info: part_d_CV_CCR.png used on input line 125.
+Package pdftex.def Info: part_d_CV_CCR.png used on input line 139.
 (pdftex.def)             Requested size: 337.26045pt x 252.94533pt.
 
-<part_d_confusion_matrix.png, id=53, 162.6075pt x 54.9553pt>
+<part_d_confusion_matrix.png, id=62, 162.6075pt x 54.9553pt>
 File: part_d_confusion_matrix.png Graphic file (type png)
 
 <use part_d_confusion_matrix.png>
-Package pdftex.def Info: part_d_confusion_matrix.png used on input line 131.
+Package pdftex.def Info: part_d_confusion_matrix.png used on input line 145.
 (pdftex.def)             Requested size: 162.6071pt x 54.95515pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--132
+Underfull \hbox (badness 10000) in paragraph at lines 139--148
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--132
+Underfull \hbox (badness 10000) in paragraph at lines 139--148
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--132
+Underfull \hbox (badness 10000) in paragraph at lines 139--148
 
  []
 
-[9 <./part_c_CV_CCR.png (PNG copy)> <./part_c_confusion_matrix.png>] [10 <./par
-t_d_CV_CCR.png (PNG copy)> <./part_d_confusion_matrix.png>] (answers.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--148
+
+ []
+
+[12 <./part_d_CV_CCR.png (PNG copy)> <./part_d_confusion_matrix.png>] [13]
+(answers.aux) ) 
 Here is how much of TeX's memory you used:
  4524 strings out of 493673
  63848 string characters out of 3147619
@@ -543,22 +563,21 @@ Here is how much of TeX's memory you used:
  7803 multiletter control sequences out of 15000+200000
  21391 words of font info for 57 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 41i,10n,47p,258b,214s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:
-\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ec
-cc1200.pk> <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
-n\ec\dpi600\eccc1440.pk> <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\
-ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\mikha_000\AppData\Local\MiKTeX
-\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <C:\Users\mikha_000\AppDat
-a\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm2074.pk> <C:\Users\mi
-kha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1095.pk
-><D:/Programs/MikTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Programs/Mik
-TeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Programs/MikTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr8.pfb><D:/Programs/MikTeX/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb><D:/Programs/MikTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on answers.pdf (10 pages, 201687 bytes).
+ 41i,10n,47p,406b,214s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
+nappen\ec\dpi600\eccc1200.pk> <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\font
+s\pk\ljfour\jknappen\ec\dpi600\eccc1440.pk> <C:\Users\mikha_000\AppData\Local\M
+iKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\mikha_000\A
+ppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <C:\Use
+rs\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm20
+74.pk> <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
+\dpi600\eccc1095.pk><D:/Programs/MikTeX/fonts/type1/public/amsfonts/cm/cmmi10.p
+fb><D:/Programs/MikTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Programs/Mi
+kTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Programs/MikTeX/fonts/type1/pu
+blic/amsfonts/cm/cmsy8.pfb>
+Output written on answers.pdf (13 pages, 190586 bytes).
 PDF statistics:
- 239 PDF objects out of 1000 (max. 8388607)
+ 241 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

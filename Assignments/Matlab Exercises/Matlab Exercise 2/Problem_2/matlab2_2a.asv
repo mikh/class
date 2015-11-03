@@ -147,12 +147,10 @@ if RUN_PART_E == 1
         fprintf('Done. (%.2fs)\n', etime(clock, t1));
     end
 
-    if RUN_CLASS_SEPERATION == 1
-        classes = cell(20,1);
-        class_sizes = zeros(20,1);
-        for ii = 1:20
-            [classes{ii}, class_sizes(ii), TT, ETT] = get_class_documents(X_wf_train, Y_train, N_train, ii, TT, ETT);
-        end
+    classes = cell(20,1);
+    class_sizes = zeros(20,1);
+    for ii = 1:20
+        [classes{ii}, class_sizes(ii), TT, ETT] = get_class_documents(X_wf_train, Y_train, N_train, ii, TT, ETT);
     end
     [SVM_classifiers, num_classifiers, training_time, TT, ETT] = train_ovo_svm(classes, class_sizes, 20, 'linear', TT, ETT);
     [CCR, confusion_matrix, testing_time, TT, ETT] = test_OVO_SVM(SVM_classifiers, num_classifiers, X_wf_test, Y_test, N_test, TT, ETT);
