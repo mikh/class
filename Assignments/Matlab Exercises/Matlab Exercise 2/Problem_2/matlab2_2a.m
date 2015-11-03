@@ -12,12 +12,12 @@ ETT = 0;
 
 LOAD_BASE_DATA = 0;
 RUN_PART_A = 0;
-LOAD_DATA_FOR_PART_A = 0;
+LOAD_DATA_FOR_PART_A = 1;
 RUN_PART_B = 0;
 RUN_PART_CD = 0;
-RUN_PART_E = 1;
+RUN_PART_E = 0;
 RUN_CLASS_SEPERATION = 0;
-RUN_PART_F = 0;
+RUN_PART_F = 1;
 
 %% Load Data
 if LOAD_BASE_DATA == 1
@@ -165,7 +165,7 @@ if RUN_PART_E == 1
         for jj = 1:c
             fprintf(fid, '%d\t', confusion_matrix(ii,jj));
         end
-        fprintf('\n');
+        fprintf(fid,'\n');
     end
 end
 
@@ -195,7 +195,7 @@ if RUN_PART_F == 1
         for jj = 1:c
             fprintf(fid, '%d\t', confusion_matrix(ii,jj));
         end
-        fprintf('\n');
+        fprintf(fid,'\n');
     end
 end
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.13)  3 NOV 2015 10:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.13)  3 NOV 2015 11:17
 entering extended mode
 **answers.tex
 (answers.tex
@@ -554,30 +554,73 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--148
 
  []
 
-[12 <./part_d_CV_CCR.png (PNG copy)> <./part_d_confusion_matrix.png>] [13]
-(answers.aux) ) 
+[12 <./part_d_CV_CCR.png (PNG copy)> <./part_d_confusion_matrix.png>]
+<part_e_confusion_matrix.png, id=67, 495.35063pt x 338.76563pt>
+File: part_e_confusion_matrix.png Graphic file (type png)
+
+<use part_e_confusion_matrix.png>
+Package pdftex.def Info: part_e_confusion_matrix.png used on input line 156.
+(pdftex.def)             Requested size: 495.34943pt x 338.76479pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--157
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--157
+
+ []
+
+
+Overfull \hbox (77.09387pt too wide) in paragraph at lines 152--157
+[] 
+ []
+
+[13 <./part_e_confusion_matrix.png>]
+<part_f_confusion_matrix.png, id=73, 503.63156pt x 344.78813pt>
+File: part_f_confusion_matrix.png Graphic file (type png)
+
+<use part_f_confusion_matrix.png>
+Package pdftex.def Info: part_f_confusion_matrix.png used on input line 164.
+(pdftex.def)             Requested size: 503.63033pt x 344.78728pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--165
+
+ []
+
+
+Overfull \hbox (85.37477pt too wide) in paragraph at lines 160--165
+[] 
+ []
+
+[14 <./part_f_confusion_matrix.png>] (answers.aux) ) 
 Here is how much of TeX's memory you used:
- 4524 strings out of 493673
- 63848 string characters out of 3147619
+ 4534 strings out of 493673
+ 64156 string characters out of 3147619
  287459 words of memory out of 3000000
- 7803 multiletter control sequences out of 15000+200000
+ 7811 multiletter control sequences out of 15000+200000
  21391 words of font info for 57 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  41i,10n,47p,406b,214s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
-nappen\ec\dpi600\eccc1200.pk> <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\font
-s\pk\ljfour\jknappen\ec\dpi600\eccc1440.pk> <C:\Users\mikha_000\AppData\Local\M
-iKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\mikha_000\A
-ppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <C:\Use
-rs\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm20
-74.pk> <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
-\dpi600\eccc1095.pk><D:/Programs/MikTeX/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb><D:/Programs/MikTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Programs/Mi
-kTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Programs/MikTeX/fonts/type1/pu
-blic/amsfonts/cm/cmsy8.pfb>
-Output written on answers.pdf (13 pages, 190586 bytes).
+ <C:\Users\mikha_000\AppDat
+a\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1200.pk> <C:\Users\mi
+kha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1440.pk
+> <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
+00\ecrm1095.pk> <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
+nappen\ec\dpi600\ecrm1440.pk> <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\font
+s\pk\ljfour\jknappen\ec\dpi600\ecrm2074.pk> <C:\Users\mikha_000\AppData\Local\M
+iKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1095.pk><D:/Programs/MikTeX/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Programs/MikTeX/fonts/type1/public/
+amsfonts/cm/cmr10.pfb><D:/Programs/MikTeX/fonts/type1/public/amsfonts/cm/cmr8.p
+fb><D:/Programs/MikTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on answers.pdf (14 pages, 228880 bytes).
 PDF statistics:
- 241 PDF objects out of 1000 (max. 8388607)
+ 248 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
