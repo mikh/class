@@ -1,0 +1,4 @@
+http://www.ai-junkie.com/ann/som/som1.html
+https://www.willamette.edu/~gorr/classes/cs449/Unsupervised/SOM.html
+http://users.ics.aalto.fi/jhollmen/dippa/node9.html
+http://davis.wpi.edu/~matt/courses/soms/

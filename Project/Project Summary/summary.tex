@@ -1,0 +1,106 @@
+\documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{graphicx}
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+	\normalfont \normalsize 
+	\textsc{EC500 - Introduction to Learning From Data} \\ [25pt] % Your university, school and/or department name(s)
+	\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+	\huge Project Summary \\ % The assignment title
+	\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{Mikhail Andreev} % Your name
+
+\date{\normalsize\today} % Today's date or a custom date
+
+\begin{document}
+	
+	\maketitle % Print the title
+	
+
+	%----------------------------------------------------------------------------------------
+	%	PROBLEM 1
+	%----------------------------------------------------------------------------------------
+	
+	
+	\section{Problem Description}
+	In this project I will be investigating Neural Networks and how they are applicable to the classification problem. Specifically, I will be researching two problems: image classification and speech classification. Both of these issues are large areas of research in the machine learning, and scientific community. 
+	\\\\
+	Although many of the neural networks I will be investigating have been applied to these issues, I seek to get a performance metric comparison of the different neural network methods on the problems. Furthermore, after having ascertained the most robust solution, I aim to create a demo which will be able to perform classification in real time using an easily accessible system. While I list two problems here for analysis my plan is to narrow down the scope to either image or vocal classification based on ease of preprocessing and quality of sample data. 
+	
+	\section{Literature}
+	Within the literature there are several different neural network types that can be used for classification. The most popular of these are: Multi-Layer Perceptrons, Radial-basis function networks, Jordan or Elman recurrent MLPs, Hopfield Networks, Self-Organizing Feature Maps, Adaptive Resonance Theory, Boltzmann machines, Convolutional Networks, and Deep-Learning Networks. Each of these strategies has distinct advantages and disadvantages when used for machine learning problems. Some examples are: MLP and RBF can be used both in classification and regression problems. SOM and ART networks are applicable in classification and clustering tasks. Hopfield Networks and Boltzmann Machines are usually used in classification. Convolutional Networks and Deep-Learning are new to the field and are being applied to many classification problems.
+	\\\\
+	My approach to these strategies will be to select four of the algorithms for implementation and observe their performance when dealing with the complex classification problem of image and vocal processing.
+	
+	
+	
+	\section{Proposed Solution}
+	\subsection{Primary Solution}
+	The desired goal for the solution will be to analyze the performance of approximately four of the algorithms listed above. Then, using these results, build a robust demo that will be capable of real-time classification at a reasonably high level of accuracy. The demo should be easy to submit new testing samples to, making verification easy. This will involve preprocessing the training samples to get correct features. Following this,the algorithm must be trained on a large set of examples. After this is complete and testing of the different methods establishes the dominant algorithm, a submission and automated testing system will be implemented to give results.
+	
+	\subsection{Fall-back Solution}
+	If the desired goal proves to be unattainable in the time alloted to the project, the primary focus will be on achieving results  for several algorithms, even if a complete form of preprocessing cannot be done. The focus will also to be on increasing the accuracy of testing as much as possible.
+	
+	\subsection{Data Sets Used}
+	The ACL SIGLEX Phonetic Library will be the primary source for the vocal dataset. The USC-SIPI Image Database will be the primary source for the image classification problem. These may be expanded as needed for additional or more varied samples.
+	
+	\subsection{Code To Be Written}
+	As mentioned above, most of the code for the algorithms will have to be written in Python. The code for the demo I already have from other projects, so the majority of work there will be involved in linking it into this system.
+	
+	\section{Distribution of Labor}
+	Since I am the sole team member, I will complete all the work.
+	
+	\section{References}
+	
+	Some of the references used:
+	\\\\
+	Universal Approximation Using Radial-Basis-Function Networks by J. Park and I. W. Sandberg
+	\\\\
+	Machine Learning: Multi Layer Perceptrons by Prof. Dr. Martin Riedmiller
+	\\\\
+	Hopfield Network by Alice Julien-Laferriere
+	\\\\
+	Deep Neural Networks for Acoustic Modeling in Speech Recognition by Geoffrey Hinton
+	\\\\
+	Convolutional Neural Network Committees For Handwritten Character
+	Classification by Dan Claudiu Cires, Ueli Meier, Luca Maria Gambardella, Jurgen Schmidhuber
+	\\\\
+	Deep Boltzman Machines by Ruslan Salakhutdinov and Geoffrey Hinton
+	\\\\	
+	Adaptive Resonance Theory by Stephen Grossberg.
+	
+	
+	
+\end{document}

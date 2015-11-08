@@ -1,0 +1,3 @@
+http://deeplearning.net/tutorial/mlp.html
+https://www.hiit.fi/u/ahonkela/dippa/node41.html
+http://web.cecs.pdx.edu/~mm/MachineLearningWinter2014/NNs.pdf

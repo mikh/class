@@ -1,0 +1,3 @@
+https://en.wikipedia.org/wiki/Boltzmann_machine
+http://deeplearning.net/tutorial/rbm.html
+http://blog.echen.me/2011/07/18/introduction-to-restricted-boltzmann-machines/
