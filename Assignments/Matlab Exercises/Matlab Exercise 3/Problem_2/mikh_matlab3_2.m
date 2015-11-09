@@ -16,7 +16,7 @@ fprintf('Done. (%.2fs)\n', etime(clock, t2));
 fprintf('Implementing OLS...\t');
 t2 = clock;
 W = (xData'*xData)^(-1) * xData' * yData;
-b = yData - xData * W;
+b = mean(yData - xData * W);
 
 y_pred = (xData' .* W)' + b;
 MSE = 1/length(xData) * sum(abs(yData - y_pred).^2);
