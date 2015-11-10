@@ -28,29 +28,14 @@ fprintf('MAD = %f\n', MAD);
 fprintf('Done. (%.2fs)\n', etime(clock, t2));
 
 %% part b
-fprintf('Using robustfit...\n');
+fprintf('Using robustfit...\t');
 t2 = clock;
 r1 = robustfit(xData, yData, 'cauchy', 2.385, 'on');
 r2 = robustfit(xData, yData, 'fair', 1.400, 'on');
 r3 = robustfit(xData, yData, 'huber', 1.345, 'on');
 r4 = robustfit(xData, yData, 'talwar', 2.795, 'on');
 
-MSE_1 = 1/length(xData) * sum(abs(yData - (xData' .* r1(2) + r1(1))').^2);
-MSE_2 = 1/length(xData) * sum(abs(yData - (xData' .* r2(2) + r2(1))').^2);
-MSE_3 = 1/length(xData) * sum(abs(yData - (xData' .* r3(2) + r3(1))').^2);
-MSE_4 = 1/length(xData) * sum(abs(yData - (xData' .* r4(2) + r4(1))').^2);
-
-MAD_1 = 1/length(xData) * sum(abs(yData - (xData' .* r1(2) + r1(1))'));
-MAD_2 = 1/length(xData) * sum(abs(yData - (xData' .* r2(2) + r2(1))'));
-MAD_3 = 1/length(xData) * sum(abs(yData - (xData' .* r3(2) + r3(1))'));
-MAD_4 = 1/length(xData) * sum(abs(yData - (xData' .* r4(2) + r4(1))'));
-
-fprintf('For %s, MSE = %f, MAD = %f\n', 'cauchy', MSE_1, MAD_1);
-fprintf('For %s, MSE = %f, MAD = %f\n', 'fair', MSE_2, MAD_2);
-fprintf('For %s, MSE = %f, MAD = %f\n', 'huber', MSE_3, MAD_3);
-fprintf('For %s, MSE = %f, MAD = %f\n', 'talwar', MSE_4, MAD_4);
-
-fprintf('For huber, w = %f, b = %f\n', r3(2), r3(1));
+MSE_1 = 
 
 figure(1);
 hold on;
