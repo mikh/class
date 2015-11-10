@@ -76,7 +76,19 @@
 	\\\\
 	The value of $w_{OLS} = 1.2476$. The value of $b_{OLS} = 2.528$. The calculated value of $MSE = 1.390425$. The calculated value of $MAD = 0.965729$.
 	\\\\\\
-	
+	For cauchy, $MSE = 0.299548$, $MAD = 0.242677$.\\
+	For fair, $MSE = 0.286079$, $MAD = 0.246835$.\\
+	For huber, $MSE = 0.292181$, $MAD = 0.245091$.\\
+	For talwar, $MSE = 0.302416$, $MAD = 0.243493$.\\
+	Compared to the above values for OLS, we see the MSE and MAD values are much lower for robustfit. This is due to the fact that robustfit ignores outliers and focus on the majority of proximal points. However, OLS takes everything into account, making an outlier have a large effect on the overall curve.
+	\\\\
+	The values for huber are: $w_{huber} = 0.127472$, $b_{huber} = 3.094357$.
+	\\\\
+	We can see the overall graph here:
+	\\\\
+	\hspace*{-3cm}\includegraphics[scale=0.7]{all_methods_graph}
+	\\\\
+	As mentioned above, we see the 4 robustfit functions are very closely aligned to the majority of points, ignoring outliers. However, OLS is deeply influenced by the outliers, and thus does not make a good fit for the majority of the data.
 	
 	
 	\newpage
