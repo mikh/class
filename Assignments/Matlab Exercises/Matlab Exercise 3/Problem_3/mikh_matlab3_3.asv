@@ -68,18 +68,15 @@ for ii = 1:14
     res1 = sum(abs(ytrain - res1).^2)*1/length(ytrain);
     res2 = sum(abs(ytest - res2).^2)*1/length(ytest);
     
-    predict(ii,1) = res1;
-    predict(ii,2) = res2;
+    predict(ii,1} = res1;
+    predict{ii,2} = res2;
 end
 figure(2);
 hold on
 grid on
 p1 = plot(1:14, predict(:,1), 'b', 'LineWidth', 2);
 p2 = plot(1:14, predict(:,2), 'r', 'LineWidth', 2);
-title('MSE rates of training and testing sets for different orders of polynomial resgression');
-xlabel('polynomial order');
-ylabel('MSE');
-legend([p1,p2], 'Training MSE', 'Testing MSE');
+
 y_pred_train = zeros(length(ytrain),1);
 
 

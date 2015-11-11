@@ -93,7 +93,17 @@
 	
 	\newpage
 	\section{Overfitting and Ridge Regression}
-	
+	Here we have the graph for the polynomial regressions of order 2, 6, 10, and 14.
+	\\\\
+	\hspace*{-3cm}\includegraphics[scale=0.8]{4_order_polynomials}
+	\\\\
+	From the graph we can see how as the order of the polynomial increases, it fits the data more exactly. This unfortunately also leads to overfitting, so different points will be poorly recognized.
+	\\\\
+	The following graphs displays the MSE rates for different polynomials on the training and testing sets.
+	\\\\
+	\includegraphics[]{MSE_rates}
+	\\\\
+	From the graph we can see for the training set, as polynomial order increases, the MSE rate goes down. This is due to overfitting, making the solution fit very closely to the training set, leading to low error. However, because of this our MSE rate for the testing set rises at the same time. Since the data is heavily fitted to the training set, it is not well adapted to the testing set. However, lower order polynomials give lower MSE error since the regression is complex enough to predict the value of the data, but not overfitted.
 	\newpage
 	\section{Lasso vs Ridge}
 	
