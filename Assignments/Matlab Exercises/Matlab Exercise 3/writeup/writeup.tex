@@ -112,5 +112,16 @@
 	From this graph we can see that the regularized version is much less curvy, and less overfitted. This allows it to have a better MSE to the testing data.
 	\newpage
 	\section{Lasso vs Ridge}
+	Here we can see the graph for the LASSO coefficients using different $\lambda$:
+	\\\\
+	\hspace*{-3cm}\includegraphics[scale=0.8]{coeff_vs_lambda}
+	\\\\
+	Using the generated coefficients we can calculate the MSE for each $\lambda$:
+	\\\\
+	\includegraphics[]{MSE_vs_lambda}
+	\\\\
+	We can see that as $\lambda$ increases, the coefficients change only slightly, until we get to a $\lambda$ between 7 and 8 which causes a large change in the coefficient value. At the same time we see the MSE rate of the testing set fall slightly, and that of the training set to rise slightly, indicating a large change point in the function. 
+	\\\\\\
+	The last features to converge are the Gleason score and the percentage Gleason score 4 or 5. This information can be used by giving these features more weight in the regression allowing them to have a larger effect on the outcome. Since they are the more significant, emphasizing them may allow for more accurate prediction.
 	
 \end{document}
