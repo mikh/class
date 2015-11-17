@@ -1,0 +1,2 @@
+[PATHS]
+dataset_path = D:\Digital_Library\data\Documents\Class\EC500_Learning_From_Data\Project\Dataset\Caltech_Dataset
