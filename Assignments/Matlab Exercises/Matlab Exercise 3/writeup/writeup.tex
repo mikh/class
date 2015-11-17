@@ -112,5 +112,27 @@
 	From this graph we can see that the regularized version is much less curvy, and less overfitted. This allows it to have a better MSE to the testing data.
 	\newpage
 	\section{Lasso vs Ridge}
+	Here we can see the graph for the LASSO coefficients using different $\lambda$:
+	\\\\
+	\hspace*{-3cm}\includegraphics[scale=0.8]{coeff_vs_lambda}
+	\\\\
+	Using the generated coefficients we can calculate the MSE for each $\lambda$:
+	\\\\
+	\includegraphics[]{MSE_vs_lambda}
+	\\\\
+	We can see that as $\lambda$ increases, the coefficients change only slightly, until we get to a $\lambda$ between 7 and 8 which causes a large change in the coefficient value. At the same time we see the MSE rate of the testing set fall slightly, and that of the training set to rise slightly, indicating a large change point in the function. 
+	\\\\\\
+	The last features to converge are the Gleason score and the percentage Gleason score 4 or 5. This information can be used by giving these features more weight in the regression allowing them to have a larger effect on the outcome. Since they are the more significant, emphasizing them may allow for more accurate prediction.
+	\\\\\\
+	Using the same method for ridge regression we can get a graph of the coefficients versus $\lambda$:
+	\\\\
+	\hspace*{-3cm}\includegraphics[scale=0.8]{coeff_vs_lambda_ridge}
+	\\\\
+	And for the MSE rate:
+	\\\\
+	\includegraphics[]{MSE_vs_lambda_ridge}
+	\\\\
+	From the first graph we can see that unlike lasso regression, ridge regression has the coefficient values highest at $\lambda=0$, and the farther $\lambda$ goes from 0, the closer the coefficients converge to 0. Similarly, the higher the values of the coefficients, the higher the error rate for the testing samples, and the lower the error rate of the training samples. This makes sense since at $\lambda=0$ there is no regularization. Overall, we see far lower error rates in the testing samples using ridge regression than we see in LASSO regression.
+	
 	
 \end{document}
