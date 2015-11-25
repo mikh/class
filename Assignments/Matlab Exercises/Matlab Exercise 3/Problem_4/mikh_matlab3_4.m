@@ -1,6 +1,7 @@
 %% Init
 clear;
 clc;
+close all;
 
 fprintf('Running matlab3 part 4...\n');
 t1 = clock;
@@ -64,7 +65,7 @@ grid on
 plots = zeros(8,1);
 lambda = -5:10;
 for i = 1:8
-    plots(i) = plot(lambda, all_B(:,i), 'Color', colors{i}, 'LineWidth', 2);
+    plots(i) = semilogx(log(lambda), all_B(:,i), 'Color', colors{i}, 'LineWidth', 2);
 end
 title('Coefficient values for different lambda');
 xlabel('log(lambda)');
@@ -93,8 +94,8 @@ figure(2);
 hold on
 grid on
 lambda = -5:10;
-p1 = plot(lambda, MSE_train, 'r', 'LineWidth', 2);
-p2 = plot(lambda, MSE_test, 'b', 'LineWidth', 2);
+p1 = semilogx(lambda, MSE_train, 'r', 'LineWidth', 2);
+p2 = semilogx(lambda, MSE_test, 'b', 'LineWidth', 2);
 title('MSE rate for different lambda');
 xlabel('log(lambda)');
 ylabel('MSE');
@@ -129,7 +130,7 @@ hold on
 grid on
 plots = zeros(8,1);
 for i = 1:8
-    plots(i) = plot(lambda, ridge_B(:,i), 'Color', colors{i}, 'LineWidth', 2);
+    plots(i) = semilogx(lambda, ridge_B(:,i), 'Color', colors{i}, 'LineWidth', 2);
 end
 title('Coefficient values for different lambda usind ridge');
 xlabel('log(lambda)');
@@ -158,8 +159,8 @@ figure(5);
 hold on
 grid on
 lambda = -5:10;
-p1 = plot(lambda, MSE_train_ridge, 'r', 'LineWidth', 2);
-p2 = plot(lambda, MSE_test_ridge, 'b', 'LineWidth', 2);
+p1 = semilogx(lambda, MSE_train_ridge, 'r', 'LineWidth', 2);
+p2 = semilogx(lambda, MSE_test_ridge, 'b', 'LineWidth', 2);
 title('MSE rate for different lambda using ridge');
 xlabel('log(lambda)');
 ylabel('MSE');

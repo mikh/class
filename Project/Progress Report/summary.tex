@@ -1,0 +1,78 @@
+\documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{graphicx}
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{hyperref}
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+	\normalfont \normalsize 
+	\textsc{EC500 - Introduction to Learning From Data} \\ [25pt] % Your university, school and/or department name(s)
+	\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+	\huge Project Progress Report \\ % The assignment title
+	\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{Mikhail Andreev} % Your name
+
+\date{\normalsize\today} % Today's date or a custom date
+
+\begin{document}
+	
+	\maketitle % Print the title
+	
+
+	%----------------------------------------------------------------------------------------
+	%	PROBLEM 1
+	%----------------------------------------------------------------------------------------
+	
+	
+	\section{Problem Update}
+	Narrowing my focus from the problem presented in the Project Summary, I will be working on applying neural network classification to different images. More specifically, given a training set of about 100 classes of images, my goal is to successfully identify incoming test images into the correct category. To accomplish this, I will be using the Multi-Layer Perceptron neural network, and then comparing it to a Deep learning neural network in performance. The Multi-Layer Perceptron network comes with many choices for activation function, network topology, and minimization approach. My goal is to examine the effects of changing these factors, and determine which one will be most successful in correct image classification. Although I will be unable to build a full deep learning network due to time and computational constraints, I will examine the principles behind the network and attempt to integrate them into an MLP to see if I can change the performance.
+	
+	\section{Working Solution}
+	\subsection{Image Pre-Processing}
+	To ready the input images for the neural network, I have pre-processed them to make them all the same size, leading to some conversions.
+	
+	\subsection{Multi-Layer Perceptron solution}
+	For the basic MLP solution, I implemented a neural network of 90000, input nodes, 2 hidden layers of 9000 nodes each and 1 output node. The activation function being used was a linear activation, the minimization approach was a generic gradient descent algorithm. Using these parameters as a proof-of-concept approach I input to train 2 classes, with 10 images each. These were then tested on 10 input examples. The reason there are so many input nodes is because the images are 300x300 and each input takes in one pixel. One of my preprocessing goals is to reduce the number of inputs used.
+	
+	\subsection{Current Results}
+	The end result of this first test was a 20\% correct rate. This indicates that two of the samples were categorized correctly. In addition to these results, training took a long time due to in-efficient calculation methods. However, now with the code in place, it will be easy to reduce the unnecessary complexity and test on larger samples with a wider variety of parameters.
+	
+	\section{Data Sets Used}
+	The image dataset being used is the Caltech Image 101 dataset available at \url{http://www.vision.caltech.edu/Image_Datasets/Caltech101/}. If testing with the algorithms leaves sufficient time, I will attempt to integrate the 256-category dataset also provided by Caltech.
+	
+	\section{Future Plans}
+	Currently I have achieved basic pre-processing and an MLP network that uses a basic framework for its parameters. My next goals are to using more advanced techniques for pre-processing to allow for better classification. In addition, I aim to tweak the parameters and mathematical basis of the MLP network to find which is best suited for image classification. 
+			
+	
+\end{document}

@@ -100,6 +100,8 @@ def get_all_files_in_directory(path):
 
 #gets all files in a directory(non-recursive) with the given extension
 def get_all_files_in_directory_with_extension(path, extension):
+	if extension == None:
+		return get_all_files_in_directory(path)
 	results = []
 	for f in os.listdir(path):
 		if f.endswith(extension):
