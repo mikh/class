@@ -1,3 +1,4 @@
 Problem_1/mikh_matlab4_1a.m
 Problem_1/mikh_matlab4_1b.m
 Problem_1/mikh_matlab4_1c.m
+Problem_2/mikh_matlab4_2.m
