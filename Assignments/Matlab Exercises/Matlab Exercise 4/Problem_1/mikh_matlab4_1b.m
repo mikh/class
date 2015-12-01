@@ -1,6 +1,7 @@
 %% start
 clc;
 clear;
+close all
 fprintf('Running Matlab 4 Problem 1 b\n');
 
 %% create D1 D2
@@ -16,8 +17,8 @@ S1 = zeros(N, N);
 S2 = zeros(N, N);
 for ii = 1:N
     for jj = 1:N
-        S1(ii, jj) = exp( -1*(sqrt((Data1(ii,1)-Data1(jj,1))^2 + (Data1(ii,2)-Data1(jj,2))^2))/(2*sigma^2));
-        S2(ii, jj) = exp( -1*(sqrt((Data2(ii,1)-Data2(jj,1))^2 + (Data2(ii,2)-Data2(jj,2))^2))/(2*sigma^2));
+        S1(ii, jj) = exp( -1*((Data1(ii,1)-Data1(jj,1))^2 + (Data1(ii,2)-Data1(jj,2))^2)/(2*sigma^2));
+        S2(ii, jj) = exp( -1*((Data2(ii,1)-Data2(jj,1))^2 + (Data2(ii,2)-Data2(jj,2))^2)/(2*sigma^2));
     end
 end
 W1 = S1;

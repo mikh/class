@@ -75,7 +75,7 @@
 	\\\\\\
 	After applying spectral clustering we get the following output using symmetric normalization:
 	\\\\
-	\hspace*{-3cm}\includegraphics[scale=0.8]{symmetric_spectral_clustering}
+	\hspace*{-4cm}\includegraphics[scale=0.7]{symmetric_spectral_clustering}
 	\\\\\\
 	In the next figure we can see the 3D interpretation of the eigenvectors, showing that all three clusters are clearly separate in eigenspace:
 	\\\\
@@ -102,4 +102,10 @@
 	For k = 5 we can plot the clusters found onto the Google map:
 	\\\\
 	\hspace*{-1cm}\includegraphics[]{google_map}
+%	\\\\\\
+%	Using a value of $\sigma=0.01$ is leading to poor results overall. As can be seen from the purity graph, our value doesn't go above 0.5, or half the points are correctly clustered. Further the clusters found for k=5 show that there are large inconsistencies in their distribution. If we switch back to using a $\sigma=0.2$ we get much better results, as indicated below:
+%	\\\\\\
+%	\hspace*{-1cm}\includegraphics[scale=0.8]{purity_sigma_2}
+%	\\\\
+%	\hspace*{-1cm}\includegraphics[]{google_map_signa2}
 \end{document}

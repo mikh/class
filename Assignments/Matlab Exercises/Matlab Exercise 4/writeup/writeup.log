@@ -1,31 +1,31 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.13)  1 DEC 2015 02:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.9)  1 DEC 2015 12:36
 entering extended mode
 **writeup.tex
 (writeup.tex
 LaTeX2e <2015/01/01> patch level 2
 Babel <3.9m> and hyphenation patterns for 69 languages loaded.
-(D:\Programs\MikTeX\tex\latex\koma-script\scrartcl.cls
+("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrartcl.cls"
 Document Class: scrartcl 2015/10/03 v3.19a KOMA-Script document class (article)
 
-(D:\Programs\MikTeX\tex\latex\koma-script\scrkbase.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrkbase.sty"
 Package: scrkbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-dependent 
 basics and keyval usage)
 
-(D:\Programs\MikTeX\tex\latex\koma-script\scrbase.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrbase.sty"
 Package: scrbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-independent
  basics and keyval usage)
 
-(D:\Programs\MikTeX\tex\latex\graphics\keyval.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(D:\Programs\MikTeX\tex\latex\koma-script\scrlfile.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrlfile.sty"
 Package: scrlfile 2015/10/03 v3.19a KOMA-Script package (loading files)
 
 Package scrlfile, 2015/10/03 v3.19a KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
-))) (D:\Programs\MikTeX\tex\latex\koma-script\tocbasic.sty
+))) ("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\tocbasic.sty"
 Package: tocbasic 2015/10/03 v3.19a KOMA-Script package (handling toc-files)
 )
 Package tocbasic Info: omitting babel extension for `toc'
@@ -40,11 +40,11 @@ Package tocbasic Info: omitting babel extension for `lot'
 Class scrartcl Info: File `scrsize11pt.clo' used to setup font sizes on input l
 ine 2033.
 
-(D:\Programs\MikTeX\tex\latex\koma-script\scrsize11pt.clo
+("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrsize11pt.clo"
 File: scrsize11pt.clo 2015/10/03 v3.19a KOMA-Script font size class option (11p
 t)
 )
-(D:\Programs\MikTeX\tex\latex\koma-script\typearea.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\typearea.sty"
 Package: typearea 2015/10/03 v3.19a KOMA-Script package (type area)
 
 Package typearea, 2015/10/03 v3.19a KOMA-Script package (type area)
@@ -88,26 +88,26 @@ LaTeX Info: Redefining \textsubscript on input line 3906.
 \c@figure=\count86
 \c@table=\count87
 \bibindent=\dimen102
-) (D:\Programs\MikTeX\tex\latex\base\fontenc.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(D:\Programs\MikTeX\tex\latex\base\t1enc.def
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-(D:\Programs\MikTeX\tex\generic\babel\babel.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2015/08/03 3.9m The Babel package
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(D:\Programs\MikTeX\tex\latex\00miktex\bblopts.cfg
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
 File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
 )
-(D:\Programs\MikTeX\tex\latex\babel-english\english.ldf
+("C:\Program Files\MiKTeX 2.9\tex\latex\babel-english\english.ldf"
 Language: english 2012/08/20 v3.3p English support from the babel system
 
-(D:\Programs\MikTeX\tex\generic\babel\babel.def
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2015/08/03 3.9m Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
@@ -116,24 +116,24 @@ File: babel.def 2015/08/03 3.9m Babel common definitions
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
-(D:\Programs\MikTeX\tex\latex\amsmath\amsmath.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip48
 
 For additional information on amsmath, use the `?' option.
-(D:\Programs\MikTeX\tex\latex\amsmath\amstext.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
-(D:\Programs\MikTeX\tex\latex\amsmath\amsgen.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks15
 \ex@=\dimen104
 ))
-(D:\Programs\MikTeX\tex\latex\amsmath\amsbsy.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen105
 )
-(D:\Programs\MikTeX\tex\latex\amsmath\amsopn.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count89
@@ -174,14 +174,14 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-(D:\Programs\MikTeX\tex\latex\amsfonts\amsfonts.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-(D:\Programs\MikTeX\tex\latex\amscls\amsthm.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
 Package: amsthm 2015/03/04 v2.20.2
 \thm@style=\toks20
 \thm@bodyfont=\toks21
@@ -193,27 +193,27 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@headsep=\skip53
 \dth@everypar=\toks25
 )
-(D:\Programs\MikTeX\tex\latex\graphics\graphicx.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(D:\Programs\MikTeX\tex\latex\graphics\graphics.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
-(D:\Programs\MikTeX\tex\latex\graphics\trig.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(D:\Programs\MikTeX\tex\latex\00miktex\graphics.cfg
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 94.
 
-(D:\Programs\MikTeX\tex\latex\pdftex-def\pdftex.def
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(D:\Programs\MikTeX\tex\generic\oberdiek\infwarerr.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(D:\Programs\MikTeX\tex\generic\oberdiek\ltxcmds.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count101
@@ -221,11 +221,11 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen113
 \Gin@req@width=\dimen114
 )
-(D:\Programs\MikTeX\tex\latex\lipsum\lipsum.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count102
 )
-(D:\Programs\MikTeX\tex\latex\sectsty\sectsty.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\sectsty\sectsty.sty"
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
 les
 )
@@ -237,7 +237,7 @@ Class scrartcl Warning: Usage of package `fancyhdr' together
 (scrartcl)              Nevertheless, using requested
 (scrartcl)              package `fancyhdr' on input line 14.
 
-(D:\Programs\MikTeX\tex\latex\fancyhdr\fancyhdr.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
 \fancy@headwidth=\skip54
 \f@ncyO@elh=\skip55
 \f@ncyO@erh=\skip56
@@ -261,7 +261,7 @@ LaTeX Font Info:    ... okay on input line 47.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
 
-(D:\Programs\MikTeX\tex\context\base\supp-pdf.mkii
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count103
 \scratchdimen=\dimen115
@@ -276,22 +276,22 @@ LaTeX Font Info:    ... okay on input line 47.
 \everyMPtoPDFconversion=\toks27
 )
 LaTeX Font Info:    Try loading font information for T1+cmss on input line 50.
- (D:\Programs\MikTeX\tex\latex\base\t1cmss.fd
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 50.
 
-(D:\Programs\MikTeX\tex\latex\amsfonts\umsa.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 50.
 
-(D:\Programs\MikTeX\tex\latex\amsfonts\umsb.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
-{C:/Users/mikha_000/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/Users/Kaysera/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 <kmeans_k2.png, id=9, 770.12718pt x 316.18124pt>
 File: kmeans_k2.png Graphic file (type png)
  <use kmeans_k2.png>
@@ -310,25 +310,25 @@ File: kmeans_k4.png Graphic file (type png)
 Package pdftex.def Info: kmeans_k4.png used on input line 63.
 (pdftex.def)             Requested size: 423.68614pt x 189.7102pt.
 
-<eigenvalues.png, id=12, 1041.1397pt x 628.59843pt>
+<eigenvalues.png, id=12, 963.6pt x 682.80093pt>
 File: eigenvalues.png Graphic file (type png)
  <use eigenvalues.png>
 Package pdftex.def Info: eigenvalues.png used on input line 74.
-(pdftex.def)             Requested size: 624.68863pt x 377.16197pt.
+(pdftex.def)             Requested size: 578.16447pt x 409.68372pt.
 
-<symmetric_spectral_clustering.png, id=13, 741.52031pt x 580.41844pt>
+<symmetric_spectral_clustering.png, id=13, 963.6pt x 682.80093pt>
 File: symmetric_spectral_clustering.png Graphic file (type png)
 
 <use symmetric_spectral_clustering.png>
 Package pdftex.def Info: symmetric_spectral_clustering.png used on input line 7
 8.
-(pdftex.def)             Requested size: 593.21706pt x 464.33539pt.
+(pdftex.def)             Requested size: 674.51541pt x 477.95738pt.
 
-<3dplots.png, id=14, 1264.725pt x 702.37407pt>
+<3dplots.png, id=14, 963.6pt x 682.80093pt>
 File: 3dplots.png Graphic file (type png)
  <use 3dplots.png>
 Package pdftex.def Info: 3dplots.png used on input line 82.
-(pdftex.def)             Requested size: 695.6009pt x 386.30693pt.
+(pdftex.def)             Requested size: 529.98164pt x 375.54167pt.
 
 <polar_kmeans.png, id=15, 726.46407pt x 525.46312pt>
 File: polar_kmeans.png Graphic file (type png)
@@ -401,7 +401,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--94
  []
 
 
-Overfull \hbox (121.07481pt too wide) in paragraph at lines 58--94
+Overfull \hbox (74.55066pt too wide) in paragraph at lines 58--94
 | [] 
  []
 
@@ -421,7 +421,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--94
  []
 
 
-Overfull \hbox (89.60324pt too wide) in paragraph at lines 58--94
+Overfull \hbox (142.44884pt too wide) in paragraph at lines 58--94
 | [] 
  []
 
@@ -438,11 +438,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--94
 
 Underfull \hbox (badness 10000) in paragraph at lines 58--94
 
- []
-
-
-Overfull \hbox (154.99843pt too wide) in paragraph at lines 58--94
-| [] 
  []
 
 
@@ -494,33 +489,33 @@ File: purity.png Graphic file (type png)
 Package pdftex.def Info: purity.png used on input line 100.
 (pdftex.def)             Requested size: 421.57396pt x 316.18047pt.
 
-<google_map.png, id=37, 421.575pt x 316.18124pt>
+<google_map.png, id=37, 422.32782pt x 316.18124pt>
 File: google_map.png Graphic file (type png)
  <use google_map.png>
 Package pdftex.def Info: google_map.png used on input line 104.
-(pdftex.def)             Requested size: 421.57396pt x 316.18047pt.
+(pdftex.def)             Requested size: 422.32678pt x 316.18047pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--105
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--105
+Underfull \hbox (badness 10000) in paragraph at lines 98--111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--105
+Underfull \hbox (badness 10000) in paragraph at lines 98--111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--105
+Underfull \hbox (badness 10000) in paragraph at lines 98--111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--105
+Underfull \hbox (badness 10000) in paragraph at lines 98--111
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--111
 
  []
 
@@ -528,19 +523,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--105
  
 Here is how much of TeX's memory you used:
  4472 strings out of 493673
- 62938 string characters out of 3147619
+ 63700 string characters out of 3143954
  287457 words of memory out of 3000000
  7766 multiletter control sequences out of 15000+200000
  14063 words of font info for 36 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 41i,10n,47p,317b,214s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
-0\eccc1440.pk> <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
-appen\ec\dpi600\ecrm1095.pk> <C:\Users\mikha_000\AppData\Local\MiKTeX\2.9\fonts
-\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <C:\Users\mikha_000\AppData\Local\Mi
-KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm2074.pk> <C:\Users\mikha_000\Ap
-pData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1095.pk>
-Output written on writeup.pdf (9 pages, 415980 bytes).
+ 41i,10n,47p,387b,214s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Kaysera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
+eccc1440.pk> <C:\Users\Kaysera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
+n\ec\dpi600\ecrm1095.pk> <C:\Users\Kaysera\AppData\Local\MiKTeX\2.9\fonts\pk\lj
+four\jknappen\ec\dpi600\ecrm1440.pk> <C:\Users\Kaysera\AppData\Local\MiKTeX\2.9
+\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm2074.pk> <C:\Users\Kaysera\AppData\Loca
+l\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1095.pk>
+Output written on writeup.pdf (9 pages, 432666 bytes).
 PDF statistics:
  177 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

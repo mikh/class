@@ -1,6 +1,7 @@
 %% start
 clc;
 clear;
+close all
 fprintf('Running Matlab 4 Problem 2\n');
 
 %% load data
@@ -39,11 +40,14 @@ for ii = 1:M
     num_truth(ii) = sum(Y_truth == ii);
 end
     
-
+best_purity = 0;
+best_sigma = 0;
+%for sigma = 0.18:0.03:0.4
+    fprintf('sigma=%f\n', sigma);
 S = zeros(N,N);
 for ii = 1:N
     for jj = 1:N
-        S(ii, jj) = exp(-1*(sqrt( (latitude(ii)-latitude(jj))^2 + (longitude(ii)-longitude(jj))^2 )) / (2*sigma^2));
+        S(ii, jj) = exp(-1*( (latitude(ii)-latitude(jj))^2 + (longitude(ii)-longitude(jj))^2 ) / (2*sigma^2));
     end
 end
 
@@ -80,8 +84,14 @@ for k = 1:25
         end
         purity(k) = purity(k) + max_match/N;
     end
+    if purity(k) > best_purity
+        best_purity = purity(k);
+        best_sigma = sigma;
+    end
 end
+%end
 
+fprintf('best_purity = %f, best_sigma = %f\n', best_purity, best_sigma);
 figure(8);
 plot(1:25, purity);
 title('Purity Metric');
