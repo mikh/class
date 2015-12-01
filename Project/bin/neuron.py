@@ -11,8 +11,11 @@ class neuron:
 		self.activation = 0
 		self.activation_function = activation_function
 
-	def forward_pass(self, layer_input):
+	def forward_pass(self, layer_input, activation_function):
 		if self.layer == const.INPUT_LAYER:
 			self.activation = layer_input
-		elif (self.layer == const.HIDDEN_LAYER) ||
+		else
+			self.activation = 0
+			for ii in range(0, number_of_prev_layer_nodes):
+
 

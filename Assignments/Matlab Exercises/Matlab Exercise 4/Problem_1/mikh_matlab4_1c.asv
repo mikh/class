@@ -1,0 +1,46 @@
+%% start
+clc;
+clear;
+fprintf('Running Matlab 4 Problem 1 c\n');
+
+%% create D1 D2 D3
+
+colors = {'r', 'b', 'g', 'k'};
+[Data1, D1_labels] = sample_circle(3, [500, 500, 500]);
+[Data2, D2_labels] = sample_spiral(3, [500, 500, 500]);
+N = length(D1_labels);
+
+[D3_c_a, D3_c_r] = cart2pol(Data1(:,1), Data1(:,2));
+[D3_s_a, D3_s_r] = cart2pol(Data2(:,1), Data2(:,2));
+
+min_a = min(D3_c_a);
+D = D3_c_a + (-1*min_a);
+max_a = max(D);
+Dca = D ./ max_a;
+
+min_a = min(D3_s_a);
+D = D3_s_a + (-1*min_a);
+max_a = max(D);
+Dsa = D ./ max_a;
+
+min_a = min(D3_c_r);
+D = D3_c_r + (-1*min_a);
+max_a = max(D);
+Dcr = D ./ max_a;
+
+min_a = min(D3_s_r);
+D = D3_s_r + (-1*min_a);
+max_a = max(D);
+Dsr = D ./ max_a;
+
+%% kmeans
+f = figure(7);
+for k = 2:4
+    rng(2);
+    [Y, C] = kmeans([Dca, Dcr], k, 'Replicate', 20, 'Distance', 'cityblock');
+    
+    subplot(3, 2, (k-2)*2+1);
+    for jj = 1:k
+        subdata_a =  
+    end
+end
