@@ -2,15 +2,12 @@
 
 
 import os, imp, sys
+import neuron, neural_network, const
 
-config_file = 'config.txt'
 
-ini_lib = imp.load_source('ini_lib', os.path.join('lib', 'ini_lib.py'))
 path_lib = imp.load_source('path_lib', os.path.join('lib', 'path_lib.py'))
 image_lib = imp.load_source('image_lib', os.path.join('lib', 'image_lib.py'))
 console_lib = imp.load_source('console_lib', os.path.join('lib', 'console_lib.py'))
-
-DATASET_PATH = ini_lib.get_value_default(config_file, 'PATHS', 'DATASET_PATH', 'NO_PATH')
 
 def load_files(path, file_type=None):
 	dataset = {}
@@ -51,9 +48,14 @@ def preprocess_dataset(path, resize_images=True, resize_image_dimensions=(300,30
 					count += 1
 					console_lib.update_progress_bar(count/total_count, 'Resizing ' + category + ' ' + ii + '                            ')
 
-preprocess_dataset(DATASET_PATH)
+def create_neural_network(n_inputs, n_hidden, n_outputs, activation_function):
+	return neural_network.neural_network(n_inputs, n_hidden, n_outputs, activation_function)
 
+if const.PERFORM_PREPROCESSING:
+	preprocess_dataset(const.DATASET_PATH, resize_images=const.RESIZE_IMAGES, resize_image_dimensions=const.RESIZE_IMAGE_DIMENSIONS)
 
+if const.BUILD_NEURAL_NETWORK:
+	neu_net = create_neural_network(const.NUMBER_OF_INPUTS, const.HIDDEN_LAYER_NODES, const.NUMBER_OF_OUTPUT_NODES, const.ACTIVATION_FUNCTION)
 
 
 
