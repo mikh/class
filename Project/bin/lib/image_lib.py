@@ -15,7 +15,7 @@
 #
 ################ END TODO ################
 
-import os, imp
+import os, imp, numpy
 import cv2
 
 import PIL
@@ -71,10 +71,18 @@ def resize_image(image_path, destination_image, new_x_size, new_y_size):
 	img = img.resize((new_x_size, new_y_size), PIL.Image.ANTIALIAS)
 	img.save(destination_image)
 
+def convert_to_hex(red, green, blue):
+	return red + (green*255) + (blue*255*255)
 
-#TEST CODE
-#get_screenshot_of_active_window('carbonpoker')
-#crop_image("E:\\Digital_Library\\temp\\poker_script\\screenshots\\current_image.jpg", "E:\\Digital_Library\\temp\\poker_script\\screenshots\\current_image_cropped.jpg", (30,30), (100,100))
-#perform_template_matching("E:\\Digital_Library\\temp\\poker_script\\screenshots\\current_image_cropped.jpg", "E:\\Digital_Library\\temp\\poker_script\\screenshots\\current_image.jpg")
-
-
+def convert_to_matrix(image_path):
+	im = Image.open(image_path)
+	row,col =  im.size
+	pixels = im.load()
+	matrix = []
+	for r in range(0,row):
+		column = []
+		for c in range(0,col):
+			(red,green,blue) = pixels[r,c]
+			column.append(convert_to_hex(red, green, blue))
+		matrix.append(column)
+	return matrix

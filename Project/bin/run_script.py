@@ -28,6 +28,24 @@ def load_dataset_paths(path, file_type=None):
 	testing_set = load_files(os.path.join(path, 'testing_set'), file_type=file_type)
 	return (training_set, testing_set)
 
+def get_sample_lists(path):
+	(training_images, testing_images) = load_dataset_paths(path, file_type='jpg')
+	const.dprint('Loading categories...\t')
+	training_list = []
+	testing_list = []
+	training_labels = []
+	testing_labels = []
+	label_ids = []
+	for category in list(training_images):
+		if (const.USE_FULL_DATASET or (category in const.DATASET_CATEGORIES)) and (category != 'dataset_count'):
+			training_list.extend([os.path.join(path, 'training_set', category, i) for i in training_images[category][0:const.NUMBER_OF_TRAINING_IMAGES]])
+			training_labels.extend([len(label_ids)]*const.NUMBER_OF_TRAINING_IMAGES)
+			testing_list.extend([os.path.join(path, 'training_set', category, i) for i in training_images[category][const.NUMBER_OF_TRAINING_IMAGES:(const.NUMBER_OF_TRAINING_IMAGES+const.NUMBER_OF_TESTING_IMAGES)]])
+			testing_labels.extend([len(label_ids)]*const.NUMBER_OF_TESTING_IMAGES)
+			label_ids.append(category)
+	const.dprint('Done.\n')
+	return (training_list, training_labels, testing_list, testing_labels, label_ids)
+
 def preprocess_dataset(path, resize_images=True, resize_image_dimensions=(300,300)):
 	(training_images, testing_images) = load_dataset_paths(path, file_type='jpg')
 	if resize_images:
@@ -51,13 +69,19 @@ def preprocess_dataset(path, resize_images=True, resize_image_dimensions=(300,30
 def create_neural_network(n_inputs, n_hidden, n_outputs, activation_function):
 	return neural_network.neural_network(n_inputs, n_hidden, n_outputs, activation_function)
 
+def run_training(training_list, training_labels, neu_net):
+	for ii in range(0, len(training_list)):
+		matrix = image_lib.convert_to_matrix(training_list[ii])
+		neu_net.add_sample(matrix, const.RESIZE_IMAGE_DIMENSIONS, True, correct_label=training_labels[ii])
+
 if const.PERFORM_PREPROCESSING:
 	preprocess_dataset(const.DATASET_PATH, resize_images=const.RESIZE_IMAGES, resize_image_dimensions=const.RESIZE_IMAGE_DIMENSIONS)
 
 if const.BUILD_NEURAL_NETWORK:
 	neu_net = create_neural_network(const.NUMBER_OF_INPUTS, const.HIDDEN_LAYER_NODES, const.NUMBER_OF_OUTPUT_NODES, const.ACTIVATION_FUNCTION)
+	#neu_net = None
+	(training_list, training_labels, testing_list, testing_labels, label_ids) = get_sample_lists(const.DATASET_PATH)
+	run_training(training_list, training_labels, neu_net)
 
 
-
-
-
+const.dprint('Script Finished.\n')

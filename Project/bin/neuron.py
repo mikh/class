@@ -17,7 +17,7 @@ class neuron:
 			self.activation = self.activation_function(layer_input)
 		else:
 			self.activation = self.bias
-			for ii in range(0, number_of_prev_layer_nodes):
+			for ii in range(0, self.prev_nodes):
 				self.activation += (self.weight_vector[ii]*layer_input[ii])
 				self.activation = const.activate(self.activation_function, self.activation)
 

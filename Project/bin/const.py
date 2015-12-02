@@ -32,7 +32,8 @@ LOG_ACTIVATION_FUNCTION = 1
 TANH_ACTIVATION_FUNCTION = 2
 
 
-DATASET_PATH = 'D:\\Digital_Library\\data\\Documents\\Class\\EC500_Learning_From_Data\\Project\\Dataset\\Caltech_Dataset'
+#DATASET_PATH = 'D:\\Digital_Library\\data\\Documents\\Class\\EC500_Learning_From_Data\\Project\\Dataset\\Caltech_Dataset'
+DATASET_PATH = 'E:\\Digital_Library\\data\\Class\\EC500\\class\\Project\\Dataset\\Caltech_Dataset'
 
 #preprocessing
 PERFORM_PREPROCESSING = False
@@ -45,6 +46,12 @@ NUMBER_OF_INPUTS = 90000
 HIDDEN_LAYER_NODES = [3000, 3000]
 NUMBER_OF_OUTPUT_NODES = 1
 ACTIVATION_FUNCTION = LOG_ACTIVATION_FUNCTION
+
+#dataset seperation
+USE_FULL_DATASET = False
+DATASET_CATEGORIES = ['accordion', 'airplanes', 'anchor']
+NUMBER_OF_TRAINING_IMAGES = 20
+NUMBER_OF_TESTING_IMAGES = 10
 
 
 def dprint(message):
