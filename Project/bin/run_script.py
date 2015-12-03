@@ -66,8 +66,8 @@ def preprocess_dataset(path, resize_images=True, resize_image_dimensions=(300,30
 					count += 1
 					console_lib.update_progress_bar(count/total_count, 'Resizing ' + category + ' ' + ii + '                            ')
 
-def create_neural_network(n_inputs, n_hidden, n_outputs, activation_function):
-	return neural_network.neural_network(n_inputs, n_hidden, n_outputs, activation_function)
+def create_neural_network(n_inputs, n_hidden, n_outputs, activation_function, learning_rate):
+	return neural_network.neural_network(n_inputs, n_hidden, n_outputs, activation_function, learning_rate)
 
 def run_training(training_list, training_labels, neu_net):
 	for ii in range(0, len(training_list)):
@@ -78,7 +78,7 @@ if const.PERFORM_PREPROCESSING:
 	preprocess_dataset(const.DATASET_PATH, resize_images=const.RESIZE_IMAGES, resize_image_dimensions=const.RESIZE_IMAGE_DIMENSIONS)
 
 if const.BUILD_NEURAL_NETWORK:
-	neu_net = create_neural_network(const.NUMBER_OF_INPUTS, const.HIDDEN_LAYER_NODES, const.NUMBER_OF_OUTPUT_NODES, const.ACTIVATION_FUNCTION)
+	neu_net = create_neural_network(const.NUMBER_OF_INPUTS, const.HIDDEN_LAYER_NODES, const.NUMBER_OF_OUTPUT_NODES, const.ACTIVATION_FUNCTION, const.LEARNING_RATE)
 	#neu_net = None
 	(training_list, training_labels, testing_list, testing_labels, label_ids) = get_sample_lists(const.DATASET_PATH)
 	run_training(training_list, training_labels, neu_net)
