@@ -6,6 +6,7 @@ fprintf('Starting matlab 5\n\n');
 c = 0;
 d = 3;
 sigma = 4;
+q=2;
 
 %% part a
 load('helix.mat');
@@ -67,3 +68,9 @@ for z = 1:3
     K_h(z, :, :) = H * squeeze(K_h(z, :, :)) * H;
     K_s(z, :, :) = H * squeeze(K_s(z, :, :)) * H;
 end
+
+%compute eigenvalues and eigenvectors
+rng('default');
+[V, D] = eigs(squeeze(K_h(1, :, :)), q);
+D = sqrt(D);
+    
