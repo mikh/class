@@ -70,7 +70,31 @@ for z = 1:3
 end
 
 %compute eigenvalues and eigenvectors
-rng('default');
-[V, D] = eigs(squeeze(K_h(1, :, :)), q);
-D = sqrt(D);
-    
+f3 = figure(3);
+kernel_type = {'linear', 'polynomial', 'rbf'};
+grid on;
+
+for z = 1:3
+    rng('default');
+    [V, D] = eigs(squeeze(K_h(z, :, :)), q);
+    D = sqrt(D);
+    enc = D*V';
+    subplot(3,2,2*(z-1)+1);
+    scatter(enc(1,:), enc(2,:), 20, t_h);
+    title(strcat('Helix encoded to 2 dimensions with ',kernel_type{z},' kernel'));
+    xlabel('x-axis');
+    ylabel('y-axis');
+
+    rng('default');
+    [V, D] = eigs(squeeze(K_s(z, :, :)), q);
+    D = sqrt(D);
+    enc = D*V';
+    subplot(3,2,2*(z-1)+2);
+    scatter(enc(1,:), enc(2,:), 20, t_s);
+    title(strcat('Swiss roll encoded to 2 dimensions with ' , kernel_type{z} , ' kernel'));
+    xlabel('x-axis');
+    ylabel('y-axis');
+end
+
+
+saveas(f3, '3kernels.fig')
