@@ -66,7 +66,20 @@
 	\\\\
 	\hspace*{-4cm}\includegraphics[scale=0.7]{3kernels}
 	\subsection{Part c}
+	None of the methods are fully successful at unrolling the shapes. Overall, the helix seems to be more coherent, although we would ideally want the output in the form of a circle. For the swiss roll, the linear kernel completely fails at unrolling the data, superimposing the 3D image directly onto 2D. The polynomial kernel is not able to unroll the data. The rbf kernel is the closest to unrolling it, but it loses the structure of the data when it is mapped onto 2D.
 	\subsection{Part d}
+	After creating the k-NN graphs we can visualize them here:
+	\\\\
+	\hspace*{-3cm}\includegraphics[]{helix_knn}
+	\\\\
+	\hspace*{-3cm}\includegraphics[]{swiss_knn}
+	\\\\
+	As can be seen, these closely resemble the shapes seen in part a. If we were to decrease the value of k, the wireframes become more sparse, but the overall shape remains.
+	\\\\\\
+	After performing the ISOMAP KPCA we have the following 2D result:
+	\\\\\\
+	\hspace*{-3cm}\includegraphics[]{isomap}
 	\subsection{Part e}
+	From this graph we see that we have a much better KPCA result using ISOMAP than we did with the other kernels. For the helix graph there seems to be some amount of over-fitting involved causing the blip on the right. If we decrease the value of k, the graph becomes much more smooth. For the swiss roll we see that this is a good 2 dimensional representation of the data. We can clearly see the length of the geodesic distance, while maintaining a close Euclidean distance.
 	
 \end{document}

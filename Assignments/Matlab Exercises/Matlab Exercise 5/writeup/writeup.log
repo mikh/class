@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.9)  4 DEC 2015 12:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.9)  4 DEC 2015 15:08
 entering extended mode
 **writeup.tex
 (writeup.tex
@@ -339,26 +339,94 @@ Overfull \hbox (142.44884pt too wide) in paragraph at lines 65--68
 | [] 
  []
 
-[3 <./swiss_roll.png (PNG copy)>] [4 <./3kernels.png (PNG copy)>] (writeup.aux)
- ) 
+[3 <./swiss_roll.png (PNG copy)>] <helix_knn.png, id=20, 578.16pt x 433.62pt>
+File: helix_knn.png Graphic file (type png)
+
+<use helix_knn.png>
+Package pdftex.def Info: helix_knn.png used on input line 73.
+(pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
+ <swiss_knn.png, id=21, 578.16pt x 433.62pt>
+File: swiss_knn.png Graphic file (type png)
+
+<use swiss_knn.png>
+Package pdftex.def Info: swiss_knn.png used on input line 75.
+(pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
+ <isomap.png, id=22, 421.575pt x 613.54219pt>
+File: isomap.png Graphic file (type png)
+
+<use isomap.png>
+Package pdftex.def Info: isomap.png used on input line 81.
+(pdftex.def)             Requested size: 421.57396pt x 613.5407pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--82
+
+ []
+
+
+Overfull \hbox (74.54477pt too wide) in paragraph at lines 71--82
+| [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--82
+
+ []
+
+
+Overfull \hbox (74.54477pt too wide) in paragraph at lines 71--82
+| [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--82
+
+ []
+
+[4 <./3kernels.png (PNG copy)>] [5 <./helix_knn.png (PNG copy)>] [6 <./swiss_kn
+n.png (PNG copy)>]
+Overfull \vbox (17.74043pt too high) has occurred while \output is active []
+
+
+[7 <./isomap.png (PNG copy)>] [8] (writeup.aux) ) 
 Here is how much of TeX's memory you used:
- 4450 strings out of 493673
- 63159 string characters out of 3143954
- 284457 words of memory out of 3000000
- 7746 multiletter control sequences out of 15000+200000
+ 4465 strings out of 493673
+ 63396 string characters out of 3143954
+ 285457 words of memory out of 3000000
+ 7758 multiletter control sequences out of 15000+200000
  17043 words of font info for 40 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 41i,10n,47p,224b,214s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Kaysera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
-0\eccc1200.pk> <C:\Users\Kaysera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
-pen\ec\dpi600\eccc1440.pk> <C:\Users\Kaysera\AppData\Local\MiKTeX\2.9\fonts\pk\
-ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\Kaysera\AppData\Local\MiKTeX\2
-.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <C:\Users\Kaysera\AppData\Lo
-cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm2074.pk> <C:\Users\Kayser
-a\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1095.pk>
-Output written on writeup.pdf (4 pages, 202255 bytes).
+ 41i,10n,47p,489b,214s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Kaysera\AppData\Loc
+al\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1200.pk> <C:\Users\Kaysera
+\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1440.pk> <C:\U
+sers\Kaysera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm10
+95.pk> <C:\Users\Kaysera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\d
+pi600\ecrm1440.pk> <C:\Users\Kaysera\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\j
+knappen\ec\dpi600\ecrm2074.pk> <C:\Users\Kaysera\AppData\Local\MiKTeX\2.9\fonts
+\pk\ljfour\jknappen\ec\dpi600\eccc1095.pk>
+Output written on writeup.pdf (8 pages, 352082 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
+ 185 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
