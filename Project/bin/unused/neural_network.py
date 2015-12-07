@@ -1,5 +1,5 @@
 import os, imp, sys
-import const, neuron
+import const, neuron, numpy
 console_lib = imp.load_source('console_lib', os.path.join('lib', 'console_lib.py'))
 
 def create_list_of_neurons(size, start_label, layer_type, prev_layer_size, activation_function, learning_rate):
@@ -8,8 +8,35 @@ def create_list_of_neurons(size, start_label, layer_type, prev_layer_size, activ
 		l.append(neuron.neuron(start_label+ii, layer_type, prev_layer_size, activation_function, learning_rate))
 	return l
 
+def get_size_of_matrix(matrix):
+	x = len(matrix)
+	y = 0
+	if x > 0:
+		y = len(matrix[0])
+	return (x, y)
 
 class neural_network:
+	def __init__(self, number_of_input_nodes, hidden_layer_list, number_of_outputs, activation_function, learning_rate):
+		self.node_weights = []
+		self.number_of_layers = 2 + len(hidden_layer_list)
+		self.layer_widths = [number_of_input_nodes]
+		self.layer_widths.extend(hidden_layer_list)
+		self.layer_widths.append(number_of_outputs)
+
+		for ii in range(0, self.number_of_layers-1):
+			a = numpy.reshape([[1] * self.layer_widths[ii]], (self.layer_widths[ii], 1))
+			b = [[1] * self.layer_widths[ii+1]]
+			c = numpy.dot(a, b)
+
+
+			print(get_size_of_matrix(a))
+			print(get_size_of_matrix(b))
+			print(get_size_of_matrix(c))
+			input("pause")
+
+
+
+	'''
 	def __init__(self, number_of_input_nodes, hidden_layer_list, number_of_outputs, activation_function, learning_rate):
 		const.dprint("Bulding neural network...\n")
 		self.nodes = []
@@ -29,6 +56,7 @@ class neural_network:
 		self.nodes.append(create_list_of_neurons(number_of_outputs, index, const.OUTPUT_LAYER, prev_size, const.LINEAR_ACTIVATION_FUNCTION, learning_rate))
 		const.dprint('Done.\n')
 		print('Neural Network Built.')
+	'''
 
 	def collect_activations(self, layer):
 		layer_size = len(self.nodes[layer])

@@ -79,10 +79,20 @@ def convert_to_matrix(image_path):
 	row,col =  im.size
 	pixels = im.load()
 	matrix = []
+
 	for r in range(0,row):
 		column = []
 		for c in range(0,col):
-			(red,green,blue) = pixels[r,c]
+			try:
+				(red,green,blue) = pixels[r,c]
+			except:
+				print(len(list(pixels)))
+				print(pixels)
+				print(row)
+				print(col)
+				print(r)
+				print(c)
+				input('pause')
 			column.append(convert_to_hex(red, green, blue))
 		matrix.append(column)
 	return matrix
