@@ -9,7 +9,7 @@ function [ layers, weights, activation_functions ] = create_neural_network( num_
 	layers{num_layers} = zeros(num_outputs, 1);
 
 	for ii = 1:num_layers-1
-		weights{ii} = ones(length(layers{ii}), length(layers{ii+1}));
+		weights{ii} = ones(length(layers{ii}), length(layers{ii+1})).*(1/length(layers{ii}));
 	end
 
 	activation_functions = cell(num_layers, 1);
