@@ -9,19 +9,20 @@ function [ weights ] = back_propogate( label, layers, weights, activation_functi
 	for ii = 1:length(layers)
 		[r, c] = size(layers{ii});
 		deriv_E{ii} = zeros(r, c);
-	end
+    end
 
-	deriv_E{length(deriv_E)} = (label - layers{length(layers)}) .* layers{length(layers)-1}'*weights{length(weights)};
-	weight_change{length(weight_change)} = learning_rate .* layers{length(layers)-1} * deriv_E{length(deriv_E)}';
-
+    ii = length(layers);
+    deriv_E{ii} = (label - layers{ii}) .* (layers{ii-1}' * weights{ii-1})';
+    weight_change{ii-1} = learning_rate .* layers{ii-1} * deriv_E{ii}';
+    
 	for ii = length(layers)-1:-1:2
-		deriv_E{ii} = (diff_activate(layers{ii-1}'*weights{ii-1}, activation_functions{ii}).* (deriv_E{ii+1} * weights{ii}'))';
-        weight_change{ii-1} = learning_rate .* layers{ii-1} * deriv_E{ii}';
-   
-		
-	end	
+        deriv_E{ii} = diff_activate((layers{ii-1}' * weights{ii-1})', activation_functions{ii})   .*  (weights{ii}*deriv_E{ii+1});
+        weight_change{ii-1} = learning_rate .* layers{ii-1} * deriv_E{ii}';		
+    end	
 
-
+    for ii = 1:length(weights)
+        weights{ii} = weights{ii} + weight_change{ii};
+    end
 
 end
 

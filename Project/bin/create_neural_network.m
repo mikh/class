@@ -12,7 +12,7 @@ function [ layers, weights, activation_functions ] = create_neural_network( num_
 		weights{ii} = ones(length(layers{ii}), length(layers{ii+1}));
 	end
 
-	activation_functions = cell(num_layers);
+	activation_functions = cell(num_layers, 1);
 	activation_functions{1} = input_activation;
 	for ii = 1:length(hidden_layers)
 		activation_functions{ii+1} = hidden_activations{ii};
