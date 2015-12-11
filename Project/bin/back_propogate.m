@@ -5,36 +5,36 @@ function [ weights ] = back_propogate( label, layers, weights, activation_functi
 		weight_change{ii} = zeros(r, c);
 	end
 
-	deriv_E = cell(length(layers), 1);
+	delta = cell(length(layers), 1);
 	for ii = 1:length(layers)
 		[r, c] = size(layers{ii});
-		deriv_E{ii} = zeros(r, c);
-    end
+		delta{ii} = zeros(r, c);
+	end
 
+    %output layer
     ii = length(layers);
     for jj = 1:length(layers{ii})
-    	deriv_E{ii}(jj) = -(label - layers{ii}(jj)) * diff_activate(layers{ii-1}'*weights{ii-1}(:, jj), activation_functions{ii});
-    	weight_change{ii-1}(:, jj) = deriv_E{ii}(jj).*learning_rate.* layers{ii-1}(jj);
-    end
-
-    %ii = length(layers);
-    %deriv_E{ii} = (label - layers{ii}) .* (layers{ii-1}' * weights{ii-1})';
-    %weight_change{ii-1} = learning_rate .* layers{ii-1} * deriv_E{ii}';
-
-    for ii = length(layers)-1:-1:2
-    	for jj = 1:length(layers{ii})
-    		deriv_E{ii}(jj) = diff_activate(layers{ii-1}'*weights{ii-1}(:, jj), activation_functions{ii}) * (deriv_E{ii+1}'*weights{ii}(jj, :)');
-    		weight_change{ii-1}(:, jj) = deriv_E{ii}(jj) .* learning_rate .* layers{ii-1}(jj);
-    	end
+        delta{ii}(jj) = (label(jj) - layers{ii}(jj)) * diff_activate(layers{ii}(jj), activation_functions{ii});
     end
     
-	%for ii = length(layers)-1:-1:2
-    %    deriv_E{ii} = diff_activate((layers{ii-1}' * weights{ii-1})', activation_functions{ii})   .*  (weights{ii}*deriv_E{ii+1});
-    %    weight_change{ii-1} = learning_rate .* layers{ii-1} * deriv_E{ii}';		
-    %end	
-
-    for ii = 1:length(weights)
-        weights{ii} = weights{ii} + weight_change{ii};
+    %hidden layers
+    for ii = length(layers)-1:-1:2
+        for jj = 1:length(layers{ii})
+            value = 0;
+            for kk = 1:length(layers{ii+1})
+                value = value + (delta{ii+1}(kk)*weights{ii}(jj, kk));
+            end
+            delta{ii}(jj) = diff_activate(layers{ii}(jj), activation_functions{ii})*value;
+        end
+    end
+    
+    %compute new weights
+    for l = 1:length(weights)
+        for ii = 1:length(layers{l})
+            for jj = 1:length(layers{l+1})
+                weights{l}(ii, jj) = weights{l}(ii, jj) + (learning_rate * delta{l+1}(jj) * layers{l}(ii));
+            end
+        end
     end
 
 end

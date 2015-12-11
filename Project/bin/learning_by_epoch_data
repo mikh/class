@@ -1,0 +1,2271 @@
+num_neurons = 50
+num_layers = 1
+learning rate = 0.20
+iterations = 50
+training time = 1.85s
+testing time = 0.00s
+13 correct of 20
+
+num_neurons = 50
+num_layers = 2
+learning rate = 0.20
+iterations = 50
+training time = 2.18s
+testing time = 0.00s
+14 correct of 20
+
+num_neurons = 50
+num_layers = 3
+learning rate = 0.20
+iterations = 50
+training time = 2.50s
+testing time = 0.00s
+0 correct of 20
+
+num_neurons = 100
+num_layers = 1
+learning rate = 0.20
+iterations = 50
+training time = 2.96s
+testing time = 0.00s
+18 correct of 20
+
+num_neurons = 100
+num_layers = 2
+learning rate = 0.20
+iterations = 50
+training time = 3.52s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 100
+num_layers = 3
+learning rate = 0.20
+iterations = 50
+training time = 4.16s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 150
+num_layers = 1
+learning rate = 0.20
+iterations = 50
+training time = 4.04s
+testing time = 0.00s
+9 correct of 20
+
+num_neurons = 150
+num_layers = 2
+learning rate = 0.20
+iterations = 50
+training time = 5.57s
+testing time = 0.00s
+0 correct of 20
+
+num_neurons = 150
+num_layers = 3
+learning rate = 0.20
+iterations = 50
+training time = 6.92s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 200
+num_layers = 1
+learning rate = 0.20
+iterations = 50
+training time = 11.60s
+testing time = 0.00s
+0 correct of 20
+
+num_neurons = 200
+num_layers = 2
+learning rate = 0.20
+iterations = 50
+training time = 14.59s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 200
+num_layers = 3
+learning rate = 0.20
+iterations = 50
+training time = 17.40s
+testing time = 0.00s
+0 correct of 20
+
+num_neurons = 250
+num_layers = 1
+learning rate = 0.20
+iterations = 50
+training time = 14.83s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 250
+num_layers = 2
+learning rate = 0.20
+iterations = 50
+training time = 19.56s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 250
+num_layers = 3
+learning rate = 0.20
+iterations = 50
+training time = 23.47s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 300
+num_layers = 1
+learning rate = 0.20
+iterations = 50
+training time = 18.23s
+testing time = 0.00s
+9 correct of 20
+
+num_neurons = 300
+num_layers = 2
+learning rate = 0.20
+iterations = 50
+training time = 24.29s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 300
+num_layers = 3
+learning rate = 0.20
+iterations = 50
+training time = 29.55s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 350
+num_layers = 1
+learning rate = 0.20
+iterations = 50
+training time = 21.65s
+testing time = 0.00s
+0 correct of 20
+
+num_neurons = 350
+num_layers = 2
+learning rate = 0.20
+iterations = 50
+training time = 29.60s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 350
+num_layers = 3
+learning rate = 0.20
+iterations = 50
+training time = 34.71s
+testing time = 0.01s
+0 correct of 20
+
+num_neurons = 400
+num_layers = 1
+learning rate = 0.20
+iterations = 50
+training time = 23.70s
+testing time = 0.00s
+0 correct of 20
+
+num_neurons = 400
+num_layers = 2
+learning rate = 0.20
+iterations = 50
+training time = 37.86s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 400
+num_layers = 3
+learning rate = 0.20
+iterations = 50
+training time = 50.53s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 450
+num_layers = 1
+learning rate = 0.20
+iterations = 50
+training time = 25.85s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 450
+num_layers = 2
+learning rate = 0.20
+iterations = 50
+training time = 42.83s
+testing time = 0.00s
+0 correct of 20
+
+num_neurons = 450
+num_layers = 3
+learning rate = 0.20
+iterations = 50
+training time = 59.85s
+testing time = 0.01s
+0 correct of 20
+
+num_neurons = 500
+num_layers = 1
+learning rate = 0.20
+iterations = 50
+training time = 30.35s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 500
+num_layers = 2
+learning rate = 0.20
+iterations = 50
+training time = 50.97s
+testing time = 0.01s
+0 correct of 20
+
+num_neurons = 500
+num_layers = 3
+learning rate = 0.20
+iterations = 50
+training time = 69.61s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 550
+num_layers = 1
+learning rate = 0.20
+iterations = 50
+training time = 32.10s
+testing time = 0.00s
+0 correct of 20
+
+num_neurons = 550
+num_layers = 2
+learning rate = 0.20
+iterations = 50
+training time = 57.85s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 550
+num_layers = 3
+learning rate = 0.20
+iterations = 50
+training time = 80.53s
+testing time = 0.02s
+0 correct of 20
+
+num_neurons = 600
+num_layers = 1
+learning rate = 0.20
+iterations = 50
+training time = 35.22s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 600
+num_layers = 2
+learning rate = 0.20
+iterations = 50
+training time = 65.72s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 600
+num_layers = 3
+learning rate = 0.20
+iterations = 50
+training time = 92.73s
+testing time = 0.02s
+10 correct of 20
+
+num_neurons = 650
+num_layers = 1
+learning rate = 0.20
+iterations = 50
+training time = 39.10s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 650
+num_layers = 2
+learning rate = 0.20
+iterations = 50
+training time = 72.12s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 650
+num_layers = 3
+learning rate = 0.20
+iterations = 50
+training time = 105.73s
+testing time = 0.02s
+10 correct of 20
+
+num_neurons = 700
+num_layers = 1
+learning rate = 0.20
+iterations = 50
+training time = 42.99s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 700
+num_layers = 2
+learning rate = 0.20
+iterations = 50
+training time = 80.61s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 700
+num_layers = 3
+learning rate = 0.20
+iterations = 50
+training time = 120.31s
+testing time = 0.03s
+10 correct of 20
+
+num_neurons = 750
+num_layers = 1
+learning rate = 0.20
+iterations = 50
+training time = 46.02s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 750
+num_layers = 2
+learning rate = 0.20
+iterations = 50
+training time = 90.19s
+testing time = 0.02s
+10 correct of 20
+
+num_neurons = 750
+num_layers = 3
+learning rate = 0.20
+iterations = 50
+training time = 137.05s
+testing time = 0.03s
+10 correct of 20
+
+num_neurons = 800
+num_layers = 1
+learning rate = 0.20
+iterations = 50
+training time = 49.12s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 800
+num_layers = 2
+learning rate = 0.20
+iterations = 50
+training time = 99.98s
+testing time = 0.02s
+10 correct of 20
+
+num_neurons = 800
+num_layers = 3
+learning rate = 0.20
+iterations = 50
+training time = 151.56s
+testing time = 0.03s
+0 correct of 20
+
+num_neurons = 850
+num_layers = 1
+learning rate = 0.20
+iterations = 50
+training time = 52.32s
+testing time = 0.01s
+0 correct of 20
+
+num_neurons = 850
+num_layers = 2
+learning rate = 0.20
+iterations = 50
+training time = 111.92s
+testing time = 0.02s
+0 correct of 20
+
+num_neurons = 850
+num_layers = 3
+learning rate = 0.20
+iterations = 50
+training time = 170.16s
+testing time = 0.04s
+10 correct of 20
+
+num_neurons = 900
+num_layers = 1
+learning rate = 0.20
+iterations = 50
+training time = 56.30s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 900
+num_layers = 2
+learning rate = 0.20
+iterations = 50
+training time = 123.43s
+testing time = 0.03s
+10 correct of 20
+
+num_neurons = 900
+num_layers = 3
+learning rate = 0.20
+iterations = 50
+training time = 190.45s
+testing time = 0.04s
+10 correct of 20
+
+num_neurons = 950
+num_layers = 1
+learning rate = 0.20
+iterations = 50
+training time = 59.00s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 950
+num_layers = 2
+learning rate = 0.20
+iterations = 50
+training time = 134.79s
+testing time = 0.03s
+10 correct of 20
+
+num_neurons = 950
+num_layers = 3
+learning rate = 0.20
+iterations = 50
+training time = 210.73s
+testing time = 0.04s
+10 correct of 20
+
+num_neurons = 1000
+num_layers = 1
+learning rate = 0.20
+iterations = 50
+training time = 62.26s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 1000
+num_layers = 2
+learning rate = 0.20
+iterations = 50
+training time = 147.75s
+testing time = 0.03s
+0 correct of 20
+
+num_neurons = 1000
+num_layers = 3
+learning rate = 0.20
+iterations = 50
+training time = 232.49s
+testing time = 0.05s
+10 correct of 20
+
+num_neurons = 50
+num_layers = 1
+learning rate = 0.20
+iterations = 100
+training time = 3.71s
+testing time = 0.00s
+16 correct of 20
+
+num_neurons = 50
+num_layers = 2
+learning rate = 0.20
+iterations = 100
+training time = 4.34s
+testing time = 0.00s
+11 correct of 20
+
+num_neurons = 50
+num_layers = 3
+learning rate = 0.20
+iterations = 100
+training time = 4.96s
+testing time = 0.00s
+17 correct of 20
+
+num_neurons = 100
+num_layers = 1
+learning rate = 0.20
+iterations = 100
+training time = 5.40s
+testing time = 0.00s
+13 correct of 20
+
+num_neurons = 100
+num_layers = 2
+learning rate = 0.20
+iterations = 100
+training time = 6.52s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 100
+num_layers = 3
+learning rate = 0.20
+iterations = 100
+training time = 7.92s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 150
+num_layers = 1
+learning rate = 0.20
+iterations = 100
+training time = 7.63s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 150
+num_layers = 2
+learning rate = 0.20
+iterations = 100
+training time = 10.17s
+testing time = 0.00s
+0 correct of 20
+
+num_neurons = 150
+num_layers = 3
+learning rate = 0.20
+iterations = 100
+training time = 13.42s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 200
+num_layers = 1
+learning rate = 0.20
+iterations = 100
+training time = 21.27s
+testing time = 0.00s
+19 correct of 20
+
+num_neurons = 200
+num_layers = 2
+learning rate = 0.20
+iterations = 100
+training time = 26.91s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 200
+num_layers = 3
+learning rate = 0.20
+iterations = 100
+training time = 32.14s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 250
+num_layers = 1
+learning rate = 0.20
+iterations = 100
+training time = 27.31s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 250
+num_layers = 2
+learning rate = 0.20
+iterations = 100
+training time = 36.24s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 250
+num_layers = 3
+learning rate = 0.20
+iterations = 100
+training time = 42.57s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 300
+num_layers = 1
+learning rate = 0.20
+iterations = 100
+training time = 33.37s
+testing time = 0.00s
+14 correct of 20
+
+num_neurons = 300
+num_layers = 2
+learning rate = 0.20
+iterations = 100
+training time = 44.65s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 300
+num_layers = 3
+learning rate = 0.20
+iterations = 100
+training time = 54.30s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 350
+num_layers = 1
+learning rate = 0.20
+iterations = 100
+training time = 39.69s
+testing time = 0.00s
+0 correct of 20
+
+num_neurons = 350
+num_layers = 2
+learning rate = 0.20
+iterations = 100
+training time = 53.81s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 350
+num_layers = 3
+learning rate = 0.20
+iterations = 100
+training time = 68.94s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 400
+num_layers = 1
+learning rate = 0.20
+iterations = 100
+training time = 45.98s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 400
+num_layers = 2
+learning rate = 0.20
+iterations = 100
+training time = 73.06s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 400
+num_layers = 3
+learning rate = 0.20
+iterations = 100
+training time = 99.77s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 450
+num_layers = 1
+learning rate = 0.20
+iterations = 100
+training time = 52.03s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 450
+num_layers = 2
+learning rate = 0.20
+iterations = 100
+training time = 85.73s
+testing time = 0.01s
+20 correct of 20
+
+num_neurons = 450
+num_layers = 3
+learning rate = 0.20
+iterations = 100
+training time = 121.29s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 500
+num_layers = 1
+learning rate = 0.20
+iterations = 100
+training time = 57.75s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 500
+num_layers = 2
+learning rate = 0.20
+iterations = 100
+training time = 101.71s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 500
+num_layers = 3
+learning rate = 0.20
+iterations = 100
+training time = 141.00s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 550
+num_layers = 1
+learning rate = 0.20
+iterations = 100
+training time = 63.91s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 550
+num_layers = 2
+learning rate = 0.20
+iterations = 100
+training time = 117.28s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 550
+num_layers = 3
+learning rate = 0.20
+iterations = 100
+training time = 163.48s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 600
+num_layers = 1
+learning rate = 0.20
+iterations = 100
+training time = 70.32s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 600
+num_layers = 2
+learning rate = 0.20
+iterations = 100
+training time = 131.42s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 600
+num_layers = 3
+learning rate = 0.20
+iterations = 100
+training time = 187.99s
+testing time = 0.02s
+10 correct of 20
+
+num_neurons = 650
+num_layers = 1
+learning rate = 0.20
+iterations = 100
+training time = 78.15s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 650
+num_layers = 2
+learning rate = 0.20
+iterations = 100
+training time = 146.02s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 650
+num_layers = 3
+learning rate = 0.20
+iterations = 100
+training time = 213.64s
+testing time = 0.02s
+10 correct of 20
+
+num_neurons = 700
+num_layers = 1
+learning rate = 0.20
+iterations = 100
+training time = 85.54s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 700
+num_layers = 2
+learning rate = 0.20
+iterations = 100
+training time = 163.06s
+testing time = 0.01s
+0 correct of 20
+
+num_neurons = 700
+num_layers = 3
+learning rate = 0.20
+iterations = 100
+training time = 242.75s
+testing time = 0.03s
+10 correct of 20
+
+num_neurons = 750
+num_layers = 1
+learning rate = 0.20
+iterations = 100
+training time = 91.81s
+testing time = 0.01s
+13 correct of 20
+
+num_neurons = 750
+num_layers = 2
+learning rate = 0.20
+iterations = 100
+training time = 180.84s
+testing time = 0.02s
+10 correct of 20
+
+num_neurons = 750
+num_layers = 3
+learning rate = 0.20
+iterations = 100
+training time = 272.57s
+testing time = 0.03s
+10 correct of 20
+
+num_neurons = 800
+num_layers = 1
+learning rate = 0.20
+iterations = 100
+training time = 98.15s
+testing time = 0.01s
+0 correct of 20
+
+num_neurons = 800
+num_layers = 2
+learning rate = 0.20
+iterations = 100
+training time = 199.68s
+testing time = 0.02s
+0 correct of 20
+
+num_neurons = 800
+num_layers = 3
+learning rate = 0.20
+iterations = 100
+training time = 305.36s
+testing time = 0.03s
+10 correct of 20
+
+num_neurons = 850
+num_layers = 1
+learning rate = 0.20
+iterations = 100
+training time = 104.87s
+testing time = 0.01s
+0 correct of 20
+
+num_neurons = 850
+num_layers = 2
+learning rate = 0.20
+iterations = 100
+training time = 223.95s
+testing time = 0.02s
+10 correct of 20
+
+num_neurons = 850
+num_layers = 3
+learning rate = 0.20
+iterations = 100
+training time = 340.60s
+testing time = 0.04s
+10 correct of 20
+
+num_neurons = 900
+num_layers = 1
+learning rate = 0.20
+iterations = 100
+training time = 111.55s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 900
+num_layers = 2
+learning rate = 0.20
+iterations = 100
+training time = 245.83s
+testing time = 0.03s
+0 correct of 20
+
+num_neurons = 900
+num_layers = 3
+learning rate = 0.20
+iterations = 100
+training time = 379.60s
+testing time = 0.04s
+10 correct of 20
+
+num_neurons = 950
+num_layers = 1
+learning rate = 0.20
+iterations = 100
+training time = 117.96s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 950
+num_layers = 2
+learning rate = 0.20
+iterations = 100
+training time = 269.43s
+testing time = 0.03s
+10 correct of 20
+
+num_neurons = 950
+num_layers = 3
+learning rate = 0.20
+iterations = 100
+training time = 420.63s
+testing time = 0.05s
+10 correct of 20
+
+num_neurons = 1000
+num_layers = 1
+learning rate = 0.20
+iterations = 100
+training time = 124.26s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 1000
+num_layers = 2
+learning rate = 0.20
+iterations = 100
+training time = 295.00s
+testing time = 0.03s
+10 correct of 20
+
+num_neurons = 1000
+num_layers = 3
+learning rate = 0.20
+iterations = 100
+training time = 464.50s
+testing time = 0.05s
+10 correct of 20
+
+num_neurons = 50
+num_layers = 1
+learning rate = 0.20
+iterations = 150
+training time = 5.54s
+testing time = 0.00s
+15 correct of 20
+
+num_neurons = 50
+num_layers = 2
+learning rate = 0.20
+iterations = 150
+training time = 6.49s
+testing time = 0.00s
+14 correct of 20
+
+num_neurons = 50
+num_layers = 3
+learning rate = 0.20
+iterations = 150
+training time = 7.41s
+testing time = 0.00s
+13 correct of 20
+
+num_neurons = 100
+num_layers = 1
+learning rate = 0.20
+iterations = 150
+training time = 8.30s
+testing time = 0.00s
+14 correct of 20
+
+num_neurons = 100
+num_layers = 2
+learning rate = 0.20
+iterations = 150
+training time = 10.23s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 100
+num_layers = 3
+learning rate = 0.20
+iterations = 150
+training time = 12.11s
+testing time = 0.00s
+0 correct of 20
+
+num_neurons = 150
+num_layers = 1
+learning rate = 0.20
+iterations = 150
+training time = 12.03s
+testing time = 0.00s
+12 correct of 20
+
+num_neurons = 150
+num_layers = 2
+learning rate = 0.20
+iterations = 150
+training time = 16.23s
+testing time = 0.00s
+0 correct of 20
+
+num_neurons = 150
+num_layers = 3
+learning rate = 0.20
+iterations = 150
+training time = 20.70s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 200
+num_layers = 1
+learning rate = 0.20
+iterations = 150
+training time = 31.84s
+testing time = 0.00s
+12 correct of 20
+
+num_neurons = 200
+num_layers = 2
+learning rate = 0.20
+iterations = 150
+training time = 40.41s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 200
+num_layers = 3
+learning rate = 0.20
+iterations = 150
+training time = 48.34s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 250
+num_layers = 1
+learning rate = 0.20
+iterations = 150
+training time = 40.97s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 250
+num_layers = 2
+learning rate = 0.20
+iterations = 150
+training time = 53.21s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 250
+num_layers = 3
+learning rate = 0.20
+iterations = 150
+training time = 64.19s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 300
+num_layers = 1
+learning rate = 0.20
+iterations = 150
+training time = 50.16s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 300
+num_layers = 2
+learning rate = 0.20
+iterations = 150
+training time = 67.35s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 300
+num_layers = 3
+learning rate = 0.20
+iterations = 150
+training time = 81.54s
+testing time = 0.00s
+0 correct of 20
+
+num_neurons = 350
+num_layers = 1
+learning rate = 0.20
+iterations = 150
+training time = 59.75s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 350
+num_layers = 2
+learning rate = 0.20
+iterations = 150
+training time = 80.85s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 350
+num_layers = 3
+learning rate = 0.20
+iterations = 150
+training time = 99.90s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 400
+num_layers = 1
+learning rate = 0.20
+iterations = 150
+training time = 68.46s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 400
+num_layers = 2
+learning rate = 0.20
+iterations = 150
+training time = 109.51s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 400
+num_layers = 3
+learning rate = 0.20
+iterations = 150
+training time = 149.23s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 450
+num_layers = 1
+learning rate = 0.20
+iterations = 150
+training time = 77.59s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 450
+num_layers = 2
+learning rate = 0.20
+iterations = 150
+training time = 128.70s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 450
+num_layers = 3
+learning rate = 0.20
+iterations = 150
+training time = 182.28s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 500
+num_layers = 1
+learning rate = 0.20
+iterations = 150
+training time = 86.77s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 500
+num_layers = 2
+learning rate = 0.20
+iterations = 150
+training time = 152.44s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 500
+num_layers = 3
+learning rate = 0.20
+iterations = 150
+training time = 211.47s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 550
+num_layers = 1
+learning rate = 0.20
+iterations = 150
+training time = 96.01s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 550
+num_layers = 2
+learning rate = 0.20
+iterations = 150
+training time = 175.14s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 550
+num_layers = 3
+learning rate = 0.20
+iterations = 150
+training time = 246.14s
+testing time = 0.02s
+10 correct of 20
+
+num_neurons = 600
+num_layers = 1
+learning rate = 0.20
+iterations = 150
+training time = 105.14s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 600
+num_layers = 2
+learning rate = 0.20
+iterations = 150
+training time = 196.80s
+testing time = 0.01s
+0 correct of 20
+
+num_neurons = 600
+num_layers = 3
+learning rate = 0.20
+iterations = 150
+training time = 281.78s
+testing time = 0.02s
+10 correct of 20
+
+num_neurons = 650
+num_layers = 1
+learning rate = 0.20
+iterations = 150
+training time = 117.47s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 650
+num_layers = 2
+learning rate = 0.20
+iterations = 150
+training time = 220.47s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 650
+num_layers = 3
+learning rate = 0.20
+iterations = 150
+training time = 320.26s
+testing time = 0.02s
+0 correct of 20
+
+num_neurons = 700
+num_layers = 1
+learning rate = 0.20
+iterations = 150
+training time = 128.23s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 700
+num_layers = 2
+learning rate = 0.20
+iterations = 150
+training time = 247.07s
+testing time = 0.02s
+0 correct of 20
+
+num_neurons = 700
+num_layers = 3
+learning rate = 0.20
+iterations = 150
+training time = 365.04s
+testing time = 0.03s
+10 correct of 20
+
+num_neurons = 750
+num_layers = 1
+learning rate = 0.20
+iterations = 150
+training time = 137.90s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 750
+num_layers = 2
+learning rate = 0.20
+iterations = 150
+training time = 272.13s
+testing time = 0.02s
+10 correct of 20
+
+num_neurons = 750
+num_layers = 3
+learning rate = 0.20
+iterations = 150
+training time = 410.07s
+testing time = 0.03s
+10 correct of 20
+
+num_neurons = 800
+num_layers = 1
+learning rate = 0.20
+iterations = 150
+training time = 147.40s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 800
+num_layers = 2
+learning rate = 0.20
+iterations = 150
+training time = 300.10s
+testing time = 0.02s
+10 correct of 20
+
+num_neurons = 800
+num_layers = 3
+learning rate = 0.20
+iterations = 150
+training time = 456.42s
+testing time = 0.03s
+10 correct of 20
+
+num_neurons = 850
+num_layers = 1
+learning rate = 0.20
+iterations = 150
+training time = 157.06s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 850
+num_layers = 2
+learning rate = 0.20
+iterations = 150
+training time = 335.31s
+testing time = 0.02s
+10 correct of 20
+
+num_neurons = 850
+num_layers = 3
+learning rate = 0.20
+iterations = 150
+training time = 510.43s
+testing time = 0.04s
+10 correct of 20
+
+num_neurons = 900
+num_layers = 1
+learning rate = 0.20
+iterations = 150
+training time = 166.73s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 900
+num_layers = 2
+learning rate = 0.20
+iterations = 150
+training time = 369.17s
+testing time = 0.03s
+10 correct of 20
+
+num_neurons = 900
+num_layers = 3
+learning rate = 0.20
+iterations = 150
+training time = 569.62s
+testing time = 0.04s
+10 correct of 20
+
+num_neurons = 950
+num_layers = 1
+learning rate = 0.20
+iterations = 150
+training time = 176.91s
+testing time = 0.01s
+0 correct of 20
+
+num_neurons = 950
+num_layers = 2
+learning rate = 0.20
+iterations = 150
+training time = 404.86s
+testing time = 0.03s
+10 correct of 20
+
+num_neurons = 950
+num_layers = 3
+learning rate = 0.20
+iterations = 150
+training time = 631.40s
+testing time = 0.04s
+10 correct of 20
+
+num_neurons = 1000
+num_layers = 1
+learning rate = 0.20
+iterations = 150
+training time = 187.06s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 1000
+num_layers = 2
+learning rate = 0.20
+iterations = 150
+training time = 442.06s
+testing time = 0.03s
+10 correct of 20
+
+num_neurons = 1000
+num_layers = 3
+learning rate = 0.20
+iterations = 150
+training time = 698.62s
+testing time = 0.05s
+10 correct of 20
+
+num_neurons = 50
+num_layers = 1
+learning rate = 0.20
+iterations = 200
+training time = 7.40s
+testing time = 0.00s
+14 correct of 20
+
+num_neurons = 50
+num_layers = 2
+learning rate = 0.20
+iterations = 200
+training time = 8.72s
+testing time = 0.00s
+20 correct of 20
+
+num_neurons = 50
+num_layers = 3
+learning rate = 0.20
+iterations = 200
+training time = 9.90s
+testing time = 0.00s
+20 correct of 20
+
+num_neurons = 100
+num_layers = 1
+learning rate = 0.20
+iterations = 200
+training time = 11.47s
+testing time = 0.00s
+18 correct of 20
+
+num_neurons = 100
+num_layers = 2
+learning rate = 0.20
+iterations = 200
+training time = 13.91s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 100
+num_layers = 3
+learning rate = 0.20
+iterations = 200
+training time = 16.21s
+testing time = 0.00s
+0 correct of 20
+
+num_neurons = 150
+num_layers = 1
+learning rate = 0.20
+iterations = 200
+training time = 16.00s
+testing time = 0.00s
+0 correct of 20
+
+num_neurons = 150
+num_layers = 2
+learning rate = 0.20
+iterations = 200
+training time = 21.87s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 150
+num_layers = 3
+learning rate = 0.20
+iterations = 200
+training time = 28.24s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 200
+num_layers = 1
+learning rate = 0.20
+iterations = 200
+training time = 42.66s
+testing time = 0.00s
+14 correct of 20
+
+num_neurons = 200
+num_layers = 2
+learning rate = 0.20
+iterations = 200
+training time = 53.93s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 200
+num_layers = 3
+learning rate = 0.20
+iterations = 200
+training time = 64.29s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 250
+num_layers = 1
+learning rate = 0.20
+iterations = 200
+training time = 54.79s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 250
+num_layers = 2
+learning rate = 0.20
+iterations = 200
+training time = 71.55s
+testing time = 0.00s
+0 correct of 20
+
+num_neurons = 250
+num_layers = 3
+learning rate = 0.20
+iterations = 200
+training time = 85.64s
+testing time = 0.00s
+0 correct of 20
+
+num_neurons = 300
+num_layers = 1
+learning rate = 0.20
+iterations = 200
+training time = 67.21s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 300
+num_layers = 2
+learning rate = 0.20
+iterations = 200
+training time = 89.24s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 300
+num_layers = 3
+learning rate = 0.20
+iterations = 200
+training time = 108.47s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 350
+num_layers = 1
+learning rate = 0.20
+iterations = 200
+training time = 79.16s
+testing time = 0.00s
+16 correct of 20
+
+num_neurons = 350
+num_layers = 2
+learning rate = 0.20
+iterations = 200
+training time = 107.82s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 350
+num_layers = 3
+learning rate = 0.20
+iterations = 200
+training time = 133.22s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 400
+num_layers = 1
+learning rate = 0.20
+iterations = 200
+training time = 91.55s
+testing time = 0.00s
+0 correct of 20
+
+num_neurons = 400
+num_layers = 2
+learning rate = 0.20
+iterations = 200
+training time = 145.92s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 400
+num_layers = 3
+learning rate = 0.20
+iterations = 200
+training time = 198.94s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 450
+num_layers = 1
+learning rate = 0.20
+iterations = 200
+training time = 103.66s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 450
+num_layers = 2
+learning rate = 0.20
+iterations = 200
+training time = 171.47s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 450
+num_layers = 3
+learning rate = 0.20
+iterations = 200
+training time = 241.02s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 500
+num_layers = 1
+learning rate = 0.20
+iterations = 200
+training time = 115.88s
+testing time = 0.00s
+0 correct of 20
+
+num_neurons = 500
+num_layers = 2
+learning rate = 0.20
+iterations = 200
+training time = 204.01s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 500
+num_layers = 3
+learning rate = 0.20
+iterations = 200
+training time = 282.41s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 550
+num_layers = 1
+learning rate = 0.20
+iterations = 200
+training time = 128.15s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 550
+num_layers = 2
+learning rate = 0.20
+iterations = 200
+training time = 233.51s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 550
+num_layers = 3
+learning rate = 0.20
+iterations = 200
+training time = 327.72s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 600
+num_layers = 1
+learning rate = 0.20
+iterations = 200
+training time = 140.80s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 600
+num_layers = 2
+learning rate = 0.20
+iterations = 200
+training time = 262.74s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 600
+num_layers = 3
+learning rate = 0.20
+iterations = 200
+training time = 376.48s
+testing time = 0.02s
+10 correct of 20
+
+num_neurons = 650
+num_layers = 1
+learning rate = 0.20
+iterations = 200
+training time = 156.66s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 650
+num_layers = 2
+learning rate = 0.20
+iterations = 200
+training time = 294.02s
+testing time = 0.01s
+0 correct of 20
+
+num_neurons = 650
+num_layers = 3
+learning rate = 0.20
+iterations = 200
+training time = 427.09s
+testing time = 0.02s
+10 correct of 20
+
+num_neurons = 700
+num_layers = 1
+learning rate = 0.20
+iterations = 200
+training time = 171.33s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 700
+num_layers = 2
+learning rate = 0.20
+iterations = 200
+training time = 327.19s
+testing time = 0.01s
+0 correct of 20
+
+num_neurons = 700
+num_layers = 3
+learning rate = 0.20
+iterations = 200
+training time = 486.33s
+testing time = 0.03s
+10 correct of 20
+
+num_neurons = 750
+num_layers = 1
+learning rate = 0.20
+iterations = 200
+training time = 183.35s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 750
+num_layers = 2
+learning rate = 0.20
+iterations = 200
+training time = 361.85s
+testing time = 0.02s
+10 correct of 20
+
+num_neurons = 750
+num_layers = 3
+learning rate = 0.20
+iterations = 200
+training time = 546.39s
+testing time = 0.03s
+10 correct of 20
+
+num_neurons = 800
+num_layers = 1
+learning rate = 0.20
+iterations = 200
+training time = 196.39s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 800
+num_layers = 2
+learning rate = 0.20
+iterations = 200
+training time = 401.17s
+testing time = 0.02s
+10 correct of 20
+
+num_neurons = 800
+num_layers = 3
+learning rate = 0.20
+iterations = 200
+training time = 607.59s
+testing time = 0.03s
+10 correct of 20
+
+num_neurons = 850
+num_layers = 1
+learning rate = 0.20
+iterations = 200
+training time = 209.87s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 850
+num_layers = 2
+learning rate = 0.20
+iterations = 200
+training time = 448.07s
+testing time = 0.02s
+10 correct of 20
+
+num_neurons = 850
+num_layers = 3
+learning rate = 0.20
+iterations = 200
+training time = 678.75s
+testing time = 0.04s
+10 correct of 20
+
+num_neurons = 900
+num_layers = 1
+learning rate = 0.20
+iterations = 200
+training time = 222.71s
+testing time = 0.01s
+20 correct of 20
+
+num_neurons = 900
+num_layers = 2
+learning rate = 0.20
+iterations = 200
+training time = 491.75s
+testing time = 0.03s
+10 correct of 20
+
+num_neurons = 900
+num_layers = 3
+learning rate = 0.20
+iterations = 200
+training time = 761.61s
+testing time = 0.04s
+10 correct of 20
+
+num_neurons = 950
+num_layers = 1
+learning rate = 0.20
+iterations = 200
+training time = 238.27s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 950
+num_layers = 2
+learning rate = 0.20
+iterations = 200
+training time = 541.16s
+testing time = 0.03s
+10 correct of 20
+
+num_neurons = 950
+num_layers = 3
+learning rate = 0.20
+iterations = 200
+training time = 842.97s
+testing time = 0.05s
+10 correct of 20
+
+num_neurons = 1000
+num_layers = 1
+learning rate = 0.20
+iterations = 200
+training time = 249.18s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 1000
+num_layers = 2
+learning rate = 0.20
+iterations = 200
+training time = 589.99s
+testing time = 0.03s
+10 correct of 20
+
+num_neurons = 1000
+num_layers = 3
+learning rate = 0.20
+iterations = 200
+training time = 930.64s
+testing time = 0.05s
+10 correct of 20
+
+num_neurons = 50
+num_layers = 1
+learning rate = 0.20
+iterations = 250
+training time = 9.26s
+testing time = 0.00s
+18 correct of 20
+
+num_neurons = 50
+num_layers = 2
+learning rate = 0.20
+iterations = 250
+training time = 10.91s
+testing time = 0.00s
+18 correct of 20
+
+num_neurons = 50
+num_layers = 3
+learning rate = 0.20
+iterations = 250
+training time = 12.47s
+testing time = 0.00s
+20 correct of 20
+
+num_neurons = 100
+num_layers = 1
+learning rate = 0.20
+iterations = 250
+training time = 14.43s
+testing time = 0.00s
+13 correct of 20
+
+num_neurons = 100
+num_layers = 2
+learning rate = 0.20
+iterations = 250
+training time = 17.41s
+testing time = 0.00s
+16 correct of 20
+
+num_neurons = 100
+num_layers = 3
+learning rate = 0.20
+iterations = 250
+training time = 20.52s
+testing time = 0.00s
+19 correct of 20
+
+num_neurons = 150
+num_layers = 1
+learning rate = 0.20
+iterations = 250
+training time = 19.37s
+testing time = 0.00s
+15 correct of 20
+
+num_neurons = 150
+num_layers = 2
+learning rate = 0.20
+iterations = 250
+training time = 26.07s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 150
+num_layers = 3
+learning rate = 0.20
+iterations = 250
+training time = 34.16s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 200
+num_layers = 1
+learning rate = 0.20
+iterations = 250
+training time = 53.09s
+testing time = 0.00s
+17 correct of 20
+
+num_neurons = 200
+num_layers = 2
+learning rate = 0.20
+iterations = 250
+training time = 67.47s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 200
+num_layers = 3
+learning rate = 0.20
+iterations = 250
+training time = 83.06s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 250
+num_layers = 1
+learning rate = 0.20
+iterations = 250
+training time = 68.37s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 250
+num_layers = 2
+learning rate = 0.20
+iterations = 250
+training time = 88.81s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 250
+num_layers = 3
+learning rate = 0.20
+iterations = 250
+training time = 105.77s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 300
+num_layers = 1
+learning rate = 0.20
+iterations = 250
+training time = 83.71s
+testing time = 0.00s
+16 correct of 20
+
+num_neurons = 300
+num_layers = 2
+learning rate = 0.20
+iterations = 250
+training time = 110.53s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 300
+num_layers = 3
+learning rate = 0.20
+iterations = 250
+training time = 134.44s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 350
+num_layers = 1
+learning rate = 0.20
+iterations = 250
+training time = 99.15s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 350
+num_layers = 2
+learning rate = 0.20
+iterations = 250
+training time = 134.82s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 350
+num_layers = 3
+learning rate = 0.20
+iterations = 250
+training time = 172.70s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 400
+num_layers = 1
+learning rate = 0.20
+iterations = 250
+training time = 175.43s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 400
+num_layers = 2
+learning rate = 0.20
+iterations = 250
+training time = 395.09s
+testing time = 0.02s
+10 correct of 20
+
+num_neurons = 400
+num_layers = 3
+learning rate = 0.20
+iterations = 250
+training time = 576.19s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 450
+num_layers = 1
+learning rate = 0.20
+iterations = 250
+training time = 292.16s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 450
+num_layers = 2
+learning rate = 0.20
+iterations = 250
+training time = 452.02s
+testing time = 0.02s
+0 correct of 20
+
+num_neurons = 450
+num_layers = 3
+learning rate = 0.20
+iterations = 250
+training time = 641.57s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 500
+num_layers = 1
+learning rate = 0.20
+iterations = 250
+training time = 303.11s
+testing time = 0.01s
+0 correct of 20
+
+num_neurons = 500
+num_layers = 2
+learning rate = 0.20
+iterations = 250
+training time = 520.82s
+testing time = 0.02s
+10 correct of 20
+
+num_neurons = 500
+num_layers = 3
+learning rate = 0.20
+iterations = 250
+training time = 729.16s
+testing time = 0.02s
+10 correct of 20
+
+num_neurons = 550
+num_layers = 1
+learning rate = 0.20
+iterations = 250
+training time = 338.65s
+testing time = 0.01s
+0 correct of 20
+
+num_neurons = 550
+num_layers = 2
+learning rate = 0.20
+iterations = 250
+training time = 622.51s
+testing time = 0.02s
+10 correct of 20
+
+num_neurons = 550
+num_layers = 3
+learning rate = 0.20
+iterations = 250
+training time = 621.57s
+testing time = 0.03s
+10 correct of 20
+
+num_neurons = 600
+num_layers = 1
+learning rate = 0.20
+iterations = 250
+training time = 288.93s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 600
+num_layers = 2
+learning rate = 0.20
+iterations = 250
+training time = 508.61s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 600
+num_layers = 3
+learning rate = 0.20
+iterations = 250
+training time = 678.25s
+testing time = 0.02s
+10 correct of 20
+
+num_neurons = 650
+num_layers = 1
+learning rate = 0.20
+iterations = 250
+training time = 215.56s
+testing time = 0.00s
+10 correct of 20
+
+num_neurons = 650
+num_layers = 2
+learning rate = 0.20
+iterations = 250
+training time = 403.31s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 650
+num_layers = 3
+learning rate = 0.20
+iterations = 250
+training time = 586.55s
+testing time = 0.02s
+10 correct of 20
+
+num_neurons = 700
+num_layers = 1
+learning rate = 0.20
+iterations = 250
+training time = 234.38s
+testing time = 0.01s
+13 correct of 20
+
+num_neurons = 700
+num_layers = 2
+learning rate = 0.20
+iterations = 250
+training time = 447.81s
+testing time = 0.02s
+10 correct of 20
+
+num_neurons = 700
+num_layers = 3
+learning rate = 0.20
+iterations = 250
+training time = 664.77s
+testing time = 0.03s
+10 correct of 20
+
+num_neurons = 750
+num_layers = 1
+learning rate = 0.20
+iterations = 250
+training time = 250.99s
+testing time = 0.01s
+10 correct of 20
+
+num_neurons = 750
+num_layers = 2
+learning rate = 0.20
+iterations = 250
+training time = 494.25s
+testing time = 0.02s
+10 correct of 20
