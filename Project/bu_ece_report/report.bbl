@@ -1,0 +1,16 @@
+\begin{thebibliography}{1}
+
+\bibitem{conv}
+{Michael Nielsen}, ``Deep learning,'' ({Holmdel, NJ}), {August} 2015.
+
+\bibitem{FastAndAccurate}
+{Subhransu Maji and Jitendra Malik}, ``Fast and accurate digit
+  classification,'' in {\em Electrical Engineering and Computer Sciences},
+  ({Berkeley, CA}), {November} 2009.
+
+\bibitem{LearningAlgorithmsForClassification}
+{Yann LeCun, L.D. Jackel, and others}, ``Learning algorithms for
+  classification,'' in {\em AT\&T Bell Laboratories}, ({Holmdel, NJ}), {May}
+  2010.
+
+\end{thebibliography}

@@ -1,7 +1,11 @@
 \contentsline {section}{\numberline {1}Introduction}{1}
-\contentsline {section}{\numberline {2}Starting chapter}{1}
-\contentsline {subsection}{\numberline {2.1}Early section}{1}
-\contentsline {section}{\numberline {3}Another chapter}{1}
-\contentsline {subsection}{\numberline {3.1}New section}{1}
-\contentsline {section}{\numberline {4}Final chapter}{1}
-\contentsline {subsection}{\numberline {4.1}Another section}{1}
+\contentsline {section}{\numberline {2}Literature Review}{1}
+\contentsline {section}{\numberline {3}Problem Statement}{1}
+\contentsline {subsection}{\numberline {3.1}Dataset}{2}
+\contentsline {subsection}{\numberline {3.2}Neuron}{2}
+\contentsline {subsection}{\numberline {3.3}Multi-Layer Perceptron}{3}
+\contentsline {subsection}{\numberline {3.4}Convolutional Network}{5}
+\contentsline {section}{\numberline {4}Implementation}{7}
+\contentsline {section}{\numberline {5}Experimental Results}{7}
+\contentsline {section}{\numberline {6}Conclusions}{8}
+\contentsline {section}{\numberline {7}Description of Individual Effort}{9}
