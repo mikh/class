@@ -1,0 +1,5 @@
+The MATLAB code present here is used to implement different variations of the MLP network. The script mlp.m takes its parameters from const.m, and can be used to run a single test. mlp_full.m runs a series of tests and records the parameters and resulting correct rate. This data is then used to determine optimal values for the parameters in MLP. All of this code is original.
+
+The python code for the convolutional network can be found in the convolutional_network subdirectory. This code has been taken from the github of Michael Nielsen (https://github.com/mnielsen/neural-networks-and-deep-learning) and has been used to investigate the results of using a convolutional neural network. It requires the installation of the python package Theano to function.
+
+The data is located in the data subdirectory. Each file in that directory corresponds to 1000 images of the appropriate digit. So, data0 contains 1000 28x28 pixel images of the handwritten zeros.
